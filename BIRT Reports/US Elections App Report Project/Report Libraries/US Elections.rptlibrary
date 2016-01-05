@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
+    <property name="units">in</property>
+    <property name="theme">US Elections</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <themes>
+        <theme name="US Elections" id="29">
+            <styles>
+                <style name="USElectionsStyle" id="30">
+                    <property name="fontFamily">"Raleway"</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="color">#000000</property>
+                </style>
+            </styles>
+        </theme>
+    </themes>
+    <components>
+        <label name="ElectionsLabel" id="31">
+            <property name="style">USElectionsStyle</property>
+            <property name="color">#000000</property>
+        </label>
+        <text name="ElectionsText" id="32">
+            <property name="style">USElectionsStyle</property>
+            <property name="color">#000000</property>
+        </text>
+    </components>
+    <page-setup>
+        <simple-master-page name="USElectionsSimpleMasterPage" id="3">
+            <property name="type">custom</property>
+            <property name="orientation">auto</property>
+            <property name="backgroundColor">#EAEAEA</property>
+            <property name="height">2048px</property>
+            <property name="width">1536px</property>
+            <property name="showHeaderOnFirst">false</property>
+            <property name="showFooterOnLast">false</property>
+        </simple-master-page>
+    </page-setup>
+</library>
