@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
-    <html-property name="description">This template is used for the US Elections App project reports.</html-property>
     <property name="units">in</property>
     <property name="theme">US Elections.US Elections</property>
-    <text-property name="displayName">US Elections</text-property>
     <property name="layoutPreference">auto layout</property>
     <property name="bidiLayoutOrientation">ltr</property>
     <property name="imageDPI">96</property>
@@ -13,8 +11,14 @@
             <property name="fileName">Report Libraries/US Elections.rptlibrary</property>
             <property name="namespace">US Elections</property>
         </structure>
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
     </list-property>
     <page-setup>
-        <simple-master-page name="USElectionsSimpleMasterPage" id="7" extends="US Elections.USElectionsSimpleMasterPage"/>
+        <simple-master-page name="USElectionsSimpleMasterPage" id="7" extends="US Elections.USElectionsSimpleMasterPage">
+            <property name="orientation">auto</property>
+        </simple-master-page>
     </page-setup>
 </report>

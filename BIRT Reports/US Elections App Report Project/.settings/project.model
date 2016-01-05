@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="US Elections App Report Project">
-  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.1"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="test_report.rptdesign" path="/US Elections App Report Project/Report Designs/test_report.rptdesign" libraries="//@files.0"/>
 </com.actuate.istudio.analysis.model:Project>
