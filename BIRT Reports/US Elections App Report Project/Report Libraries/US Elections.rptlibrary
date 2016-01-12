@@ -36,7 +36,7 @@
             <property name="orientation">auto</property>
             <property name="backgroundColor">#EAEAEA</property>
             <property name="height">2048px</property>
-            <property name="width">1536px</property>
+            <property name="width">980px</property>
             <property name="showHeaderOnFirst">false</property>
             <property name="showFooterOnLast">false</property>
         </simple-master-page>

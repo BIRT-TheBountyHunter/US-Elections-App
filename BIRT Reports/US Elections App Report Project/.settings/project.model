@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="US Elections App Report Project">
-  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.1"/>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="test_report.rptdesign" path="/US Elections App Report Project/Report Designs/test_report.rptdesign" libraries="//@files.0"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.2 //@files.3 //@files.4 //@files.5 //@files.6"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="Local - US Elections.datadesign" path="/US Elections App Report Project/Data Objects/Local - US Elections.datadesign">
+    <dataSets name="Key Stats Data Set">
+      <columns name="TotalArtictles"/>
+      <columns name="PositiveArticles"/>
+      <columns name="NegativeArticles"/>
+      <columns name="NeutralArticles"/>
+      <columns name="PopularKeywords"/>
+      <columns name="PopularState"/>
+      <columns name="Period"/>
+    </dataSets>
+    <dataSets name="Candidate Stats Data Set">
+      <columns name="TotalArtictles"/>
+      <columns name="PositiveArticles"/>
+      <columns name="NegativeArticles"/>
+      <columns name="NeutralArticles"/>
+      <columns name="Period"/>
+      <columns name="DoB"/>
+      <columns name="Age"/>
+      <columns name="State"/>
+      <columns name="Position"/>
+      <columns name="HeadshotImageName"/>
+    </dataSets>
+    <dataSets name="Candidate Breakdown Data Set">
+      <columns name="TotalArtictles"/>
+      <columns name="PositiveArticles"/>
+      <columns name="NegativeArticles"/>
+      <columns name="NeutralArticles"/>
+      <columns name="Week"/>
+      <columns name="Media"/>
+    </dataSets>
+    <dataSets name="Candidate Comparison Stats Data Set">
+      <columns name="TotalArtictles"/>
+      <columns name="PositiveArticles"/>
+      <columns name="NegativeArticles"/>
+      <columns name="NeutralArticles"/>
+      <columns name="Period"/>
+      <columns name="DoB"/>
+      <columns name="Age"/>
+      <columns name="State"/>
+      <columns name="Position"/>
+      <columns name="HeadshotImageName"/>
+    </dataSets>
+    <dataSets name="Topic Stats Data Set">
+      <columns name="TotalArtictles"/>
+      <columns name="PositiveArticles"/>
+      <columns name="NegativeArticles"/>
+      <columns name="NeutralArticles"/>
+      <columns name="Period"/>
+      <columns name="TopicImageName"/>
+      <columns name="Description"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Candidate Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Candidate Stats.rptdesign" libraries="//@files.0"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Key Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Key Stats.rptdesign" libraries="//@files.0"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Candidate Comparison Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Candidate Comparison Stats.rptdesign" libraries="//@files.0"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Topic Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Topic Stats.rptdesign" libraries="//@files.0"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Candidate Breakdown.rptdesign" path="/US Elections App Report Project/Report Designs/Candidate Breakdown.rptdesign" libraries="//@files.0"/>
 </com.actuate.istudio.analysis.model:Project>
