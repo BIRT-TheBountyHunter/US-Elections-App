@@ -1710,6 +1710,7 @@
     <body>
         <grid id="104">
             <property name="width">9.635416666666666in</property>
+            <expression name="bookmark" type="javascript">"keyStats"</expression>
             <column id="105">
                 <property name="width">1.6875in</property>
             </column>
