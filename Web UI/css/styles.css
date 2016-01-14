@@ -21,6 +21,11 @@ body.home {
 	background: url('../img/header-bg.jpg') center top no-repeat;
 }
 
+.clearfix {
+	clear: left;
+    overflow: auto;
+}
+
 /* Main Colours */
 
 	.democrat {
@@ -94,7 +99,12 @@ body.home {
 	} 
 	
 	h1 {
-		font-weight: 400;	
+		font-size: 35px;
+		font-weight: 600;	
+	}
+	
+	body.interior h1 { 
+		font-size: 45px;
 	}
 	
 	
@@ -285,6 +295,11 @@ body.home {
 
 	#frontdoor {
 		padding: 85px 0;
+		text-align: center;
+	}
+	
+	#profileFrontdoor {
+		padding: 75px 0;
 		text-align: center;
 	}
 
@@ -562,266 +577,313 @@ body.home {
 		float: left;
 	}
 
-.clearfix {
-	clear: left;
-    overflow: auto;
-}
-
 /* Tables */
 
-.analyticContainer table {
-	width: 930px;
-	table-layout: fixed;
-	border-spacing: 3px;
-    border-collapse: separate;
-	vertical-align: middle;
-}
+	.analyticContainer table {
+		width: 930px;
+		table-layout: fixed;
+		border-spacing: 3px;
+	    border-collapse: separate;
+		vertical-align: middle;
+	}
+	
+	.analyticContainer table th {
+		text-align: left;
+		color: #666;
+		font-weight: 200;
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+	
+	.analyticContainer table tbody tr {
+		height: 80px;
+		background: url('../img/table-bg-tile.png') repeat-x;
+		background-position: center top;
+		cursor: pointer;
+	}
+	
+	.analyticContainer table tbody tr:hover {
+		background-position: center bottom;
+	}
+	
+	
+	.analyticContainer table tbody tr span.ranking {
+		padding: 25px 8px 0 8px;
+		width: 10px;
+		font-size: 22px;
+		font-weight: 200;
+		display: block;
+		float: left;
+	}
+	
+	.analyticContainer table tbody tr img {
+		margin: 0 12px 0 8px;
+		float: left;
+	}
+	
+	.analyticContainer table tbody tr span.nameContainer {
+		display: block;
+		float: left;
+		padding-top: 15px;
+		text-align: left;
+	}
+	
+	.analyticContainer table tbody tr span.topicContainer {
+		display: block;
+		float: left;
+		padding-top: 25px;
+	}
+	
+	.analyticContainer table tbody tr span.nameContainer span.candidate {
+		font-size: 20px;
+		font-weight: 600;
+		display: block;
+	}
+	
+	.analyticContainer table tbody tr span.topicContainer span.topic {
+		font-size: 20px;
+		font-weight: 600;
+		display: block;
+	}
+	
+	.analyticContainer table tbody tr span.nameContainer span.party {
+		font-size: 16px;
+		font-weight: 200;
+		display: block;
+	}
+	
+	.analyticContainer table tbody tr td:nth-child(2) {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	
+	.analyticContainer table tbody tr td:nth-child(3) {
+		padding: 10px;
+	}
+	
+	.analyticContainer table tbody tr td:nth-child(4) {
+		background: url('../img/icon-arrow.png') no-repeat;
+	}
 
-.analyticContainer table th {
-	text-align: left;
-	color: #666;
-	font-weight: 200;
-	font-size: 14px;
-	padding-bottom: 15px;
-}
 
-.analyticContainer table tbody tr {
-	height: 80px;
-	background: url('../img/table-bg-tile.png') repeat-x;
-	background-position: center top;
-	cursor: pointer;
-}
-
-.analyticContainer table tbody tr:hover {
-	background-position: center bottom;
-}
-
-
-.analyticContainer table tbody tr span.ranking {
-	padding: 25px 8px 0 8px;
-	width: 10px;
-	font-size: 22px;
-	font-weight: 200;
-	display: block;
-	float: left;
-}
-
-.analyticContainer table tbody tr img {
-	margin: 0 12px 0 8px;
-	float: left;
-}
-
-.analyticContainer table tbody tr span.nameContainer {
-	display: block;
-	float: left;
-	padding-top: 15px;
-	text-align: left;
-}
-
-.analyticContainer table tbody tr span.topicContainer {
-	display: block;
-	float: left;
-	padding-top: 25px;
-}
-
-.analyticContainer table tbody tr span.nameContainer span.candidate {
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-}
-
-.analyticContainer table tbody tr span.topicContainer span.topic {
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-}
-
-.analyticContainer table tbody tr span.nameContainer span.party {
-	font-size: 16px;
-	font-weight: 200;
-	display: block;
-}
-
-.analyticContainer table tbody tr td:nth-child(2) {
-	text-align: center;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.analyticContainer table tbody tr td:nth-child(3) {
-	padding: 10px;
-}
-
-.analyticContainer table tbody tr td:nth-child(4) {
-	background: url('../img/icon-arrow.png') no-repeat;
-}
-
-
-/* Forms */
+/* Form Elements */
 
 	#candidatesByMediaSource {
 		margin-top: 20px;
 	}
 
-	.select-style {
-		float: left;
-		margin-right: 30px;
-	    width: 375px;
-	    border-radius: 3px;
-	    overflow: hidden;
-	    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
-	    padding: 6px;
-	}
+	/* Select Style Menu */
+		.select-style {
+			float: left;
+			margin-right: 30px;
+		    width: 375px;
+		    border-radius: 3px;
+		    overflow: hidden;
+		    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+		    padding: 6px;
+		}
+		
+		.select-style select {
+		    padding: 5px 8px;
+		    width: 375px;
+		    border: none;
+		    box-shadow: none;
+		    background: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		    font-family: 'Lato', sans-serif;
+		    font-size: 16px;
+		}
+		
+		.select-style:active, .select-style:hover {
+			background-color: #c6c6c6;
+		}
+		
+		.select-style select:focus {
+		    outline: none;
+		}
+		
+		.goButton {
+			float: left;
+			display: block;
+			color: #000000;
+			background-color: #FFFFFF;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 10px 20px 10px 20px;
+			width: 90px;
+			text-align: center;
+			font-size: 18px;
+			border: none;
+		}
 	
-	.select-style select {
-	    padding: 5px 8px;
-	    width: 375px;
-	    border: none;
-	    box-shadow: none;
-	    background: transparent;
-	    background-image: none;
-	    -webkit-appearance: none;
-	    font-family: 'Lato', sans-serif;
-	    font-size: 16px;
-	}
+		.goButton:hover, .goButton:active {
+			background-color: #c6c6c6;
+		}
+		
+	/* Profile / Topic Page Select Menu Header */
 	
-	.select-style:active, .select-style:hover {
-		background-color: #c6c6c6;
-	}
-	
-	.select-style select:focus {
-	    outline: none;
-	}
-	
-	.goButton {
-		float: left;
-		display: block;
-		color: #000000;
-		background-color: #FFFFFF;
-		text-transform: uppercase;
-		text-decoration: none;
-		padding: 10px 20px 10px 20px;
-		width: 90px;
-		text-align: center;
-		font-size: 18px;
-		border: none;
-	}
-	
-	.goButton:hover, .goButton:active {
-		background-color: #c6c6c6;
-	}
-	
-	.filterPane ul{
-	  list-style: none;
-	  margin: 0 0 10px 0 !important;
-	  padding: 0;
-	  display: block;
-	}
-	
-	
-	.filterPane ul li{
-	  color: #333;
-	  display: block;
-	  position: relative;
-	  float: left;
-	  width: 100%;
-	}
-	
-	.filterPane ul li input[type=radio]{
-	  position: absolute;
-	  visibility: hidden;
-	}
-	
-	.filterPane ul li label{
-	  display: block;
-	  position: relative;
-	  font-weight: 400;
-	  font-size: 16px;
-	  padding: 0px 5px 5px 30px;
-	  margin: 0px auto;
-	  z-index: 9;
-	  cursor: pointer;
-	  -webkit-transition: all 0.25s linear;
-	}
-	
-	.filterPane ul li:hover label{
-		color: #999;
-	}
-	
-	.filterPane ul li .check{
-	  display: block;
-	  position: absolute;
-	  border: 2px solid #333;
-	  border-radius: 100%;
-	  height: 15px;
-	  width: 15px;
-	  top: 2px;
-		z-index: 5;
-		transition: border .25s linear;
-		-webkit-transition: border .25s linear;
-	}
-	
-	.filterPane ul li:hover .check {
-	  border: 2px solid #999;
-	}
-	
-	.filterPane ul li .check::before {
-	  display: block;
-	  position: absolute;
-	  content: '';
-	  border-radius: 100%;
-	  height: 11px;
-	  width: 11px;
-	  top: 2px;
-	  left: 2px;
-	  margin: auto;
-		transition: background 0.25s linear;
-		-webkit-transition: background 0.25s linear;
-	}
+		.profile-select-style {
+			display: inline-block;
+		    border-radius: 3px;
+		    overflow: hidden;
+		    background: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+		    padding: 20px 40px 20px 20px;
+		    -webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+			font-weight: 600;
+			font-size: 45px;
+			border: 1px solid #e7e7e7;
+			text-align: center;
+		}
+		
+		.profile-select-style select {
+		    padding: 5px 8px;
+		    border: none;
+		    box-shadow: none;
+		    background: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		    font-family: 'Lato', sans-serif;
+		    font-weight: 600;
+			font-size: 45px;
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+			text-align: center;
 
-	input[type=radio]:checked ~ .check {
-	  border: 2px solid #333;
-	}
+		}
+		
+		.profile-select-style:active, .select-style:hover {
+			background-color: #c6c6c6;
+		}
+		
+		.profile-select-style select:focus {
+		    outline: none;
+		}
+		
+		#width_tmp_select{
+		 display : none;
+		} 
 	
-	input[type=radio]:checked ~ .check::before{
-	  background: #333;
-	}
 		
-		/* Custom Radio Button fills */
-		input[type=radio]#candidates-partyDemocrats:checked ~ .check::before {
-			background: #0000FF !important;
+	/* Filter Pane Form Elements */
+	
+		.filterPane ul{
+		  list-style: none;
+		  margin: 0 0 10px 0 !important;
+		  padding: 0;
+		  display: block;
 		}
 		
-		input[type=radio]#candidates-partyRepublicans:checked ~ .check::before {
-			background: #FF0000 !important;
+		
+		.filterPane ul li{
+		  color: #333;
+		  display: block;
+		  position: relative;
+		  float: left;
+		  width: 100%;
 		}
 		
-		input[type=radio]#candidates-sentimentPositive:checked ~ .check::before, input[type=radio]#topics-sentimentPositive:checked ~ .check::before, input[type=radio]#media-sentimentPositive:checked ~ .check::before {
-			background: #38c645 !important;
+		.filterPane ul li input[type=radio]{
+		  position: absolute;
+		  visibility: hidden;
 		}
 		
-		input[type=radio]#candidates-sentimentNegative:checked ~ .check::before, input[type=radio]#topics-sentimentNegative:checked ~ .check::before, input[type=radio]media-sentimentNegative:checked ~ .check::before {
-			background: #9b151e !important;
+		.filterPane ul li label{
+		  display: block;
+		  position: relative;
+		  font-weight: 400;
+		  font-size: 16px;
+		  padding: 0px 5px 5px 30px;
+		  margin: 0px auto;
+		  z-index: 9;
+		  cursor: pointer;
+		  -webkit-transition: all 0.25s linear;
+		}
+		
+		.filterPane ul li:hover label{
+			color: #999;
+		}
+		
+		.filterPane ul li .check{
+		  display: block;
+		  position: absolute;
+		  border: 2px solid #333;
+		  border-radius: 100%;
+		  height: 15px;
+		  width: 15px;
+		  top: 2px;
+			z-index: 5;
+			transition: border .25s linear;
+			-webkit-transition: border .25s linear;
+		}
+		
+		.filterPane ul li:hover .check {
+		  border: 2px solid #999;
+		}
+		
+		.filterPane ul li .check::before {
+		  display: block;
+		  position: absolute;
+		  content: '';
+		  border-radius: 100%;
+		  height: 11px;
+		  width: 11px;
+		  top: 2px;
+		  left: 2px;
+		  margin: auto;
+			transition: background 0.25s linear;
+			-webkit-transition: background 0.25s linear;
 		}
 	
-	input[type=radio]:checked ~ label{
-	  color: #333;
-	}
+		input[type=radio]:checked ~ .check {
+		  border: 2px solid #333;
+		}
 		
-		/* Custom Label colours */
-		input[type=radio]#candidates-partyDemocrats:checked ~ label{
-			color: #0000FF !important;
-	  	}
-	  	
-	  	input[type=radio]#candidates-partyRepublicans:checked ~ label{
-			color: #FF0000 !important;
-	  	}
-	  	
-	  	input[type=radio]#candidates-sentimentPositive:checked ~ label, input[type=radio]#topics-sentimentPositive:checked ~ label, input[type=radio]#media-sentimentPositive:checked ~ label{
-			color: #39b54a !important;
-	  	}
-	  	
-	  	input[type=radio]#candidates-sentimentNegative:checked ~ label, input[type=radio]#topics-sentimentNegative:checked ~ label, input[type=radio]#media-sentimentNegative:checked ~ label {
-			color: #9b151e !important;
-	  	}
+		input[type=radio]:checked ~ .check::before{
+		  background: #333;
+		}
+			
+			/* Custom Radio Button fills */
+			input[type=radio]#candidates-partyDemocrats:checked ~ .check::before {
+				background: #0000FF !important;
+			}
+			
+			input[type=radio]#candidates-partyRepublicans:checked ~ .check::before {
+				background: #FF0000 !important;
+			}
+			
+			input[type=radio]#candidates-sentimentPositive:checked ~ .check::before, input[type=radio]#topics-sentimentPositive:checked ~ .check::before, input[type=radio]#media-sentimentPositive:checked ~ .check::before {
+				background: #38c645 !important;
+			}
+			
+			input[type=radio]#candidates-sentimentNegative:checked ~ .check::before, input[type=radio]#topics-sentimentNegative:checked ~ .check::before, input[type=radio]media-sentimentNegative:checked ~ .check::before {
+				background: #9b151e !important;
+			}
+		
+		input[type=radio]:checked ~ label{
+		  color: #333;
+		}
+			
+			/* Custom Label colours */
+			input[type=radio]#candidates-partyDemocrats:checked ~ label{
+				color: #0000FF !important;
+		  	}
+		  	
+		  	input[type=radio]#candidates-partyRepublicans:checked ~ label{
+				color: #FF0000 !important;
+		  	}
+		  	
+		  	input[type=radio]#candidates-sentimentPositive:checked ~ label, input[type=radio]#topics-sentimentPositive:checked ~ label, input[type=radio]#media-sentimentPositive:checked ~ label{
+				color: #39b54a !important;
+		  	}
+		  	
+		  	input[type=radio]#candidates-sentimentNegative:checked ~ label, input[type=radio]#topics-sentimentNegative:checked ~ label, input[type=radio]#media-sentimentNegative:checked ~ label {
+				color: #9b151e !important;
+		  	}
 	
