@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$(this).closest('div').find('.filterPane').toggleClass('filterPaneOpen');
 	});
 	
-	//how it works lightbox
+	//How It Works Lightbox
 	$('#menu li.howitworks a, #methodology a').featherlight({
 		iframe: 'howitworks.html',
 		iframeWidth: 800,
@@ -27,20 +27,22 @@ $(document).ready(function() {
 		$('#sharePullDown').toggleClass('shareOpen');
 	});
 	
-	// Table Row Highlight Button  
-	$('.tableRowButton').hover(function(){
-		$(this).closest('td, tr').css('background-position', 'center bottom');
-		}, function() {
-			$(this).closest('td, tr').css('background-position', 'center top');	
+	//Row click functionality on data tables
+	$('.analyticContainer table tbody tr').click(function(){
+		
+		//check to see if table clicked is a topic or candidate
+		if($(this).parents().eq(3).attr('id') == "topCandidates") {
+			pageURL = "profile.html";
+		} else if($(this).parents().eq(3).attr('id') == "topTopics"){
+			pageURL = "topic.html";
+		}
+		
+		//get data attribute for the row selected
+		variableString = $(this).data('string');
+		
+		//combine variables to create 
+		window.location = pageURL + '#' + variableString;	
+		
 	});
-	
-// Cache selectors outside callback for performance. 
-   var $window = $(window),
-       $stickyEl = $('#sharePullDown'),
-       elTop = $stickyEl.offset().top;
-
-   $window.scroll(function() {
-        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    });
 	
 });
