@@ -1719,7 +1719,15 @@
                 <cell id="110"/>
             </row>
             <row id="112">
-                <cell id="1301"/>
+                <cell id="1301">
+                    <property name="textAlign">center</property>
+                    <image id="1305">
+                        <property name="height">168px</property>
+                        <property name="width">168px</property>
+                        <property name="source">file</property>
+                        <expression name="uri" type="constant">Images/profile-ted-cruz-large.png</expression>
+                    </image>
+                </cell>
                 <cell id="113">
                     <extended-item extensionName="Chart" name="Chart1" id="1224">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
@@ -1919,8 +1927,8 @@
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
                         <property name="marginBottom">0pt</property>
-                        <property name="height">1.6in</property>
-                        <property name="width">1.53in</property>
+                        <property name="height">1.8229166666666667in</property>
+                        <property name="width">2.8020833333333335in</property>
                         <property name="dataSet">Candidate Stats Data Set</property>
                         <list-property name="boundDataColumns">
                             <structure>
