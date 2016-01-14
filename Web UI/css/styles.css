@@ -510,7 +510,7 @@ body {
 
 /* Tables */
 
-#analyticContainer table {
+.analyticContainer table {
 	width: 930px;
 	table-layout: fixed;
 	border-spacing: 3px;
@@ -518,7 +518,7 @@ body {
 	vertical-align: middle;
 }
 
-#analyticContainer td, th {
+.analyticContainer table th {
 	text-align: left;
 	color: #666;
 	font-weight: 200;
@@ -526,13 +526,19 @@ body {
 	padding-bottom: 15px;
 }
 
-#analyticContainer tr, td {
+.analyticContainer table tbody tr {
 	height: 80px;
 	background: url('../img/table-bg-tile.png') repeat-x;
 	background-position: center top;
+	cursor: pointer;
 }
 
-#analyticContainer tr, td:first-child span.ranking {
+.analyticContainer table tbody tr:hover {
+	background-position: center bottom;
+}
+
+
+.analyticContainer table tbody tr span.ranking {
 	padding: 25px 8px 0 8px;
 	width: 10px;
 	font-size: 22px;
@@ -541,55 +547,54 @@ body {
 	float: left;
 }
 
-#analyticContainer tr, td:first-child a:link {
-	text-decoration: none;
-	color: inherit;
-}
-
-#analyticContainer tr, td:first-child img {
+.analyticContainer table tbody tr img {
 	margin: 0 12px 0 8px;
 	float: left;
 }
 
-#analyticContainer tr, td:first-child span.nameContainer {
+.analyticContainer table tbody tr span.nameContainer {
 	display: block;
 	float: left;
 	padding-top: 15px;
+	text-align: left;
 }
 
-#analyticContainer tr, td:first-child span.topicContainer {
+.analyticContainer table tbody tr span.topicContainer {
 	display: block;
 	float: left;
 	padding-top: 25px;
 }
 
-#analyticContainer tr, td:first-child span.nameContainer span.candidate {
+.analyticContainer table tbody tr span.nameContainer span.candidate {
 	font-size: 20px;
 	font-weight: 600;
 	display: block;
 }
 
-#analyticContainer tr, td:first-child span.topicContainer span.topic {
+.analyticContainer table tbody tr span.topicContainer span.topic {
 	font-size: 20px;
 	font-weight: 600;
 	display: block;
 }
-}
 
-#analyticContainer td:first-child span.nameContainer span.party {
+.analyticContainer table tbody tr span.nameContainer span.party {
 	font-size: 16px;
 	font-weight: 200;
 	display: block;
 }
 
-#analyticContainer tr, td:nth-child(2) {
+.analyticContainer table tbody tr td:nth-child(2) {
 	text-align: center;
 	font-size: 18px;
 	font-weight: 600;
 }
 
-#analyticContainer tr, td:nth-child(3) {
+.analyticContainer table tbody tr td:nth-child(3) {
 	padding: 10px;
+}
+
+.analyticContainer table tbody tr td:nth-child(4) {
+	background: url('../img/icon-arrow.png') no-repeat;
 }
 
 
