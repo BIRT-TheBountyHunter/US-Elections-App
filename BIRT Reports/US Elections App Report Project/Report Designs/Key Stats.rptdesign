@@ -1,6 +1,1538 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/D:/GitHub/US-Elections-App/BIRT%20Reports/US%20Elections%20App%20Report%20Project/Data%20Objects/Local%20-%20US%20Elections.datadesign">
+                <reference-elements>Test BDO Data Source;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
+                    <data-sources>
+                        <oda-data-source extensionID="com.actuate.data.oda.static" name="Static Data Source" id="2"/>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Key Stats Articles Data Set" id="3">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">TotalArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">TotalArticles</text-property>
+                                    <text-property name="heading">TotalArticles</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Period</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Period</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Period</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Type</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Type</text-property>
+                                    <text-property name="heading">Type</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">TotalArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Period</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">TotalArticles</property>
+                                    <property name="nativeName">TotalArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Period</property>
+                                    <property name="nativeName">Period</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Type</property>
+                                    <property name="nativeName">Type</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","Period","Type"],"Types":[3,3,1]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TotalArtictles</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>TotalArtictles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TotalArtictles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PositiveArticles</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>PositiveArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PositiveArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NegativeArticles</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NegativeArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NegativeArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NeutralArticles</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NeutralArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NeutralArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Period</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Period</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Period</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["882","30","positive"],["687","30","negative"],["989","30","neutral"],["1616","60","positive"],["1214","60","negative"],["1880","60","neutral"],["2445","90","positive"],["1820","90","negative"],["2740","90","neutral"],["4883","0","positive"],["3636","0","negative"],["5455","0","neutral"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Key Stats Trending Data Set" id="9">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Keywords</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Keywords</text-property>
+                                    <text-property name="heading">Keywords</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">State</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">State</text-property>
+                                    <text-property name="heading">State</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Period</property>
+                                    <text-property name="displayName">Period</text-property>
+                                    <text-property name="heading">Period</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Keywords</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">State</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Period</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Keywords</property>
+                                    <property name="nativeName">Keywords</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">State</property>
+                                    <property name="nativeName">State</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Period</property>
+                                    <property name="nativeName">Period</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["Keywords","State","Period"],"Types":[1,1,3]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Keywords</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>1</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Keywords</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Keywords</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>1</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>State</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["Trump, refugee, debate","New York","30"],["Guns, economy, religion","Iowa","60"],["Primary, ballot, fraud","New Hampshire","90"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Stats Data Set" id="5">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">TotalArtictles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">TotalArtictles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">TotalArtictles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">PositiveArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">PositiveArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">PositiveArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NegativeArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NegativeArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NegativeArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NeutralArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NeutralArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NeutralArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Period</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Period</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Period</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">DoB</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">DoB</text-property>
+                                    <text-property name="heading">DoB</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Age</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Age</text-property>
+                                    <text-property name="heading">Age</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">State</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">State</text-property>
+                                    <text-property name="heading">State</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Position</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Position</text-property>
+                                    <text-property name="heading">Position</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">HeadshotImageName</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">HeadshotImageName</text-property>
+                                    <text-property name="heading">HeadshotImageName</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">TotalArtictles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">PositiveArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">NegativeArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">NeutralArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Period</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">DoB</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Age</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">State</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">Position</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">HeadshotImageName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">TotalArtictles</property>
+                                    <property name="nativeName">TotalArtictles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">PositiveArticles</property>
+                                    <property name="nativeName">PositiveArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">NegativeArticles</property>
+                                    <property name="nativeName">NegativeArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">NeutralArticles</property>
+                                    <property name="nativeName">NeutralArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Period</property>
+                                    <property name="nativeName">Period</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">DoB</property>
+                                    <property name="nativeName">DoB</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Age</property>
+                                    <property name="nativeName">Age</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">State</property>
+                                    <property name="nativeName">State</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">Position</property>
+                                    <property name="nativeName">Position</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">HeadshotImageName</property>
+                                    <property name="nativeName">HeadshotImageName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,3,3,3,1,1,1,1,1]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TotalArtictles</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>TotalArtictles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TotalArtictles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PositiveArticles</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>PositiveArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PositiveArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NegativeArticles</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NegativeArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NegativeArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NeutralArticles</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NeutralArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NeutralArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Period</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Period</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Period</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["3738","687","989","3062","30","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["6896","1201","1808","6124","60","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["9993","1890","2727","9876","90","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["18900","3600","5454","18800","0","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3001","700","1000","4000","30","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["6001","1301","19008","6200","60","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["9001","1990","2828","9900","90","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["19900","3700","5555","19800","0","06/14/1946","69","New York","Business Magnate","Donald Trump.png"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Breakdown Data Set" id="6">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">TotalArtictles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">TotalArtictles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">TotalArtictles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">PositiveArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">PositiveArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">PositiveArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NegativeArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NegativeArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NegativeArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NeutralArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NeutralArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NeutralArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Week</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Week</text-property>
+                                    <text-property name="heading">Week</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Media</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Media</text-property>
+                                    <text-property name="heading">Media</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">TotalArtictles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">PositiveArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">NegativeArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">NeutralArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Week</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">Media</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">TotalArtictles</property>
+                                    <property name="nativeName">TotalArtictles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">PositiveArticles</property>
+                                    <property name="nativeName">PositiveArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">NegativeArticles</property>
+                                    <property name="nativeName">NegativeArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">NeutralArticles</property>
+                                    <property name="nativeName">NeutralArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Week</property>
+                                    <property name="nativeName">Week</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">Media</property>
+                                    <property name="nativeName">Media</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Week","Media"],"Types":[3,3,3,3,1,1]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TotalArtictles</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>TotalArtictles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TotalArtictles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PositiveArticles</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>PositiveArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PositiveArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NegativeArticles</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NegativeArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NegativeArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NeutralArticles</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NeutralArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NeutralArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Period</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Period</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Period</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["3738","687","989","3062","1/3","CNN"],["6896","1201","1808","6124","1/10","CNN"],["9993","1890","2727","9876","1/17","CNN"],["18900","3600","5454","18800","1/25","CNN"],["3001","700","1000","4000","1/3","Fox News"],["6001","1301","19008","6200","1/10","Fox News"],["9001","1990","2828","9900","1/17","Fox News"],["19900","3700","5555","19800","1/25","Fox News"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Comparison Stats Data Set" id="7">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">TotalArtictles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">TotalArtictles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">TotalArtictles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">PositiveArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">PositiveArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">PositiveArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NegativeArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NegativeArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NegativeArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NeutralArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NeutralArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NeutralArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Period</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Period</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Period</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">DoB</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">DoB</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">DoB</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Age</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Age</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Age</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">State</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">State</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">State</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Position</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Position</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Position</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">HeadshotImageName</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">HeadshotImageName</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">HeadshotImageName</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">TotalArtictles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">PositiveArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">NegativeArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">NeutralArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Period</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">DoB</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Age</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">State</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">Position</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">HeadshotImageName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">TotalArtictles</property>
+                                    <property name="nativeName">TotalArtictles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">PositiveArticles</property>
+                                    <property name="nativeName">PositiveArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">NegativeArticles</property>
+                                    <property name="nativeName">NegativeArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">NeutralArticles</property>
+                                    <property name="nativeName">NeutralArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Period</property>
+                                    <property name="nativeName">Period</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">DoB</property>
+                                    <property name="nativeName">DoB</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Age</property>
+                                    <property name="nativeName">Age</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">State</property>
+                                    <property name="nativeName">State</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">Position</property>
+                                    <property name="nativeName">Position</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">HeadshotImageName</property>
+                                    <property name="nativeName">HeadshotImageName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,3,3,3,1,1,1,1,1]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TotalArtictles</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>TotalArtictles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TotalArtictles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PositiveArticles</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>PositiveArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PositiveArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NegativeArticles</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NegativeArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NegativeArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NeutralArticles</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NeutralArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NeutralArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Period</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Period</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Period</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["3738","687","989","3062","30","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["6896","1201","1808","6124","60","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["9993","1890","2727","9876","90","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["18900","3600","5454","18800","0","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3001","700","1000","4000","30","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["6001","1301","19008","6200","60","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["9001","1990","2828","9900","90","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["19900","3700","5555","19800","0","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["3344","880","1000","4000","30","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["6688","1601","2000","8000","60","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["9900","2420","3000","1600","90","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["20900","3800","5600","20800","0","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Topic Stats Data Set" id="8">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">TotalArtictles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">TotalArtictles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">TotalArtictles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">PositiveArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">PositiveArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">PositiveArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NegativeArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NegativeArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NegativeArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">NeutralArticles</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">NeutralArticles</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">NeutralArticles</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Period</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Period</text-property>
+                                    <property name="onColumnLayout">false</property>
+                                    <text-property name="heading">Period</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">TopicImageName</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">TopicImageName</text-property>
+                                    <text-property name="heading">TopicImageName</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Description</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Description</text-property>
+                                    <text-property name="heading">Description</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">TotalArtictles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">PositiveArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">NegativeArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">NeutralArticles</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Period</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">TopicImageName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Description</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Static Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">TotalArtictles</property>
+                                    <property name="nativeName">TotalArtictles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">PositiveArticles</property>
+                                    <property name="nativeName">PositiveArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">NegativeArticles</property>
+                                    <property name="nativeName">NegativeArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">NeutralArticles</property>
+                                    <property name="nativeName">NeutralArticles</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Period</property>
+                                    <property name="nativeName">Period</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">3</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">TopicImageName</property>
+                                    <property name="nativeName">TopicImageName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Description</property>
+                                    <property name="nativeName">Description</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">1</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","TopicImageName","Description"],"Types":[3,3,3,3,3,1,1]}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TotalArtictles</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>TotalArtictles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TotalArtictles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PositiveArticles</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>PositiveArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PositiveArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NegativeArticles</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NegativeArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NegativeArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>NeutralArticles</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>NeutralArticles</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>NeutralArticles</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Period</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Period</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Period</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>DATA</name>
+                                    <value>[["3738","687","989","3062","30","Firearms.png","Media coverage about guns and firearms ownership"],["6896","1201","1808","6124","60","Firearms.png","Media coverage about guns and firearms ownership"],["9993","1890","2727","9876","90","Firearms.png","Media coverage about guns and firearms ownership"],["18900","3600","5454","18800","0","Firearms.png","Media coverage about guns and firearms ownership"],["3001","700","1000","4000","30","Healthcare.png","Media coverage about healthcare issues"],["6001","1301","19008","6200","60","Healthcare.png","Media coverage about healthcare issues"],["9001","1990","2828","9900","90","Healthcare.png","Media coverage about healthcare issues"],["19900","3700","5555","19800","0","Healthcare.png","Media coverage about healthcare issues"]]</value>
+                                </ex-property>
+                            </list-property>
+                        </oda-data-set>
+                    </data-sets>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
     <property name="units">in</property>
     <property name="theme">US Elections.US Elections</property>
     <property name="layoutPreference">auto layout</property>
@@ -16,9 +1548,772 @@
             <property name="namespace">ThemesReportItems31</property>
         </structure>
     </list-property>
+    <data-sources>
+        <data-mart-data-source name="Test BDO Data Source" id="56">
+            <property name="datamartURL">Data Objects/Local - US Elections</property>
+            <property name="accessType">transient</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="Articles Data Set" id="1225">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">TotalArticles</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TotalArticles</text-property>
+                    <text-property name="heading">TotalArticles</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Period</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Period</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Period</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Type</text-property>
+                    <text-property name="heading">Type</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Period"]</expression>
+                    <simple-property-list name="value1">
+                        <value>30</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">TotalArticles</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Test BDO Data Source</property>
+            <property name="dataObject">Key Stats Articles Data Set</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">TotalArticles</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Period</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Type</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="Trending Data Set" id="1266">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Keywords</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Keywords</text-property>
+                    <text-property name="heading">Keywords</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">State</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">State</text-property>
+                    <text-property name="heading">State</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Period</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Period</text-property>
+                    <text-property name="heading">Period</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Period"]</expression>
+                    <simple-property-list name="value1">
+                        <value>30</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Keywords</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">State</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Test BDO Data Source</property>
+            <property name="dataObject">Key Stats Trending Data Set</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Keywords</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">State</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Period</property>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
     <page-setup>
         <simple-master-page name="USElectionsSimpleMasterPage" id="7" extends="US Elections.USElectionsSimpleMasterPage">
             <property name="orientation">auto</property>
+            <property name="backgroundColor">white</property>
         </simple-master-page>
     </page-setup>
+    <body>
+        <grid id="104">
+            <property name="width">9.635416666666666in</property>
+            <column id="105">
+                <property name="width">1.6875in</property>
+            </column>
+            <column id="106">
+                <property name="width">3.6145833333333335in</property>
+            </column>
+            <column id="1296">
+                <property name="width">0.20833333333333334in</property>
+            </column>
+            <column id="107">
+                <property name="width">4.125in</property>
+            </column>
+            <row id="108">
+                <cell id="109"/>
+                <cell id="110"/>
+                <cell id="1293"/>
+                <cell id="111"/>
+            </row>
+            <row id="112">
+                <cell id="113">
+                    <extended-item extensionName="Chart" name="Chart1" id="1224">
+                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithoutAxes version="2.6.1" type="Pie Chart" subType="Standard">
+  <block>
+   <children _type="TitleBlock" visible="true">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption value="Last 30 Days">
+      <font name="Lato" size="16.0" bold="true" rotation="90.0"/>
+      <color _body=",255,0,0,0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline visible="false">
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false" itemType="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <cursor type="0"/>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,572.25,286.125"/>
+   <insets _body="0.0,0.0,0.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+   <cursor type="0"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    options.title = &#13;&#10;        {&#13;&#10;        verticalAlign: &#039;middle&#039;,&#13;&#10;        },&#13;&#10;&#13;&#10;    options.chart = &#13;&#10;        {&#13;&#10;            spacingLeft: 0,&#13;&#10;            spacingRight:0,&#13;&#10;            spacingBottom:0,&#13;&#10;            spacingTop:0,&#13;&#10;        }&#13;&#10;},"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <extendedProperties name="enable.data.summarize" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="&#039;A&#039;,&#039;B&#039;,&#039;C&#039;,&#039;D&#039;,&#039;E&#039;"/>
+   <orthogonalSampleData dataSetRepresentation="6,4,12,8,10" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <interactivity enable="false"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <seriesDefinitions>
+   <query definition=""/>
+   <seriesPalette>
+    <entries _body=",255,56,198,69"/>
+    <entries _body=",255,155,21,30"/>
+    <entries _body=",255,170,170,170"/>
+    <entries _body=",255,255,255,255"/>
+    <entries _body=",255,128,207,255"/>
+    <entries _body=",255,232,172,57"/>
+    <entries _body=",255,128,255,128"/>
+    <entries _body=",255,64,128,128"/>
+    <entries _body=",255,128,128,192"/>
+    <entries _body=",255,170,85,85"/>
+    <entries _body=",255,128,128,0"/>
+    <entries _body=",255,192,192,192"/>
+    <entries _body=",255,255,255,128"/>
+    <entries _body=",255,128,192,128"/>
+    <entries _body=",255,7,146,94"/>
+    <entries _body=",255,0,128,255"/>
+    <entries _body=",255,255,128,192"/>
+    <entries _body=",255,0,255,255"/>
+    <entries _body=",255,255,128,128"/>
+    <entries _body=",255,0,128,192"/>
+    <entries _body=",255,128,128,192"/>
+    <entries _body=",255,255,0,255"/>
+    <entries _body=",255,128,64,64"/>
+    <entries _body=",255,255,128,64"/>
+    <entries _body=",255,80,240,120"/>
+    <entries _body=",255,0,64,128"/>
+    <entries _body=",255,128,0,64"/>
+    <entries _body=",255,255,0,128"/>
+    <entries _body=",255,128,128,64"/>
+    <entries _body=",255,128,128,128"/>
+    <entries _body=",255,255,128,255"/>
+    <entries _body=",255,0,64,0"/>
+    <entries _body=",255,0,0,0"/>
+    <entries _body=",255,255,255,255"/>
+    <entries _body=",255,255,128,0"/>
+   </seriesPalette>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,56,198,69"/>
+     <entries _body=",255,155,21,30"/>
+     <entries _body=",255,170,170,170"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,128,207,255"/>
+     <entries _body=",255,232,172,57"/>
+     <entries _body=",255,128,255,128"/>
+     <entries _body=",255,64,128,128"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,170,85,85"/>
+     <entries _body=",255,128,128,0"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series _type="PieSeries" seriesIdentifier="Series 1" labelPosition="4" rotation="90.0" innerRadius="75.0" innerRadiusPercent="true">
+     <label visible="false">
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;TotalArticles&quot;]">
+      <grouping>
+       <aggregateParameters _body="0"/>
+      </grouping>
+     </dataDefinition>
+     <dataPoint prefix="" separator="">
+      <components type="1"/>
+     </dataPoint>
+     <cursor type="0"/>
+     <title>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </title>
+     <leaderLineAttributes visible="false"/>
+     <sliceOutline _body=",255,219,219,219"/>
+    </series>
+   </seriesDefinitions>
+   <series seriesIdentifier="">
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <dataDefinition definition="row[&quot;Type&quot;]"/>
+    <curveFitting _nil="1"/>
+   </series>
+   <grouping groupingUnit="7"/>
+   <sortKey/>
+  </seriesDefinitions>
+ </ChartWithoutAxes>
+</ActuateChart>
+]]></xml-property>
+                        <property name="outputFormat">JS</property>
+                        <property name="inheritColumns">false</property>
+                        <property name="marginBottom">0pt</property>
+                        <property name="height">1.6in</property>
+                        <property name="width">1.53in</property>
+                        <property name="dataSet">Articles Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">TotalArticles</property>
+                                <text-property name="displayName">TotalArticles</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["TotalArticles"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Period</property>
+                                <text-property name="displayName">Period</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Period"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Type</property>
+                                <text-property name="displayName">Type</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                </cell>
+                <cell id="114">
+                    <table id="1226">
+                        <property name="style">USElectionsStyle</property>
+                        <property name="width">3.6145833333333335in</property>
+                        <property name="dataSet">Articles Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">TotalArticles</property>
+                                <text-property name="displayName">TotalArticles</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["TotalArticles"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Period</property>
+                                <text-property name="displayName">Period</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Period"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Type</property>
+                                <text-property name="displayName">Type</text-property>
+                                <expression name="expression" type="javascript">"No. of " + dataSetRow["Type"] + " articles"</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Aggregation</property>
+                                <text-property name="displayName">Total no. of articles</text-property>
+                                <property name="dataType">float</property>
+                                <property name="aggregateFunction">SUM</property>
+                                <list-property name="arguments">
+                                    <structure>
+                                        <property name="name">Expression</property>
+                                        <expression name="value" type="javascript">row["TotalArticles"]</expression>
+                                    </structure>
+                                </list-property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <column id="1245">
+                            <property name="fontWeight">normal</property>
+                            <property name="textAlign">left</property>
+                            <property name="width">2.25in</property>
+                        </column>
+                        <column id="1247">
+                            <property name="fontWeight">normal</property>
+                            <property name="textAlign">right</property>
+                            <property name="width">1.3645833333333333in</property>
+                        </column>
+                        <header>
+                            <row id="1261">
+                                <cell id="1262">
+                                    <label name="ElectionsLabel" id="1265" extends="US Elections.ElectionsLabel">
+                                        <property name="fontSize">16pt</property>
+                                        <property name="fontWeight">bold</property>
+                                                                            <text-property name="text">Key Stats</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1263">
+                                    <text name="ElectionsText1" id="1264" extends="US Elections.ElectionsText">
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<select>
+  <option value="30">Last 30 days</option>
+  <option value="60">Last 60 days</option>
+  <option value="90">Last 90 days</option>
+</select> 
+]]></text-property>
+                                    </text>
+                                </cell>
+                            </row>
+                            <row id="1227">
+                                <cell id="1228">
+                                    <label id="1256">
+                                        <text-property name="text">No. of articles</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1232">
+                                    <data id="1257">
+                                        <property name="resultSetColumn">Aggregation</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="1234">
+                                <cell id="1235">
+                                    <data id="1240">
+                                        <property name="resultSetColumn">Type</property>
+                                    </data>
+                                </cell>
+                                <cell id="1239">
+                                    <data id="1236">
+                                        <property name="resultSetColumn">TotalArticles</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="1241">
+                                <cell id="1242"/>
+                                <cell id="1244"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+                <cell id="1294"/>
+                <cell id="115">
+                    <table id="1267">
+                        <property name="style">USElectionsStyle</property>
+                        <property name="width">4.0625in</property>
+                        <property name="dataSet">Trending Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Keywords</property>
+                                <text-property name="displayName">Keywords</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Keywords"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">State</property>
+                                <text-property name="displayName">State</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["State"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="1281">
+                            <property name="width">2.5104166666666665in</property>
+                        </column>
+                        <column id="1282">
+                            <property name="width">1.5520833333333333in</property>
+                        </column>
+                        <header>
+                            <row id="1268">
+                                <cell id="1269">
+                                    <label name="ElectionsLabel1" id="1297" extends="US Elections.ElectionsLabel">
+                                        <property name="fontSize">16pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="textAlign">left</property>
+                                                                            <text-property name="text">What's Trending?</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="1271"/>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="1273">
+                                <cell id="1274">
+                                    <text name="ElectionsText" id="1291" extends="US Elections.ElectionsText">
+                                        <property name="backgroundColor">#EAEAEA</property>
+                                                                            <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[Most popular keywords: <br/><B>
+<VALUE-OF>row["Keywords"]</VALUE-OF>
+</B>]]></text-property>
+                                    </text>
+                                </cell>
+                                <cell id="1276">
+                                    <image id="1298">
+                                        <property name="height">56px</property>
+                                        <property name="width">139px</property>
+                                        <property name="source">embed</property>
+                                        <property name="imageName">VisualizeKeywords.png</property>
+                                    </image>
+                                </cell>
+                            </row>
+                            <row id="1287">
+                                <cell id="1288">
+                                    <text name="ElectionsText2" id="1292" extends="US Elections.ElectionsText">
+                                        <property name="backgroundColor">#EAEAEA</property>
+                                                                            <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[Most popular state: <br/><B>
+<VALUE-OF>row["State"]</VALUE-OF>
+</B>]]></text-property>
+                                    </text>
+                                </cell>
+                                <cell id="1289">
+                                    <image id="1299">
+                                        <property name="height">56px</property>
+                                        <property name="width">137px</property>
+                                        <property name="source">embed</property>
+                                        <property name="imageName">VisualizeState.png</property>
+                                    </image>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="1278">
+                                <cell id="1279"/>
+                                <cell id="1280"/>
+                            </row>
+                        </footer>
+                    </table>
+                </cell>
+            </row>
+            <row id="116">
+                <cell id="117"/>
+                <cell id="118"/>
+                <cell id="1295"/>
+                <cell id="119"/>
+            </row>
+        </grid>
+    </body>
+    <list-property name="images">
+        <structure>
+            <property name="name">VisualizeKeywords.png</property>
+            <property name="type">image/png</property>
+            <property name="data">
+                iVBORw0KGgoAAAANSUhEUgAAAIsAAAA4CAYAAADNRwskAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+                YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAolSURBVHhe7Z0JUFRHGsf/AxhFwqUCYlQQxAgoYIjnapyJ
+                B2wOQRGMWYxHTLLlhYbS2t2q9dhYpbESs2BiEhIVtZJVFF3UmKwXg7IqAgooCCoGFUVRlMEDD4a33f3e
+                4ICDM4MzI872r+qb93W/a3re//X3dc8bkAkEcDgGIMvJyeFi4eglNDQULepZlHnloiOT6Vk2vOjfRueS
+                upKjYyn3dhR9jlnJzc1lYrGRyhyOXrhYOAbDxcIxGC4WjsHwoTNHLzzB5RgNFwvHYLhYOAZjspylYaJO
+                e0JNg2YiTcMT5YaXx+jbxqAyRXKaLVNIwagyQUebrHWSUJOzyNLzygXWcEPM5rEv7+EkHUqEi8XyYlEq
+                lVAoFHB2dmZ+SEiItMa08ATXCnBxcWFLlUoFuVyOvLw8VjYXXCwvMLQnWbduHfMtIRgulhecKVOmWEww
+                XCxWgKUEw8ViJVhCMHzozCAFo8qEVjAa0kVycjKmTp3KfFONkvhoyEoxZw/DxWKFmEswRoilDjV7R6IL
+                6W5lXf6G1ap6qb4xTm1qcX/HO1CEdIVidgry2srgVJ6Ilf39MDYhE2VtLK9PV7saVK0ZCMWrr2PKviti
+                nW017qVEY0KvaMRnVUDNaq0HcwjGiCtnB6cB4zDJk7gVe7Al66ZY3QT7h1lI33GGeL3hM34Yhgk1+D19
+                M3Y+vIfqtb9AeVO3yCzNS0IhMpIOoBIHcHx7Li7ZNU1KXnxMLRjjbnPnMIS9T6f5c5G5rwAVYm0D9jb1
+                uJe/Bck59wD30RgztAvq6hzQQzEB777UHi7T3oa8Q+uIfA9lgRj+8Ztwx5t4bWwoutVZ52M9JhUMHQ0Z
+                g/r0DGE02Q2eM4VFlx5ItRrOCfvjneinLtjN3y9ckWqfP5VC9jI38r58hYCUi1Ld/xdEMOy6UCOjJOHE
+                iRPSGv3QnwtR2G1Oh73M8i+LVnBFtJMVUJ6idhXKwmvMim0j8cYQBxKKtuLrjcexv+QGlMyqUHwyE5s2
+                1pAjBqNPkBdKzlVDWVqNorRZ6E5znfE/IfnSbXpKoL4Q2d8qoKD1LA+ajJhfSnCdrbyOnOXupL4nArdc
+                YjUix5Ea247UKxCTdYfVZBVcRHZaElbOHQwP6Vh2Ef/AnF1nGtqRX3wTF6peJlvX4e7VKtae/JKzSF3g
+                Q7b3hvfX+cguvozMVSPF9/KE9YD36pOsjcozVSgqOIg1i6MxSLN+yFxEbSvG/tJbrL2iqaA8r2W/14hW
+                JrXfwpiihzE6Jtyv74XQt3oT7xqqfjuGk7ZirLeXqXE3fzfSKklhcAwi+rmyet2UEzGEY8AMJZRSDSo2
+                YMs78ZiZVS1VGIbTlQR8GvkJ4hOOkvxDRL1jEVZ9uBzJKlOlrc5wdWzHPI+HGVg//S1MX7IVWayGcCQB
+                26LisPQUvVFaL88qGKPFUqO2h1f/URhKCwf3kzvlAatvb3cDhQf/Sy5YZ3SMGIlh7Z6SMNYdgXItncSL
+                xozTtTQUEiM9QMoKfDNQ/CbVUIROozA2bgXmphUjnfSO+acLsDXeH6jcjV0HL0JNH6swgLv1bVA34mek
+                F10jVomckkvISBxNchrAdvw8zB7cEU62tbiwYzlWZDvC5aNUrDt3E+mkpyk88hWi3PdA+dVO5Bl4vueF
+                LsGUlZWxsj5alG3W+byPj6Z3Id4xZGaTC0K64jZ3iJ92mdQNxNDXvWD7tHzRpgM6eNsRR4WivDIp9Hgi
+                KDoAbsw3nEq7PnhtykREdCehkfDgkRM8unsQ7xqqLxJr4SjH/sYmJC7dg0r3DxE7Lww+6nq0k51F7u4i
+                snYghscMgXe92Ei1RzjGRHYFMvaRUCPePK0ZKpjJkycznwqGzvIaQovEcu+RGwKH/YHcdVfFUGTzEJUZ
+                m8QQ9MYIyHu0FTdsDptBCPu4H5EHuRsn+sNdFgbFqu3YUv5Q2sA4XNvegirjJyh3foGkaQEYFic2Xn1d
+                hdstaKGb3Tkc+PILpFb6w2fhLEzqSIVN3vbdC7hw9i7x0pA2yhOKXh2ZBfn4Y3IS7SmroLpdx7ZtzdCv
+                BNavX8/84OBgREZGMl8fLRJLLcmLHYLCEUH7aBqKzhfh0OZMEoLIhxszHH2lO655HPBKzGGcOfUd/pUo
+                h5yKZs44xAz4FIuNFIx7zb/x7QeDEDn3L1jy93/iRzpsfwYcbR6g6tfF+GybDC4LEvBlWDfYSuv00xHO
+                jqKwWiva3x1RodBeRfMQlT6YWOQhXUULfkW0oC6i9fWEvA+1zpAHeogW4M6sd8hwvDeJzrlk41jWYdw8
+                T+44z0jEx/bBiJ6ukDNzgdzXBb06V+IleiIHe/TvpvmyzQ4vB36C92anI12dj33xniTJ3YakX8/D8Gm7
+                UuRsWIrvc7rDK+57LEq/gGMFZTiUIJfWG4e9rB6yU8uwII6En0GzEPenELhozb/UO3jBy4+GuwhE7K1g
+                +YpoJHc5S20d5nqxlrZKnkUolBb1LCK+kE+PxWhUoGLhQqysIJc/diTGOhtyyAqcTl2O1YUqsWjjjW5+
+                7YnTHq4uDuRNtYWTKxViKc78lo0Cpp463Clajx0HtHKC+jJcOk2Hon4ICQ+D3NUW9naXUZpHcyfjcXp0
+                CJuXbyCjnFGQz58IeZPrfl/wIyPBAOJlISPlMMqkZJaKzKF0NzaeuNpqvzZ4VqFQnkEsZOde4zBhhKbb
+                DcXQkUEkDzEA1XYkz/4rZvZxkeYxnPHqn0tJzxSO6ME0OXVCz7djMY0crG5tFILJ8FwmawPHwERs0J42
+                piLzpz3VTqT90Zt9H9U3YBzmlvuQFNQ42Ehn5+dYkUNzkr1QRvlC4e9OzA2K3pFYUlTLRoLd312Kz8YI
+                qP4hClN7dmA5yyC/ThgQHou1s3/Erlp9IdjymEIoDDY112JUQsl3vvTTESBfKaTcVkv1jXl0NFrwpdt8
+                kCqcYjV3hMuHlglJcZ7ivvAU3Ob9IHxzqpqtFSHbHJ4nzB9qJx1/gTDnyDmhiJ1PLkQfvc22Upf/LKxp
+                OM5oQb76iHDx0T5hzQiyX8P5dM3gNq3TlOlxmtrj8zFq0oX/JMoFEuyk9eS8iduElCdmtJ8/2jO3RCjC
+                rVu3pDWGo5nBbfTwU8MDTORub2RaPwF5mjX9eYgG3Q9Gafl0fw36fLZ4ii8Vjfa1ztVcO140TNWj8Ief
+                rByThR4teM+i8bXOZcqehbWdHrs5e8pn29L3YWqh8J7FSjFHj6KBi8WKMKdQKBb5Yz48DNHzNGMmCkPm
+                FAoPQ1aEuXsUDVwsLziWEgqFhyGNr3UuU4Yhc0IfXOrXrx/zzSkUTRiyiFg45oGKg/59FnP3KFwsHIPh
+                CS7HaFrUszTkIA15RHPLhhf92+hcUldydCz5P3qwDLxn4RgNFwvHYHgY0kGj9hlt4n4vyvDbEHgY4hgN
+                FwvHYPg8iw54GGoMD0Mco+H/fVUHuaXST1Se6DWasye3De1EK62H0NBQ/A9G7NAQqduaSwAAAABJRU5E
+                rkJggg==
+</property>
+        </structure>
+        <structure>
+            <property name="name">VisualizeState.png</property>
+            <property name="type">image/png</property>
+            <property name="data">
+                iVBORw0KGgoAAAANSUhEUgAAAIkAAAA4CAYAAADJstsZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+                YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABdwSURBVHhe7V15cFzFnf7mntFIlizJNsYXJhiDYyjhKwFs
+                kG2OQAiGlEnIkpTNskWuLeKsHVL5I7iA2lp2IQeQZSEQbCopQoCQJRAI4EM2UATbBAUnxjbGlvGJLMm6
+                R5pzv6/nPWk0GsmjkUaWWb6qrtfq96Zfv+6vf1f3e3IkCHyKT9EPHNu2bcuJJK1tEew6GmINDpQHXIix
+                luMxh/nbJKLYDQTcDhQXuFDIaz7FqYmcJcnBY63Yc7jJEEKUcDidiDMZgjhtsvBv5Ql3JIKAx4FRAQ/G
+                lxag0O8x5Z9i5CNnktQcbUbNxy3MJUkAlwjRB0l0i3AEnkQckWjMnPN53Qj4mLwujC70YWyxP1nP/xN8
+                UNuG4+1RRGJxzJxQhGI/xe4IRc4k2barFq0dEYsMIoZFEJO3jhZJ3CRHtDMCZzyGeJy3s68TrLybJPOT
+                MH6PCz63E8VBD8aO+uQSZ+veBrS1dXJyuTC2LIgZ44LWmZGH3Emy+xhCnVHaItag90MSD8kRCUfhiMUo
+                VDKTpGdKnlKmwOtk1Q743S64SZ4YJZE967weJ0qDPhKs6wcZseNQM2ZMGGX9NTLw5u46RDhxRBKP34uL
+                zyyxzow85ESSjnAMW3bXIq7RjMeTA9sPSZzhsJEgLkqUGMVr13WCne+R0spVYJV7EzGEW2kw636p92QS
+                WbyURE6WJ2gDOSyp1UGr+jPjCjFmlA9R5v0k18lG1fu1YGMMSdhwlBT6UXH6yJQmOZHkvb31aGgLGwKY
+                Oa1BIqIaFHvgZKOIJCQGDRFz3iDKvDWoBna+R0orTyUJpVK4zSKJygwh0/I8eiNhhDVTTXmyTOecbFdp
+                0IuyQq+Rgl7+PbbIa5oynHjjg3pEO9iHIonaJ6KwXRXjRx5R2LqBQVKkUbrUQpSDYJIe1EPK8GE1IC5w
+                ABwJeHg0hqvAa1w6PxhkyeleV5mChJFoda1h7KLhuKcuhN08Hmnufp7hwNGmDkRpyPcAn6stzAk1AjFg
+                kuz/uBkSGP2CZIg5XQg7XIjwaGaxhe5cbgjTtskGDkmyE6A04Mb8z4zGeKqhI40d2Ly7HvUkUD5R2xLG
+                ztp2QGrXBidXYYEXsyd8QtTNWzuOojNq2yES4f0lSo5oBDGpG7tM6kZQ3j72SmnlKeoGoY5kHZJcKrPU
+                SI+8JBmN5JiuNeW9rx1N78lPG2ZKeQF2H2lBU2snieVCUYEHE0sDlDYRqlR6ZPyN1GiuhmVTKIqjJEYb
+                jfwQvcEI67Lt7JhluJYUF+CccQU0ztm2EYgBterv++rRGaGxlSWcMXo/qWJVA+X1sl9y7AwZyRz8rGAN
+                RCbIbj3e2I4jDe3Yuu84Gpo7jNcUJZmPt3Ri+4FmI1k0GcI0dDWLanOQMB8ca8e7B5pMXa1UJZEQ1Ror
+                M31iEddb4MuZINXV1aisrMSKFSuskvwg65bVsyPrmmgwDgAOGpkZbQiRJUd4adP46DJ66MXIk/FwJrok
+                IQTdSvdjihmJkvnx4hL1Ipyuk4fBOl0BPzwBH3+TrMvLQZs+LohxQTf8rKapPc2GyAK1snWs5zcq2rbH
+                mDf39Xowb/KonCVIY2MjNm3ahPvvvx/Lly+3SoceWbdOMZGBwtEHGWIs1zmJcgMOmJtZzXAvZbFplDXY
+                qVB5mLO9k2I6QokW5kxXxDKmEVBVdtLPJHHSfi/olrHONKnAy1SHUQVu2gcBD2ZNLkaRz0VyhNFKQ/0Q
+                pU71QUWYs8M7B1pMG7vBun30ouw28l5enwduuw9ygKTIsmXLTP6JJ57IG1GyJonUTDIGkf1DRftSTZz9
+                CZ8Pcb8fTnUcBzPKmWUGniQwUVmNrwZZBEIcXic72RSeCGyf2sjBziSxVHV/0Ol2tkOxlGqqiq7JwRMi
+                ZLbwyfBII6nWtwz4/E4aq1GSvD4HCZWKtWvX5p0oWZMkyg6Sfo4nkhJA4jg5483pXnBmaT/0K2k1yExR
+                Dnw4TukzEFsmA0G60IcaMuDPxhf7jbGqOEZcasGCk3XukmfSB6ReDh4PYYcMYUqgdCiQZ8fx4rRLpPbq
+                2qKoPtKWLMwR+SZK1r0u486AnahIq1z6uPEUONBkiomHiBgWspv15NiJpnYqBjCT+wWNZyPBMkDNCVBi
+                Hmqg/ZXyPCKdgm+KqRxp7k2AHYdbsGN/A/YcakItVZOWIXqDKi0UNmTzBLxmmUF1hSKDf658EiUrkuyo
+                aaC66eNBSJQ4Z4jRvxpEqgut9ibMgPYzmy0Y9/gkQNsa3N6+V14DXk2AlPaTIO2W6pFLmw651OZ6o2JS
+                iK8yuxrlqWYkQSJmecCFCyYEceHkIuuCwSFfRMmKJJ7+dAIJEU+bceoAE4GVt0AL3i0vhHUY6ZKqpzlt
+                jaeRJeJSX6bT7V7vH4ruekkE4wUxyTOSmjTekGlG5npOG+U1K9C+LPe8KIL64dGkUevk83pMchu7Q5Oo
+                2+WnqmYbCosCKPK7MXN8cMi3COSDKFmRRJ3cF9wasJRx7wUXDTS3x0RejdsnQvHoodJyxTgzUwl2Ami7
+                QRcsophFPSUOvIdFEgBuEZFJ6iHM2a8obYQSKyzDmPfu4Q2lEsV6jsNNyTC9mwZmOuSNXDCh0PoL+OuB
+                Zuw+3MzHUJ0OY8NIqkZolNqTR/dzMC+u6PftrSGMoueUr+DZUBMlq1a2GCMshratK7F04UIsXPoonm9L
+                doCjF0PacfCFm7BQ193+MqopaUL7H8R9ixbi+oe3oUY/47hI2gzEU+oaQYsAtlhPGtTJJBdWxnWU5zQo
+                3WjErievZ5tuwvKNtVZZPfa+cCtuWPxDrNxam9zyYCUTUSa6AoeWoesiCQpoeSqK2hSKYEtNI5rZN3F5
+                ZFKbfRGedSZoqEq1FpJ386aVY9rY/Ibgh5IoA6CyC8EZl+DyUmbrt6Hq/aR4jVkd2oX2t/DGax8zMxVn
+                Xj0L5zua8dGbG/AndlLj715HVUO3t2Bmn2ZrNuqjj7hHX0iwTrenH3UR3Y63fvch6tzV+Ou6nTigAbbq
+                1wLguzXHKesI1SEREOEgt4fQ3NSO7Qca8d5HTWjX5NFvMkicHiDJnH6qXj5vcUnQ2CLDgaEiSlYkKbN3
+                iAXnYO7iADO7sf2dvahnB/WwRyRt/vESnt3OAS29CNfOHcsbFGHyxYtwFdVNyVcXoLK0u4NimqE+dh47
+                UIEm2QseShepDwXXzADYxNDBzmeJhCRVX9LKfR4uvGEqyjvPw6xF0zHJKhZkozc1hyx7SfdkHTaROdBR
+                qi+jOgWedvVjAAtOttupLROEpNFwYiiIkhVJxpcFkxI3cToqvngF5jAbe20zXqiLsjy1io+xa+tOCnJ2
+                xhWzMT+oDnEhMOm7uP3VV/GHb83BGZnuqJnGS5O2A+0GHqOSHJI0IiEHS+cVNvcyuX3ZGZQxPV6fs7wM
+                k699DM+s/0/8ZE45W9kN3TYd2ofSJxQKsEESyDiVe+tR9JjtlicVJ1FkzJYHh9ZQzQaDJUo/T94TEpFm
+                Yk5agIWz2KX1r+PFt48gps4TF4T2rdi6XsGms3HerDM5DEm4d9yBmyorsfCe11FjlSFRg53Pfx/fl+3C
+                NP/au3HnXw7QehBSbIiqY6Ykzs6PuPZh/T1XY8HiVbhzp7WOJJtn34vY8MTNSXuJ6bL/eAbP1SSDXvIs
+                FPcocpBsJJyDD+Fl8wPOJuz7zbVYWPlPvIfslAjqq25N2lK90k1YtjnZDoP2amz7g9X2xYtwyW3/g4f2
+                tyFBaSiPJiFSqL0kvJEfkiRuNyaO9p+0ld7BECXrFmu/g5lhjnNxfuU4ZupRv/kf+FvC3khEVbNjM15r
+                YLbiMiz5bLfv77NJ1IVjJMHt+PbPq1FtlaDuFVT96CHcv7PVKugH6nR6TU7FaA48iDv++Se4e20N1V/y
+                XOyVh/DgykextpZGJQcsRMnUohAHzyei8nZiCJn4TAaRIai95plsFJod/Qah9Xjqh6vwgwfYdqM6mKp/
+                i2e+dR/uer/NkEPGvGJHDtozPksC8a8kYU4iciVK1iQJ+j203yQ1CnD6+XONysHWLag62GlsC7ez1lI1
+                pShb/DksKEipWqvBqYjuQPXLmpmVWPLEK9i4YQM2bnwWj63+Jr53Trd72R/i2jfLAXeOXoAlX/8uVjz2
+                R9aznukpPHxLOUm3CS/+5bCJ17gVr8gAYx+YgRY8KKv8Jdux0Up/xjN3TDfS0HX11/G9ubTYHR04uO5x
+                PPL3YtpX92LNps3YuH49Njy9HFeVvYWqNa/jPQksy5aRuxshD4t8bk4hredk3d15Qy5EybrVMl7t/UnO
+                KV/B175SwNx2vPHex+wAGpod2yxVcx7mnz+uh47vjKbNWGcRisbpijbs//AoGlVvrASfqTwDWW3tSV0T
+                KqjA/OVfxpIzbJdyNMonFPPYgMbD9Un1RbvEn9ogCyE9vpf2jcifhkTtk3j8F7tQX3odvr7885iqQJz3
+                Q+x5s471VaDy2gtwhkV+x5jLcdli3v/tt7BhX/fajt4xki3SQQ9QBMlk65wMiChLliwxeRFFf/eHgVHb
+                nnQYh+lzz+EsS6qc7YkIDm5bh3WS93PmoXKiJZoF2gydFL094JiBeddM4++3ovquZbj+0lX4/nN0j49l
+                uSLaKx5Rj/2v/xovvfwzPHLbF7D0zj2mNNbQCjnqUdoD8poygirLkS5p4jvx+mNP4+UGuvH/eiOWjfWY
+                OEg4dBC7DrIez5v435u/QFuFdpZls6x8Wot0jWhqS5OahOI3MmJHCrRZqaqqyvqL1kFFhZXLjKxJoj0W
+                RUxJuBA89xJcLlkslfPRXmx54QPUec42sZHzUmrVarACSD1iIQ4/yhf+Ar9e82/48W0VmJN4G9UP3IE7
+                v/0Q1h5Lro9ki3jdc3j0thux/I7Hce9//RFPbc9R89vtS3SgreqneOCVApR883b8/LLxcBj1kQbt3U31
+                nETceDGKg2kiy5K+7fSrS0bA+9D2brampibz95o1a4aOJMLksTRGrYdGcC7mLrZUzua3UbOfM6h8PpZc
+                eFoPVaP1mlYat0akM7lo3WsNxUPDc9TUL2HRdT/FLzatwU++SsbJY9pyeAAG3mFUP/MrPLl9EqbcvBqr
+                n36VtsSreHb1Wdb57KDAWzLWQYN2531Yvfp91FfciO8tORtFirrazxyYhEln6Okqcd3aP2PTunXYvKkK
+                G3ncuI720MbVWDGFUpT1eaSemPRmouxjqZ2TjUwEGVKbRJBd0r2TSjGTy2nAUuU8vgbP1JMQV8zGxUVu
+                E6AUnOFI91YAzVSmWMKBcKIeezY9hWc/6jBeRCxWjrGTA0bCFBUHEfT6Ma6YBEwcxMG3d2KvWJOI0tV9
+                CW+8m6KS4kdxdI+WDKagovIiVI6hpIsfwP6dcrEGBrULnZvxp4c24p3wHFTeeiUqAynST3Cck/TsEu+h
+                6oV3sZfSwbjUbgech17Cb94/bnbdiVSyR7ROpGUDsURGcvXhwe0bGQxyJYgwIJII5gUsC85JlyRjJgZn
+                47zZZ6JMRHCwTLOHIjjZSWloewN/fvCX+Pnya4xOv3j+VfjGTw9TEn0Ol55bglCsAMWf/wKuGkuv4LU7
+                ccsVi7Hwsitx9bJn8epHNAxl44iJ7tNx2tl+NmQTnpeNUCn7YCXuPjQNc7R4SHtItkhAT6nB6w+Odhzb
+                8Dj+e4sGkp7Kd76EhYsWMcnuWIG7P+jkNQWYeNltWLWoDY2//xFuvuYqLFhwCdt/KS79xr341Y9/jxdb
+                e9sk/KFZiDy7XNHq4cdgCCIMmCRTxxVxposEHCh7ZgmKjcywYiMcQJejm0y9ELwSS1ffipVLtRAklKFk
+                6SqsuO9fsFzSgHCMuRG33HUDbpxpkbDia7jhoSfx29snmlYraOX1TsZFX1uFH3yZqkq3c85Dxcp/xyN3
+                fgUL50nsO43RGJK5YGa4Zr7UnRMBtrHQwQG1N2vHO9BQR19IdoaRlrqeB0kYxThssgc+hy+uugcPfGcm
+                KvTKhvG05qLitrux+uFlWGKizL0hdTO2MLtI8VBisAQRcn5h/J09dWjpZAfJ1tAAKKlz7bw6r0Ozzz6X
+                6TqW6fahUPe5rvPW9Sl1ejnI5tVNwb5WkNGYdm166vUOsa41bVLSnyRCG6VU2u96JP2GF5t3mvVahCCJ
+                xjoUtk/ud9Hful6XJn/npkodE/Rg+pjhlSRDQRCBT5QbZp9VjvLCft6hpdup9YsTwsxkK59HJDR4fYED
+                6TxRIzToJLThIa91ez0kBqWO8WriSYIYj4dS1Kzy6geAjwSZM7HwlCWIkDNJhJlTRqNIu3wywBUOm93g
+                J0K2e2GF3ntXskdfr3cYsFptt/QFA/AyuQv8RiVJAhhpQGYYL4WSMc5kvwUQTyW4jpKKTNpkJKJo8bPI
+                n7/NRX1hKAkiDLr1n51c0rUM3gV1lv065wkwkKXzPrc6Zl9FRhj1QU/EvLHHAdZmKKk181K3JIUhQs+b
+                yCB3ea33aDJAXuC8KaMw87T8bi5Kx1ATRBg0SezVYRmFpkMNOOdFlGzQ9ZsTo09pQFWS86ujqfaFhUxN
+                1263HsEzIsa2ax9Mpm0E2rt6qksQGzkbrunQzGpoDZtthB83tKNFn6fQoNqpD8PVG+k0q7LdZfZ56/qU
+                ci/dWu1TNbCv7cqbjOhpJIFVkDQoKR10SbTdei0kxXBVCM1IDJWJBLxeqibcTFfYXGeV8yjVaN7+U2Xm
+                XPIoaZiQXaKeZFlhwIuKCYUpMaX8I18EEfikQwPpbH0cb2JpgTFqtVHJ6PETwHz5KFtkQWcZqFpwNImD
+                p1VYvResF7y8/t6G9kBmiLMPyaB72a6zPkSjXfCfFIIIQ0aSdEyfWILPnzMW5aP8nJx9d9hASKIIZs4g
+                Ybq2Wkp4Kln2R7Ywrx7JmM0AxWH0RcmKCUXDqmbyTRAhr08jSSIPaK7lLvdyM+0l/5Rx0gx06jINqEmp
+                v0n7/QChvaamTosgOvao/oRgQ22iZUC/IYE8oKamJu8EEYaF8vr05kx6QbOmlpqoY4nPiUIPdb8VlZUO
+                nzF5NM4aPwolBVqWp41gJ7rS6KAtoejmgAa0N8znKNIhwgwEskX6wLRhDruLJPkmiDBkhutQYsdHjag9
+                ruinVSBD0eR1tApNWWreZNLy1jk7rycNsV4dVS6bSepOXWAbqCyTBIy2WIarZWvIkFa5gmbmHZsUwzV5
+                zoE5g/jWSC7Q90mkbkpKSk643D8YjEiSCCbsb7+Zn04Ck03Pm0xa3jqXkndRKpnXIVTOQddyvhlsXqDF
+                S6NMJHFCIbg87u63Di0Joq2QxmNi3ixemvvp98CEkgCmDXNkdTgwfLQfIOQhafP1UCNm20ECp4d5+y+a
+                MEE0Lftrm6HWL+UJadd7YdCH0tF0Z/l38psiMWNsa63HSCTNMWuetYYHtmHqVMGIlSTCezX6npm9+KeS
+                7lmbOoN7ne/KW+fsvB7V2DY8qtxWGZQceqFdr57qtYezxmgzVW/sPdZmvp44mm6uPpW1paYp+aUBcwvV
+                48DUsgCmsI5PEkY0SepbOrH7UFPynVwOgNxpxSEa2yM43hY220oMzACZTFo+eU7fT9FjBkiEQp/LfItW
+                n9LSAmSIeePa8joX7YoJJX6cyYHOFn872ILjUovmvtqA5MKsiYUn7f2afGBEk0TQ14E+PNpsXtCeNbXM
+                GIjCkcYQdh2x/ktGD2Kk5nWgCqEXNWN8EYoDvV+taKUk2HGkFQXUMfrC0b76kDFAs4V2wv9lb2PXvZTO
+                opczsThlM/gpjhFPkv5g/tOD9rRkJAnMrjR9++yzJEi+vicv9bPjqPVCmUWSUrrx54/Az3/nilNaJvb5
+                r05Ie6mYmacXYfbk4rwRRBjlp7djeT42GkNRGrEpBvIpjlOaJPqas9REOhyJOOZPK8uoXoYaImBJ2n1k
+                4uystd5V/gTglCaJcH4vSZEw3sdwYsZpwV7/Lk62yicFOf+jxpGEI8fDOBzSYyTtkSlBJz2h/EuRVCgQ
+                92F9DK3xpF2idswec8rPQYNT2nD9FMMB4P8A+n4R9idF5okAAAAASUVORK5CYII=
+</property>
+        </structure>
+    </list-property>
 </report>
