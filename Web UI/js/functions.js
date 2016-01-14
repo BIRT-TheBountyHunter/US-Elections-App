@@ -45,4 +45,20 @@ $(document).ready(function() {
 		
 	});
 	
+	//Click header to return home
+	$('.headerWrapper img, .headerWrapper h4').click(function(){
+		console.log('clickkkkkkkk');
+		window.location = "index.html";
+	});
+	
+	//Scroll down to add heading
+	function testScroll(ev){
+	    if(window.pageYOffset>100){
+	    	$('body.home #menuHeader').addClass('scrollDown');
+	    }else{
+	    	$('body.home #menuHeader').removeClass('scrollDown');
+	    }
+	}
+	window.onscroll=testScroll;
+	
 });
