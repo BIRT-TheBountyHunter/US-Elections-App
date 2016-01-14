@@ -5,34 +5,36 @@ $(document).ready(function() {
     $(document).bind("idle.idleTimer", function() {
 	    $('.filterPane').removeClass('filterPaneOpen');
 	    $('#sharePullDown').removeClass('shareOpen');
+	    $(this).find('span.textLabel').removeClass('hideText');
     });
 	
 	// Filter Button 
 	$('.filterButton').click(function(){
 		$(this).find('.filterIcon').toggleClass('open');
+		$(this).find('span.textLabel').toggleClass('hideText');
 		$(this).closest('div').find('.filterPane').toggleClass('filterPaneOpen');
 	});
 	
-	//click anywhere to close share
-/*
-	$(document).mouseup(function (e) {
-		
-		var container = $('#sharePullDown');
-	
-	    if (!container.is(e.target) // if the target of the click isn't the container...
-	        && container.has(e.target).length === 0) // ... nor a descendant of the container
-	    {
-	         $('#sharePullDown').removeClass('shareOpen');
-	    }
+	//how it works lightbox
+	$('#menu li.howitworks a, #methodology a').featherlight({
+		iframe: 'howitworks.html',
+		iframeWidth: 800,
+		iframeHeight: 550
 	});
-*/
 	
 	// Share Button  
 	$('#menu li.share a').click(function(){
 		$('#sharePullDown').toggleClass('shareOpen');
 	});
 	
-	// Cache selectors outside callback for performance. 
+	// Table Row Highlight Button  
+	$('.tableRowButton').hover(function(){
+		$(this).closest('td, tr').css('background-position', 'center bottom');
+		}, function() {
+			$(this).closest('td, tr').css('background-position', 'center top');	
+	});
+	
+// Cache selectors outside callback for performance. 
    var $window = $(window),
        $stickyEl = $('#sharePullDown'),
        elTop = $stickyEl.offset().top;

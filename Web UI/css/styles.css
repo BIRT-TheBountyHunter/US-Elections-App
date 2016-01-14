@@ -20,6 +20,7 @@ body {
 /* Main Content */
 
 	.contentWrapper {
+		position: relative;
 		margin: 0 auto 0 auto;
 		width: 980px;
 	}
@@ -36,9 +37,39 @@ body {
 	}
 	
 	#keyStats {
-		background: #FFFFFF !important;
-		padding: 0 !important;
+		position: relative;
+		background: #FFFFFF;
+		padding: 0 ;
+		width: 980px;
+		margin-bottom: 30px;
+		text-align: left;
 	}
+	
+	#methodology {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 20px;
+		font-weight: 200;
+		padding: 20px;
+		border: 1px solid #e7e7e7;
+	}
+	
+	#methodology a {
+		display: inline-block;
+		color: #000000;
+		background-color: #cccccc;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 5px 10px 7px 10px;
+		width: 120px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	
+	#methodology a:hover, #methodology a:active {
+		background-color: #b8b8b8;
+	} 
 	
 	h1 {
 		font-weight: 400;	
@@ -70,6 +101,7 @@ body {
 		padding: 10px 20px 10px 20px;
 		width: 150px;
 		text-align: center;
+		font-size: 18px;
 	}
 	
 	a.seeMoreButton:hover, a.seeMoreButton:active {
@@ -78,8 +110,37 @@ body {
 	
 	.analyticContainer {
 		margin: 20px 0px 20px 0px;
-		min-height: 200px;
-		border: 1px solid #cccccc;
+		min-height: 250px;
+	}
+	
+	#overallMediaMentionsDonut {
+		float: left;
+		width: 170px;
+		min-height: 170px;
+		margin-right: 30px;
+	}
+	
+	#overallKeyStatsTable {
+		float: left;
+		width: 375px;
+		min-height: 170px;
+		margin-right: 30px;
+	}
+	
+	#dataVisualizationCallouts {
+		float: left;
+		width: 375px;
+		min-height: 170px;
+		margin: 0;
+	}
+	
+	hr {
+		width: 100%;
+		height: 1px;
+		border: 0;
+		background-color: #ccc;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 
@@ -198,7 +259,7 @@ body {
 	}
 	
 	h5 {
-		margin: 15px 0px 8px 0px;
+		margin: 0px 0px 8px 0px;
 		padding: 0;
 		font-weight: 200;
 		font-size: 25px;
@@ -231,6 +292,17 @@ body {
 	
 	a.filterButton:active, a.filterButton:hover, {
 		color: #FFFFFF;
+	}
+	
+	.textLabel {
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+	}
+	
+	.hideText {
+		opacity: 0.1 !important;
 	}
 	
 	.filterIcon {
@@ -431,15 +503,270 @@ body {
 		float: left;
 	}
 
-	
-/*	
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){ 
-	
-	.headerWrapper, .contentWrapper {
-		width: 724px;
-	}
-	
+.clearfix {
+	clear: left;
+    overflow: auto;
 }
 
-*/
+/* Tables */
+
+#analyticContainer table {
+	width: 930px;
+	table-layout: fixed;
+	border-spacing: 3px;
+    border-collapse: separate;
+	vertical-align: middle;
+}
+
+#analyticContainer td, th {
+	text-align: left;
+	color: #666;
+	font-weight: 200;
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+#analyticContainer tr, td {
+	height: 80px;
+	background: url('../img/table-bg-tile.png') repeat-x;
+	background-position: center top;
+}
+
+#analyticContainer tr, td:first-child span.ranking {
+	padding: 25px 8px 0 8px;
+	width: 10px;
+	font-size: 22px;
+	font-weight: 200;
+	display: block;
+	float: left;
+}
+
+#analyticContainer tr, td:first-child a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+#analyticContainer tr, td:first-child img {
+	margin: 0 12px 0 8px;
+	float: left;
+}
+
+#analyticContainer tr, td:first-child span.nameContainer {
+	display: block;
+	float: left;
+	padding-top: 15px;
+}
+
+#analyticContainer tr, td:first-child span.topicContainer {
+	display: block;
+	float: left;
+	padding-top: 25px;
+}
+
+#analyticContainer tr, td:first-child span.nameContainer span.candidate {
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+}
+
+#analyticContainer tr, td:first-child span.topicContainer span.topic {
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+}
+}
+
+#analyticContainer td:first-child span.nameContainer span.party {
+	font-size: 16px;
+	font-weight: 200;
+	display: block;
+}
+
+#analyticContainer tr, td:nth-child(2) {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#analyticContainer tr, td:nth-child(3) {
+	padding: 10px;
+}
+
+
+.democrat {
+	color: #0000FF;
+}
+.republican {
+	color: #FF0000;
+}
+
+
+
+/* Forms */
+
+	#candidatesByMediaSource {
+		margin-top: 20px;
+	}
+
+	.select-style {
+		float: left;
+		margin-right: 30px;
+	    width: 375px;
+	    border-radius: 3px;
+	    overflow: hidden;
+	    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+	    padding: 6px;
+	}
+	
+	.select-style select {
+	    padding: 5px 8px;
+	    width: 375px;
+	    border: none;
+	    box-shadow: none;
+	    background: transparent;
+	    background-image: none;
+	    -webkit-appearance: none;
+	    font-family: 'Lato', sans-serif;
+	    font-size: 16px;
+	}
+	
+	.select-style:active, .select-style:hover {
+		background-color: #c6c6c6;
+	}
+	
+	.select-style select:focus {
+	    outline: none;
+	}
+	
+	.goButton {
+		float: left;
+		display: block;
+		color: #000000;
+		background-color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 10px 20px 10px 20px;
+		width: 90px;
+		text-align: center;
+		font-size: 18px;
+		border: none;
+	}
+	
+	.goButton:hover, .goButton:active {
+		background-color: #c6c6c6;
+	}
+	
+	.filterPane ul{
+	  list-style: none;
+	  margin: 0 0 10px 0 !important;
+	  padding: 0;
+	  display: block;
+	}
+	
+	
+	.filterPane ul li{
+	  color: #333;
+	  display: block;
+	  position: relative;
+	  float: left;
+	  width: 100%;
+	}
+	
+	.filterPane ul li input[type=radio]{
+	  position: absolute;
+	  visibility: hidden;
+	}
+	
+	.filterPane ul li label{
+	  display: block;
+	  position: relative;
+	  font-weight: 400;
+	  font-size: 16px;
+	  padding: 0px 5px 5px 30px;
+	  margin: 0px auto;
+	  z-index: 9;
+	  cursor: pointer;
+	  -webkit-transition: all 0.25s linear;
+	}
+	
+	.filterPane ul li:hover label{
+		color: #999;
+	}
+	
+	.filterPane ul li .check{
+	  display: block;
+	  position: absolute;
+	  border: 2px solid #333;
+	  border-radius: 100%;
+	  height: 15px;
+	  width: 15px;
+	  top: 2px;
+		z-index: 5;
+		transition: border .25s linear;
+		-webkit-transition: border .25s linear;
+	}
+	
+	.filterPane ul li:hover .check {
+	  border: 2px solid #999;
+	}
+	
+	.filterPane ul li .check::before {
+	  display: block;
+	  position: absolute;
+	  content: '';
+	  border-radius: 100%;
+	  height: 11px;
+	  width: 11px;
+	  top: 2px;
+	  left: 2px;
+	  margin: auto;
+		transition: background 0.25s linear;
+		-webkit-transition: background 0.25s linear;
+	}
+
+	input[type=radio]:checked ~ .check {
+	  border: 2px solid #333;
+	}
+	
+	input[type=radio]:checked ~ .check::before{
+	  background: #333;
+	}
+		
+		/* Custom Radio Button fills */
+		input[type=radio]#candidates-partyDemocrats:checked ~ .check::before {
+			background: #0000FF !important;
+		}
+		
+		input[type=radio]#candidates-partyRepublicans:checked ~ .check::before {
+			background: #FF0000 !important;
+		}
+		
+		input[type=radio]#candidates-sentimentPositive:checked ~ .check::before, input[type=radio]#topics-sentimentPositive:checked ~ .check::before, input[type=radio]#media-sentimentPositive:checked ~ .check::before {
+			background: #38c645 !important;
+		}
+		
+		input[type=radio]#candidates-sentimentNegative:checked ~ .check::before, input[type=radio]#topics-sentimentNegative:checked ~ .check::before, input[type=radio]media-sentimentNegative:checked ~ .check::before {
+			background: #9b151e !important;
+		}
+	
+	input[type=radio]:checked ~ label{
+	  color: #333;
+	}
+		
+		/* Custom Label colours */
+		input[type=radio]#candidates-partyDemocrats:checked ~ label{
+			color: #0000FF !important;
+	  	}
+	  	
+	  	input[type=radio]#candidates-partyRepublicans:checked ~ label{
+			color: #FF0000 !important;
+	  	}
+	  	
+	  	input[type=radio]#candidates-sentimentPositive:checked ~ label, input[type=radio]#topics-sentimentPositive:checked ~ label, input[type=radio]#media-sentimentPositive:checked ~ label{
+			color: #39b54a !important;
+	  	}
+	  	
+	  	input[type=radio]#candidates-sentimentNegative:checked ~ label, input[type=radio]#topics-sentimentNegative:checked ~ label, input[type=radio]#media-sentimentNegative:checked ~ label {
+			color: #9b151e !important;
+	  	}
+	
