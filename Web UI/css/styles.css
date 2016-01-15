@@ -74,7 +74,7 @@ body.home {
 		text-align: left;
 	}
 	
-	#methodology {
+	#methodology, #compareTo {
 		text-align: center;
 		margin-bottom: 30px;
 		font-size: 20px;
@@ -86,19 +86,25 @@ body.home {
 	#methodology a {
 		display: inline-block;
 		color: #000000;
-		background-color: #cccccc;
+		background-color: #eaeaea;
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 5px 10px 7px 10px;
+		padding: 10px 30px 10px 30px;
 		width: 120px;
 		text-align: center;
 		font-size: 16px;
 		font-weight: 400;
+		font-size: 16px;
 	}
 	
 	#methodology a:hover, #methodology a:active {
 		background-color: #b8b8b8;
 	} 
+	
+	#compareTo span {
+		display: inline-block;
+		float: left;
+	}
 	
 	h1 {
 		font-size: 35px;
@@ -191,15 +197,22 @@ body.home {
 		float: left;
 		width: 375px;
 		min-height: 170px;
-		margin-right: 30px;
 	}
 	
 	#dataVisualizationCallouts {
 		float: left;
 		width: 375px;
 		min-height: 170px;
-		margin: 0;
+		margin-left: 30;
 	}
+	
+	#profileTopicImage {
+		float: left;
+		width: 170px;
+		min-height: 170px;
+		margin-right: 30px;
+	}
+	
 	
 	hr {
 		width: 100%;
@@ -336,8 +349,9 @@ body.home {
 	}
 	
 	#profileFrontdoor {
-		padding: 65px 0;
+		padding: 65px 0 10px 0;
 		text-align: center;
+		margin: 0;
 	}
 
 	
@@ -756,17 +770,66 @@ body.home {
 			background-color: #FFFFFF;
 			text-transform: uppercase;
 			text-decoration: none;
-			padding: 10px 20px 10px 20px;
-			width: 90px;
+			padding: 10px 30px 10px 30px;
 			text-align: center;
 			font-size: 18px;
 			border: none;
+			cursor: pointer;
 		}
 	
 		.goButton:hover, .goButton:active {
 			background-color: #c6c6c6;
 		}
 		
+		/* Compare Form Elements */
+		
+		.select-compare-style {
+			display: inline-block;
+			margin-right: 30px;
+		    width: 250px;
+		    border-radius: 3px;
+		    overflow: hidden;
+		    background: #eaeaea; url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+		    padding: 6px;
+		}
+		
+		.select-compare-style select {
+		    padding: 5px 8px;
+		    width: 250px;
+		    border: none;
+		    box-shadow: none;
+		    background: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		    font-family: 'Lato', sans-serif;
+		    font-size: 16px;
+		}
+		
+		.select-compare-style:active, .select-compare-style:hover {
+			background-color: #c6c6c6;
+		}
+		
+		.select-compare-style select:focus {
+		    outline: none;
+		}
+		
+		.compareButton {
+			display: inline-block;
+			color: #000000;
+			background-color: #eaeaea;;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 10px 30px 10px 30px;
+			text-align: center;
+			font-size: 18px;
+			border: none;
+			cursor: pointer;
+		}
+	
+		.compareButton:hover, .compareButton:active {
+			background-color: #b8b8b8;
+		}
+
 	/* Profile / Topic Page Select Menu Header */
 	
 		.profile-select-style {
@@ -824,7 +887,6 @@ body.home {
 		  padding: 0;
 		  display: block;
 		}
-		
 		
 		.filterPane ul li{
 		  color: #333;
