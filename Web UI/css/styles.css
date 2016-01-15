@@ -104,7 +104,17 @@ body.home {
 	}
 	
 	body.interior h1 { 
+		display: inline-block;
+		padding: 20px 60px 20px 20px;
 		font-size: 45px;
+		font-weight: 600;
+		border: 1px solid #e7e7e7;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAQ0lEQVQoz63MuQ0AIAzAQLM9G2RcaCgi8eWz5PYAOjCKFlYVqAANVQbdsAx6xSLoF/OgZsyCurEXGsZOaBrTaBnmagL38GTms7AgbgAAAABJRU5ErkJggg==") no-repeat 95% 50%;
+		cursor: pointer;
+	}
+	
+	body.interior h1:hover {
+		background-color: #eaeaea;
 	}
 	
 	
