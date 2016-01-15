@@ -1,0 +1,258 @@
+<html>
+
+<head>
+	
+	<title>Intelligent Media Analysis of US Election Coverage</title>
+	
+	<!-- Web Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<!-- Scripts-->
+	<script language="javascript" type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery.idle-timer.js"></script>
+	<script language="javascript" type="text/javascript" src="js/featherlight.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/functions.js"></script>
+	
+	<!-- Share This -->
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "b9262918-17a9-4cf2-a1be-bd5d5f73fb6f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+	
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel="stylesheet" href="css/featherlight.css" type="text/css" />
+	
+</head>
+
+
+<body class="profile interior">
+	
+	<!-- Share Pull Down -->
+	<div id="sharePullDown">
+		
+		<h2>Share this page:</h3>
+		
+		<!-- Social Icons -->
+		<div id="socialIcons">
+			<span class='st_facebook_large' displayText='Facebook'></span>
+			<span class='st_twitter_large' displayText='Tweet'></span>
+			<span class='st_linkedin_large' displayText='LinkedIn'></span>
+			<span class='st_googleplus_large' displayText='Google +'></span>
+			<span class='st_pinterest_large' displayText='Pinterest'></span>
+			<span class='st_email_large' displayText='Email'></span>
+		</div>
+				
+	</div>
+	
+	<!-- Sticky Header -->
+	<div id="menuHeader">
+		<div class="headerWrapper">
+			<ul id="menu">
+				<li class="home"><a href="index.html"></a></li>
+				<li class="share"><a href="#/"></a></li>
+				<li class="howitworks"><a href="#/">How it works</a></li>
+			</ul>
+			<img src="img/presidential-election-heading.png" alt="2016 Presidental Election" width="160" height="25" />&nbsp;<h4>Intelligent Analysis of US Election Coverage<h4>
+		</div>
+	</div>
+	
+	<!-- Wrapper to center all content -->
+	<div class="contentWrapper">
+	
+		<!-- Front Door -->
+		<div id="profileFrontdoor">
+			
+				<h1>Bernie Sanders</h1>
+			
+		</div>
+		
+		<!-- Key Stats -->
+		<div id="keyStats" class="clearfix">
+		
+		
+		</div>
+		
+		<!-- Methology Call Out -->
+		<div id="compareTo">
+		
+		</div>
+		
+		<!-- Top Candidates -->
+		<div id="overallBreakdown" class="module">
+			<h2>Overall Breakdown</h2><h3>by media mentions</h3>
+			
+			<!-- Filter Button -->
+			<a id="topCandidatesFilter" href="#/" class="filterButton">
+				<span class="textLabel">FILTER</span>
+				<span class="filterIcon">
+					<span class="line"></span>
+					<span class="circle"></span>
+					<span class="line"></span>
+					<span class="circle"></span>
+					<span class="line"></span>
+					<span class="circle"></span>
+				</span>
+			</a>
+			
+			<!-- Filter Pane -->
+			<div class="filterPane">
+				<h5>Filters</h5>
+				
+				<h6>Media Sentiment</h6>
+				<ul class="clearfix">
+				  <li>
+				  	<input type="radio" id="candidates-sentimentShowAll" name="candidates-filterBySentiment" value="showall" checked>
+				  	<label for="candidates-sentimentShowAll">Show All</label>
+				  	<div class="check"></div>
+				  </li>
+				  <li>
+				  	<input type="radio" id="candidates-sentimentPositive" name="candidates-filterBySentiment" value="negative">
+				  	<label for="candidates-sentimentPositive">Positive mentions only</label>
+				  	<div class="check"></div>
+				  </li>
+				  
+				  <li>
+				    <input type="radio" id="candidates-sentimentNegative" name="candidates-filterBySentiment" value="positive">
+				    <label for="candidates-sentimentNegative">Negative mentions only</label>
+				    <div class="check"></div>
+				  </li>
+				</ul>
+				
+			</div> <!-- End Filter Pane -->
+			
+			<!-- Analytic Container -->
+			<div class="analyticContainer">
+								
+			</div>
+			
+			<!-- See More -->
+			<a href="#/" class="seeMoreButton">SEE MORE</a>
+			
+		</div>
+		
+		<!-- Top Topics -->
+		<div id="topTopics" class="module">
+			<h2>Bernie's Top Topics</h2><h3>by media mentions</h3>
+			
+			<!-- Filter Button -->
+			<a id="topTopicsFilter" href="#/" class="filterButton">
+				<span class="textLabel">FILTER</span>
+				<span class="filterIcon">
+					<span class="line"></span>
+					<span class="circle"></span>
+					<span class="line"></span>
+					<span class="circle"></span>
+					<span class="line"></span>
+					<span class="circle"></span>
+				</span>
+			</a>
+			
+			<!-- Filter Pane -->
+			<div class="filterPane">
+				<h5>Filters</h5>
+				
+				<h6>Media Sentiment</h6>
+				<ul class="clearfix">
+				  <li>
+				  	<input type="radio" id="topics-sentimentShowAll" name="topics-filterBySentiment" value="showall" checked>
+				  	<label for="topics-sentimentShowAll">Show All</label>
+				  	<div class="check"></div>
+				  </li>
+				  <li>
+				  	<input type="radio" id="topics-sentimentPositive" name="topics-filterBySentiment" value="negative">
+				  	<label for="topics-sentimentPositive">Positive mentions only</label>
+				  	<div class="check"></div>
+				  </li>
+				  
+				  <li>
+				    <input type="radio" id="topics-sentimentNegative" name="topics-filterBySentiment" value="positive">
+				    <label for="topics-sentimentNegative">Negative mentions only</label>
+				    <div class="check"></div>
+				  </li>
+				</ul>
+				
+				<h5>Sort By</h5>
+				<ul class="clearfix">
+				  <li>
+				  	<input type="radio" id="topics-sortDesc" name="topics-sortBy" value="descending" checked>
+				  	<label for="topics-sortDesc">Descending</label>
+				  	<div class="check"></div>
+				  </li>
+				  <li>
+				  	<input type="radio" id="topics-sortAsc" name="topics-sortBy" value="ascending">
+				  	<label for="topics-sortAsc">Ascending</label>
+				  	<div class="check"></div>
+				  </li>
+				</ul>
+				
+			</div> <!-- End Filter Pane -->
+			
+			<!-- Analytic Container -->
+			<div class="analyticContainer">
+				
+				<!-- Table Mock up -->
+				<table>
+				
+					<col width="360"> <col width="80"> <col width="421"> <col width="60">
+					
+					<thead>
+				    	<tr>
+							<th>Topic</th>
+							<th>Mentions</th>
+							<th>Sentiment Breakdown</th>
+							<th></th>
+				    	</tr>
+				  	</thead>
+				  	
+				  	<tbody>
+				    	<tr data-string="armed-forces">
+							<td>
+								<span class="ranking">1</span>
+								<img src="img/icon-armed-forces-small.png" alt="Topic Icon" />
+								<span class="topicContainer">
+									<span class="topic">Armed Forces</span>
+								</span>
+						  	</td>
+				      
+						  	<td>12,000</td>
+				      
+					  		<td>Graph here</td>
+				      		
+				      		<td>
+				      		</td>
+				    	</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+			<!-- See More -->
+			<a href="#/" class="seeMoreButton">SEE MORE</a>
+			
+		</div>
+		
+		
+		<!-- Footer -->
+		<div id="footer">
+			
+			<!-- Left -->
+			<div id="copyright">	
+				Copyright &copy; 2016. &nbsp;&nbsp;Legal Disclaimer | Privacy Policy
+			</div>
+			
+			<!-- Powered by OpenText -->
+			<div id="poweredBy">
+				<img src="img/powered-by-opentext.png" alt="Powered by OpenText" width="144" height="41"/>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+	<!-- End wrapper -->
+	
+
+</body>
+
+</html>
