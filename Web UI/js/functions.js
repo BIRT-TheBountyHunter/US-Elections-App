@@ -45,6 +45,12 @@ $(document).ready(function() {
 		
 	});
 	
+	//Drop down header on profile / topic lages
+	$('.profile-select-style select').change(function(){
+	    $("#width_tmp_option").html($('.profile-select-style select option:selected').text());
+	    $(this).width($("#width_tmp_select").width());  
+	 });
+	
 	//Click header to return home
 	$('.headerWrapper img, .headerWrapper h4').click(function(){
 		console.log('clickkkkkkkk');
