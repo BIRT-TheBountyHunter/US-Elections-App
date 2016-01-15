@@ -1740,7 +1740,7 @@
                                                     <property name="height">168px</property>
                                                     <property name="width">168px</property>
                                                     <property name="source">file</property>
-                                                    <expression name="uri" type="constant">Images/profile-ted-cruz-large.png</expression>
+                                                    <expression name="uri" type="constant">Images/profile-bernie-sanders-large.png</expression>
                                                 </image>
                                             </cell>
                                         </row>
@@ -2183,7 +2183,7 @@
                                                     <property name="height">168px</property>
                                                     <property name="width">168px</property>
                                                     <property name="source">file</property>
-                                                    <expression name="uri" type="constant">Images/profile-ted-cruz-large.png</expression>
+                                                    <expression name="uri" type="constant">Images/profile-donald-trump-large.png</expression>
                                                 </image>
                                             </cell>
                                         </row>

@@ -1603,8 +1603,77 @@
     </page-setup>
     <body>
         <grid id="104">
+            <property name="style">USElectionsStyle</property>
             <property name="backgroundColor">#FFFFFF</property>
             <property name="width">8.416666666666666in</property>
+            <property name="dataSet">Candidate Stats Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">TotalArticles</property>
+                    <text-property name="displayName">TotalArticles</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TotalArticles"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Period</property>
+                    <text-property name="displayName">Period</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Period"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Type</property>
+                    <text-property name="displayName">Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DoB</property>
+                    <text-property name="displayName">DoB</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DoB"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">Age</property>
+                    <text-property name="displayName">Age</text-property>
+                    <expression name="expression" type="javascript">"Age: " + dataSetRow["Age"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">State</property>
+                    <text-property name="displayName">State</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["State"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">Position</property>
+                    <text-property name="displayName">Position</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Position"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">HeadshotImageName</property>
+                    <text-property name="displayName">HeadshotImageName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["HeadshotImageName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Aggregation</property>
+                    <text-property name="displayName">Total Articles</text-property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">dataSetRow["TotalArticles"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
             <expression name="bookmark" type="javascript">"keyStats"</expression>
             <column id="1303">
                 <property name="width">1.8645833333333333in</property>
@@ -1616,9 +1685,95 @@
                 <property name="width">3.6770833333333335in</property>
             </column>
             <row id="108">
-                <cell id="1300"/>
-                <cell id="109"/>
-                <cell id="110"/>
+                <cell id="1300">
+                    <property name="colSpan">3</property>
+                    <property name="rowSpan">1</property>
+                    <grid id="1306">
+                        <property name="height">0.5520833333333334in</property>
+                        <column id="1323">
+                            <property name="textAlign">right</property>
+                        </column>
+                        <column id="1307"/>
+                        <column id="1325">
+                            <property name="textAlign">right</property>
+                        </column>
+                        <column id="1308"/>
+                        <column id="1327">
+                            <property name="textAlign">right</property>
+                        </column>
+                        <column id="1309"/>
+                        <column id="1329">
+                            <property name="textAlign">right</property>
+                        </column>
+                        <column id="1310"/>
+                        <row id="1312">
+                            <property name="fontSize">12pt</property>
+                            <property name="borderBottomColor">#EAEAEA</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">thin</property>
+                            <property name="borderTopColor">#EAEAEA</property>
+                            <property name="borderTopStyle">solid</property>
+                            <property name="borderTopWidth">thin</property>
+                            <property name="verticalAlign">middle</property>
+                            <cell id="1322">
+                                <label name="ElectionsLabel1" id="1330" extends="US Elections.ElectionsLabel">
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                                                    <text-property name="text">DoB:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1313">
+                                <data id="1318">
+                                    <property name="resultSetColumn">DoB</property>
+                                </data>
+                            </cell>
+                            <cell id="1324">
+                                <label name="ElectionsLabel11" id="1331" extends="US Elections.ElectionsLabel">
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                                                    <text-property name="text">Age:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1314">
+                                <data id="1319">
+                                    <property name="resultSetColumn">Age</property>
+                                </data>
+                            </cell>
+                            <cell id="1326">
+                                <label name="ElectionsLabel12" id="1332" extends="US Elections.ElectionsLabel">
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                                                    <text-property name="text">Location:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1315">
+                                <data id="1320">
+                                    <property name="resultSetColumn">State</property>
+                                </data>
+                            </cell>
+                            <cell id="1328">
+                                <label name="ElectionsLabel13" id="1333" extends="US Elections.ElectionsLabel">
+                                    <property name="fontSize">12pt</property>
+                                    <property name="fontWeight">bold</property>
+                                                                    <text-property name="text">Position:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="1316">
+                                <data id="1321">
+                                    <property name="resultSetColumn">Position</property>
+                                </data>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+            <row id="1343">
+                <property name="height">0.23958333333333334in</property>
+                <cell id="1344">
+                    <property name="textAlign">right</property>
+                </cell>
+                <cell id="1345"/>
+                <cell id="1346"/>
             </row>
             <row id="112">
                 <cell id="1301">
@@ -1627,7 +1782,7 @@
                         <property name="height">168px</property>
                         <property name="width">168px</property>
                         <property name="source">file</property>
-                        <expression name="uri" type="constant">Images/profile-ted-cruz-large.png</expression>
+                        <expression name="uri" type="constant">Images/profile-bernie-sanders-large.png</expression>
                     </image>
                 </cell>
                 <cell id="113">
@@ -1831,57 +1986,6 @@
                         <property name="marginBottom">0pt</property>
                         <property name="height">1.8229166666666667in</property>
                         <property name="width">2.8020833333333335in</property>
-                        <property name="dataSet">Candidate Stats Data Set</property>
-                        <list-property name="boundDataColumns">
-                            <structure>
-                                <property name="name">TotalArticles</property>
-                                <text-property name="displayName">TotalArticles</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["TotalArticles"]</expression>
-                                <property name="dataType">integer</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Period</property>
-                                <text-property name="displayName">Period</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Period"]</expression>
-                                <property name="dataType">integer</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Type</property>
-                                <text-property name="displayName">Type</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">DoB</property>
-                                <text-property name="displayName">DoB</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["DoB"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Age</property>
-                                <text-property name="displayName">Age</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Age"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">State</property>
-                                <text-property name="displayName">State</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["State"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Position</property>
-                                <text-property name="displayName">Position</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["Position"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">HeadshotImageName</property>
-                                <text-property name="displayName">HeadshotImageName</text-property>
-                                <expression name="expression" type="javascript">dataSetRow["HeadshotImageName"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                        </list-property>
                     </extended-item>
                 </cell>
                 <cell id="114">
@@ -1905,26 +2009,6 @@
                             <structure>
                                 <property name="name">Type</property>
                                 <text-property name="displayName">Type</text-property>
-                                <expression name="expression" type="javascript">"No. of " + dataSetRow["Type"] + " articles"</expression>
-                                <property name="dataType">string</property>
-                                <property name="allowExport">true</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Aggregation</property>
-                                <text-property name="displayName">Total no. of articles</text-property>
-                                <property name="dataType">float</property>
-                                <property name="aggregateFunction">SUM</property>
-                                <list-property name="arguments">
-                                    <structure>
-                                        <property name="name">Expression</property>
-                                        <expression name="value" type="javascript">row["TotalArticles"]</expression>
-                                    </structure>
-                                </list-property>
-                                <property name="allowExport">true</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Type_1</property>
-                                <text-property name="displayName">Type</text-property>
                                 <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
@@ -1957,6 +2041,19 @@
                                 <text-property name="displayName">HeadshotImageName</text-property>
                                 <expression name="expression" type="javascript">dataSetRow["HeadshotImageName"]</expression>
                                 <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Aggregation</property>
+                                <text-property name="displayName">Total Articles</text-property>
+                                <property name="dataType">float</property>
+                                <property name="aggregateFunction">SUM</property>
+                                <list-property name="arguments">
+                                    <structure>
+                                        <property name="name">Expression</property>
+                                        <expression name="value" type="javascript">row["TotalArticles"]</expression>
+                                    </structure>
+                                </list-property>
+                                <property name="allowExport">true</property>
                             </structure>
                         </list-property>
                         <column id="1245">
@@ -1999,7 +2096,7 @@
                                     </label>
                                 </cell>
                                 <cell id="1232">
-                                    <data id="1257">
+                                    <data id="1348">
                                         <property name="resultSetColumn">Aggregation</property>
                                     </data>
                                 </cell>

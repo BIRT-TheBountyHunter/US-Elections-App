@@ -4,6 +4,7 @@
     <targetReportsMap key="//@files.2" value="1"/>
     <targetReportsMap key="//@files.3" value="1"/>
     <targetReportsMap key="//@files.4" value="1"/>
+    <targetReportsMap key="//@files.5" value="1"/>
     <targetLibrariesMap key="//@files.1" value="1"/>
     <dataSets name="Key Stats Articles Data Set" targetDataSets="//@files.3/@dataSets.0">
       <columns name="TotalArticles" targetColumns="//@files.3/@dataSets.0/@columns.0"/>
@@ -33,22 +34,22 @@
       <columns name="Week"/>
       <columns name="Media"/>
     </dataSets>
-    <dataSets name="Topic Stats Data Set" targetDataSets="//@files.4/@dataSets.0">
-      <columns name="TotalArticles" targetColumns="//@files.4/@dataSets.0/@columns.0"/>
-      <columns name="Period" targetColumns="//@files.4/@dataSets.0/@columns.1"/>
-      <columns name="TopicImageName" targetColumns="//@files.4/@dataSets.0/@columns.3"/>
-      <columns name="Description" targetColumns="//@files.4/@dataSets.0/@columns.4"/>
-      <columns name="Type" targetColumns="//@files.4/@dataSets.0/@columns.2"/>
+    <dataSets name="Topic Stats Data Set" targetDataSets="//@files.5/@dataSets.0">
+      <columns name="TotalArticles" targetColumns="//@files.5/@dataSets.0/@columns.0"/>
+      <columns name="Period" targetColumns="//@files.5/@dataSets.0/@columns.1"/>
+      <columns name="Type" targetColumns="//@files.5/@dataSets.0/@columns.2"/>
+      <columns name="TopicImageName" targetColumns="//@files.5/@dataSets.0/@columns.3"/>
+      <columns name="Description" targetColumns="//@files.5/@dataSets.0/@columns.4"/>
     </dataSets>
-    <dataSets name="Candidate Comparison Stats Data Set">
-      <columns name="TotalArticles"/>
-      <columns name="Period"/>
-      <columns name="Type"/>
-      <columns name="HeadshotImageName"/>
-      <columns name="Party"/>
+    <dataSets name="Candidate Comparison Stats Data Set" targetDataSets="//@files.4/@dataSets.0 //@files.4/@dataSets.1">
+      <columns name="TotalArticles" targetColumns="//@files.4/@dataSets.0/@columns.0 //@files.4/@dataSets.1/@columns.0"/>
+      <columns name="Period" targetColumns="//@files.4/@dataSets.0/@columns.1 //@files.4/@dataSets.1/@columns.1"/>
+      <columns name="Type" targetColumns="//@files.4/@dataSets.0/@columns.2 //@files.4/@dataSets.1/@columns.2"/>
+      <columns name="HeadshotImageName" targetColumns="//@files.4/@dataSets.0/@columns.3 //@files.4/@dataSets.1/@columns.3"/>
+      <columns name="Party" targetColumns="//@files.4/@dataSets.0/@columns.4 //@files.4/@dataSets.1/@columns.4"/>
     </dataSets>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.2 //@files.3 //@files.4">
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.2 //@files.3 //@files.4 //@files.5">
     <dataDesignMap key="//@files.0" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Candidate Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Candidate Stats.rptdesign" libraries="//@files.1">
@@ -77,14 +78,31 @@
       <columns name="Period" sourceColumns="//@files.0/@dataSets.1/@columns.2"/>
     </dataSets>
   </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Candidate Comparison Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Candidate Comparison Stats.rptdesign" libraries="//@files.1">
+    <dataDesignMap key="//@files.0" value="1"/>
+    <dataSets name="Comparison Stats1 Data Set" sourceDataSet="//@files.0/@dataSets.5">
+      <columns name="TotalArticles" sourceColumns="//@files.0/@dataSets.5/@columns.0"/>
+      <columns name="Period" sourceColumns="//@files.0/@dataSets.5/@columns.1"/>
+      <columns name="Type" sourceColumns="//@files.0/@dataSets.5/@columns.2"/>
+      <columns name="HeadshotImageName" sourceColumns="//@files.0/@dataSets.5/@columns.3"/>
+      <columns name="Party" sourceColumns="//@files.0/@dataSets.5/@columns.4"/>
+    </dataSets>
+    <dataSets name="Comparison Stats2 Data Set" sourceDataSet="//@files.0/@dataSets.5">
+      <columns name="TotalArticles" sourceColumns="//@files.0/@dataSets.5/@columns.0"/>
+      <columns name="Period" sourceColumns="//@files.0/@dataSets.5/@columns.1"/>
+      <columns name="Type" sourceColumns="//@files.0/@dataSets.5/@columns.2"/>
+      <columns name="HeadshotImageName" sourceColumns="//@files.0/@dataSets.5/@columns.3"/>
+      <columns name="Party" sourceColumns="//@files.0/@dataSets.5/@columns.4"/>
+    </dataSets>
+  </files>
   <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Topic Stats.rptdesign" path="/US Elections App Report Project/Report Designs/Topic Stats.rptdesign" libraries="//@files.1">
     <dataDesignMap key="//@files.0" value="1"/>
     <dataSets name="Topic Stats Data Set" sourceDataSet="//@files.0/@dataSets.4">
       <columns name="TotalArticles" sourceColumns="//@files.0/@dataSets.4/@columns.0"/>
       <columns name="Period" sourceColumns="//@files.0/@dataSets.4/@columns.1"/>
-      <columns name="Type" sourceColumns="//@files.0/@dataSets.4/@columns.4"/>
-      <columns name="TopicImageName" sourceColumns="//@files.0/@dataSets.4/@columns.2"/>
-      <columns name="Description" sourceColumns="//@files.0/@dataSets.4/@columns.3"/>
+      <columns name="Type" sourceColumns="//@files.0/@dataSets.4/@columns.2"/>
+      <columns name="TopicImageName" sourceColumns="//@files.0/@dataSets.4/@columns.3"/>
+      <columns name="Description" sourceColumns="//@files.0/@dataSets.4/@columns.4"/>
     </dataSets>
   </files>
 </com.actuate.istudio.analysis.model:Project>
