@@ -8,6 +8,8 @@ body {
 	color: #000000;
 	background: #FFFFFF;
 	margin: 0 0 25px 0;
+	padding-right:0px !important;
+	margin-right:0px !important;
 	padding: 0;
 	text-align: center;
 	background-color: #FFFFFF;
@@ -105,18 +107,41 @@ body.home {
 	
 	body.interior h1 { 
 		display: inline-block;
-		padding: 20px 60px 20px 20px;
+		padding: 20px 50px 15px 15px;
 		font-size: 45px;
 		font-weight: 600;
-		border: 1px solid #e7e7e7;
 		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAQ0lEQVQoz63MuQ0AIAzAQLM9G2RcaCgi8eWz5PYAOjCKFlYVqAANVQbdsAx6xSLoF/OgZsyCurEXGsZOaBrTaBnmagL38GTms7AgbgAAAABJRU5ErkJggg==") no-repeat 95% 50%;
 		cursor: pointer;
+		margin: 0 0 0 20px;;
+		-webkit-transition: .25s ease-in-out;
+		-moz-transition: .25s ease-in-out;
+		-o-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
 	}
 	
 	body.interior h1:hover {
 		background-color: #eaeaea;
 	}
 	
+	#candidateStats {
+		margin: 20px 0px 20px 0px;
+		border-top: 1px solid  #000;
+		border-bottom: 1px solid  #000;
+		text-align: center;
+		padding: 10px;
+	}
+	
+	#candidateStats span {
+		margin-right: 30px;
+	}
+
+	
+	span.partyTitle {
+		display: block;
+		margin: 0 auto 0 auto;
+		font-weight: 200;
+		font-size: 25px;
+	}
 	
 	h2 {
 		margin: 0;
@@ -242,12 +267,14 @@ body.home {
 		-o-transition: .5s ease-in-out;
 		transition: .5s ease-in-out;
 		opacity: 0;
+		filter: alpha(opacity=0);
 		cursor: pointer;
 		margin-top: -60px;
 	}
 	
 	#menuHeader.scrolldown .headerWrapper img, body.interior #menuHeader .headerWrapper img {
 		opacity: 1.0;
+		filter: alpha(opacity=100);
 		margin-top: 12px;
 	}
 	
@@ -309,7 +336,7 @@ body.home {
 	}
 	
 	#profileFrontdoor {
-		padding: 75px 0;
+		padding: 65px 0;
 		text-align: center;
 	}
 
@@ -380,6 +407,7 @@ body.home {
 	
 	.textLabel {
 		opacity: 1;
+		filter: alpha(opacity=100);
 		transition: opacity .25s ease-in-out;
 		-moz-transition: opacity .25s ease-in-out;
 		-webkit-transition: opacity .25s ease-in-out;
@@ -387,6 +415,7 @@ body.home {
 	
 	.hideText {
 		opacity: 0.1 !important;
+		filter: alpha(opacity=10);
 	}
 	
 	.filterIcon {
@@ -415,6 +444,7 @@ body.home {
 	  background: #000000;
 	  border-radius: 8px;
 	  opacity: 1;
+	  filter: alpha(opacity=100);
 	  -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
 	  -o-transform: rotate(0deg);
@@ -435,6 +465,7 @@ body.home {
 	  border-radius: 50%;
 	  border: 2px solid black;
 	  opacity: 1;
+	  filter: alpha(opacity=100);
 	  -webkit-transition: .25s ease-in-out;
 	  -moz-transition: .25s ease-in-out;
 	  -o-transition: .25s ease-in-out;
@@ -504,6 +535,7 @@ body.home {
 		.filterIcon.open span:nth-child(2) {
 		  width: 0%;
 		  opacity: 0;
+		  filter: alpha(opacity=0);
 		  left: 15;
 		  height: 4px;
 		  width: 4px;
@@ -513,11 +545,13 @@ body.home {
 		.filterIcon.open span:nth-child(3) {
 		  width: 0%;
 		  opacity: 0;
+		  filter: alpha(opacity=0);
 		}
 		/* circle 2 */ 
 		.filterIcon.open span:nth-child(4) {
 		  width: 0%;
 		  opacity: 0;
+		  filter: alpha(opacity=0);
 		  left: 0;
 		  height: 4px;
 		  width: 4px;
@@ -537,6 +571,7 @@ body.home {
 		.filterIcon.open span:nth-child(6) {
 		  width: 0%;
 		  opacity: 0;
+		  filter: alpha(opacity=0);
 		  left: 15;
 		  height: 4px;
 		  width: 4px;
@@ -896,4 +931,166 @@ body.home {
 		  	input[type=radio]#candidates-sentimentNegative:checked ~ label, input[type=radio]#topics-sentimentNegative:checked ~ label, input[type=radio]#media-sentimentNegative:checked ~ label {
 				color: #9b151e !important;
 		  	}
+/* Profile / Topic Menu */
+
+	/* close button */
+
+		a.overlayCloseButton {
+			display: block;
+			position: absolute;
+			top: 85px;
+			right: 150px;
+			width: 25px;
+			height: 25px;
+			padding: 5px;
+			cursor: pointer;
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+			-ms-transform-origin: 50% 50%; /* IE 9 */
+			-webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+			transform-origin: 50% 50%;
+		}
+		
+		a.overlayCloseButton span {
+			display: block;
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: #FFFFFF;
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+		
+		a.overlayCloseButton span:nth-child(1) {
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		
+		a.overlayCloseButton span:nth-child(2) {
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+		
+		a.overlayCloseButton:hover span:nth-child(1) {
+			-webkit-transform: rotate(225deg);
+			-moz-transform: rotate(225deg);
+			-o-transform: rotate(225deg);
+			transform: rotate(225deg);
+			-ms-transform-origin: 50% 50%; /* IE 9 */
+			-webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+			transform-origin: 50% 50%;
+			-o-transform-origin: 50% 50%;
+		}
+		
+		a.overlayCloseButton:hover span:nth-child(2) {
+			-webkit-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			-o-transform: rotate(135deg);
+			transform: rotate(135deg);
+			-ms-transform-origin: 50% 50%; /* IE 9 */
+			-webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+			transform-origin: 50% 50%;
+			-o-transform-origin: 50% 50%;
+		}
+		
+	/* overlay controls */
 	
+		#profileTopicMenu {
+			position: fixed;
+			top: 0;
+			left; 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.9);
+			z-index: 4000;
+			overflow: hidden;
+			text-align: center;
+			opacity: 0;
+			transition: -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+			transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 700ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+			-webkit-transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -100%, 0);
+		}
+		
+		.noScroll {
+			overflow-y: auto;
+		}
+		
+		.displayed {
+			transition: -webkit-transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) !important;
+			transition: transform 0ms cubic-bezier(0.25, 0.25, 0.75, 0.75) 0ms, opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) !important;
+			-webkit-transform: translate3d(0, 0, 0) !important;
+			transform: translate3d(0, 0, 0) !important;
+			opacity: 1 !important;
+		}
+		
+		
+	/* Candidate / Topic Menu */
+	
+		#profileTopicMenu #menuContainer {
+			margin: 65px auto 0 auto;
+			display: block;
+			width: 600px;
+		}
+		
+		#profileTopicMenu ul {
+			margin: 0 20px 0 0;
+			padding: 0;
+			list-style-type: none;
+			float: left;
+			margin-right: 20px;
+		}
+		
+		#profileTopicMenu ul li {
+			text-align: left;
+			padding: 1px;
+		}
+		
+		#profileTopicMenu ul li a {
+			display: block;
+			font-weight: 200;
+			font-size: 23px;
+			color: #FFFFFF;
+			text-decoration: none;
+			padding: 4px 10px 4px 10px;
+			width: 230px;
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
+		
+		#profileTopicMenu ul li a:hover {
+			background-color: #FFFFFF;
+			color: #000000;
+		}
+		
+		#profileTopicMenu ul li a:hover img {
+			filter: none;
+			-webkit-filter: none;
+		}
+		
+		#profileTopicMenu ul li a img {
+			width: 40px;
+			height: 40px;
+			margin-right: 15px;
+			vertical-align:middle;
+			filter: grayscale(85%);
+			-webkit-filter: grayscale(85%);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+		}
