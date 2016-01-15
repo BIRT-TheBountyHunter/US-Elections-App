@@ -32,18 +32,6 @@
       <columns name="Week"/>
       <columns name="Media"/>
     </dataSets>
-    <dataSets name="Candidate Comparison Stats Data Set">
-      <columns name="TotalArticles"/>
-      <columns name="PositiveArticles"/>
-      <columns name="NegativeArticles"/>
-      <columns name="NeutralArticles"/>
-      <columns name="Period"/>
-      <columns name="DoB"/>
-      <columns name="Age"/>
-      <columns name="State"/>
-      <columns name="Position"/>
-      <columns name="HeadshotImageName"/>
-    </dataSets>
     <dataSets name="Topic Stats Data Set">
       <columns name="TotalArticles"/>
       <columns name="PositiveArticles"/>
@@ -52,6 +40,13 @@
       <columns name="Period"/>
       <columns name="TopicImageName"/>
       <columns name="Description"/>
+    </dataSets>
+    <dataSets name="Candidate Comparison Stats Data Set">
+      <columns name="TotalArticles"/>
+      <columns name="Period"/>
+      <columns name="Type"/>
+      <columns name="HeadshotImageName"/>
+      <columns name="Party"/>
     </dataSets>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="US Elections.rptlibrary" path="/US Elections App Report Project/Report Libraries/US Elections.rptlibrary" reports="//@files.2 //@files.3">
