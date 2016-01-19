@@ -45,15 +45,8 @@ $(document).ready(function() {
 		
 	});
 	
-	//Drop down header on profile / topic lages
-	$('.profile-select-style select').change(function(){
-	    $("#width_tmp_option").html($('.profile-select-style select option:selected').text());
-	    $(this).width($("#width_tmp_select").width());  
-	 });
-	
 	//Click header to return home
 	$('.headerWrapper img, .headerWrapper h4').click(function(){
-		console.log('clickkkkkkkk');
 		window.location = "index.html";
 	});
 	
@@ -66,5 +59,15 @@ $(document).ready(function() {
 	    }
 	}
 	window.onscroll=testScroll;
+	
+	//Profile / Topic Menu
+	
+	$('body.profile h1').click(function(){
+		$('#profileTopicMenu').addClass('displayed');
+	});
+	
+	$('.overlayCloseButton').click(function(){
+		$('#profileTopicMenu').removeClass('displayed');
+	});
 	
 });
