@@ -1374,6 +1374,15 @@
     </data-sources>
     <data-sets>
         <data-mart-data-set name="Topic Stats Data Set" id="1306">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">CalcColor</property>
+                    <expression name="expression" type="javascript">if (row["Type"] == "positive") { "#38c645" }&#13;
+else if (row["Type"] == "negative") { "#9b151e" }&#13;
+else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
             <list-property name="columnHints">
                 <structure>
                     <property name="columnName">TotalArticles</property>
@@ -1407,6 +1416,10 @@
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">Description</text-property>
                     <text-property name="heading">Description</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CalcColor</property>
+                    <property name="analysis">attribute</property>
                 </structure>
             </list-property>
             <list-property name="filter">
@@ -1450,6 +1463,11 @@
                     <structure>
                         <property name="position">5</property>
                         <property name="name">Description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">CalcColor</property>
                         <property name="dataType">string</property>
                     </structure>
                 </list-property>
@@ -1528,7 +1546,7 @@
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <expression name="bookmark" type="javascript">"keyStats"</expression>
+            <expression name="bookmark" type="javascript">"topicStats"</expression>
             <column id="1303">
                 <property name="width">1.8645833333333333in</property>
             </column>
@@ -1539,6 +1557,14 @@
                 <property name="width">3.6770833333333335in</property>
             </column>
             <row id="108">
+                <property name="borderBottomColor">#EAEAEA</property>
+                <property name="borderBottomStyle">solid</property>
+                <property name="borderBottomWidth">thin</property>
+                <property name="borderTopColor">#EAEAEA</property>
+                <property name="borderTopStyle">solid</property>
+                <property name="borderTopWidth">thin</property>
+                <property name="verticalAlign">middle</property>
+                <property name="height">0.55in</property>
                 <cell id="1300">
                     <property name="colSpan">3</property>
                     <property name="rowSpan">1</property>
@@ -1548,7 +1574,14 @@
                     </data>
                 </cell>
             </row>
+            <row id="1371">
+                <property name="height">0.24in</property>
+                <cell id="1372"/>
+                <cell id="1373"/>
+                <cell id="1374"/>
+            </row>
             <row id="112">
+                <property name="verticalAlign">middle</property>
                 <cell id="1301">
                     <property name="textAlign">right</property>
                     <image id="1305">
@@ -1559,7 +1592,8 @@
                     </image>
                 </cell>
                 <cell id="113">
-                    <extended-item extensionName="Chart" name="Chart1" id="1224">
+                    <extended-item extensionName="Chart" name="ElectionsDonutChart" extends="US Elections.ElectionsDonutChart"
+ id="1370">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithoutAxes version="2.6.1" type="Pie Chart" subType="Standard">
   <block>
@@ -1569,7 +1603,7 @@
     </outline>
     <label>
      <caption value="Last 30 Days">
-      <font name="Lato" size="16.0" bold="true" rotation="90.0"/>
+      <font name="Lato" size="10.0" bold="true" rotation="90.0"/>
       <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
@@ -1619,7 +1653,7 @@
   <extendedProperties name="enable.area.alt" value="false"/>
   <extendedProperties name="enable.drill.category" value="true"/>
   <extendedProperties name="enable.drill.series" value="true"/>
-  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    options.title = &#13;&#10;        {&#13;&#10;        verticalAlign: &#039;middle&#039;,&#13;&#10;        },&#13;&#10;&#13;&#10;    options.chart = &#13;&#10;        {&#13;&#10;            spacingLeft: 0,&#13;&#10;            spacingRight:0,&#13;&#10;            spacingBottom:0,&#13;&#10;            spacingTop:0,&#13;&#10;        }&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    options.title = &#13;&#10;        {&#13;&#10;        verticalAlign: &#039;middle&#039;,&#13;&#10;        text: &#039;&lt;tspan style=&quot;font-size:16px&quot;&gt;Last&lt;/tspan&gt;&lt;br/&gt;&lt;tspan style=&quot;font-size:32px&quot;&gt;30&lt;/tspan&gt;&lt;br/&gt;&lt;tspan style=&quot;font-size:16px&quot;&gt;Days&lt;/tspan&gt;&#039;,&#13;&#10;        },&#13;&#10;&#13;&#10;    options.chart = &#13;&#10;        {&#13;&#10;            spacingLeft: 0,&#13;&#10;            spacingRight:0,&#13;&#10;            spacingBottom:0,&#13;&#10;            spacingTop:0,&#13;&#10;        }&#13;&#10; },&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is rendered.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; */&#13;&#10;beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;    //You can change options here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before axis instance is rendered.&#13;&#10; *&#13;&#10; * @param axis&#13;&#10; *            axis instance&#13;&#10; * @param  axisOptions&#13;&#10; *             axis options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  axisIndex&#13;&#10; *             axis index&#13;&#10; */&#13;&#10;beforeDrawAxis: function(axis, axisOptions, chart, axisIndex)&#13;&#10;{&#13;&#10;    //You can change axisOptions here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before series instance is rendered.&#13;&#10; *&#13;&#10; * @param series&#13;&#10; *            series instance&#13;&#10; * @param  seriesOptions&#13;&#10; *             series options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  seriesIndex&#13;&#10; *             series index&#13;&#10; */&#13;&#10;beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;    //You can change seriesOptions here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before data point instance is rendered.&#13;&#10; *&#13;&#10; * @param point&#13;&#10; *            data point instance&#13;&#10; * @param  pointOptions&#13;&#10; *             data point options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  seriesIndex&#13;&#10; *             series index&#13;&#10; * @param  pointIndex&#13;&#10; *             data point index&#13;&#10; */&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;    //You can change pointOptions here to modify data, color and y.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called after chart instance is rendered.&#13;&#10; *&#13;&#10; * @param chart&#13;&#10; *            chart instance&#13;&#10; */&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;},"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
   <extendedProperties name="enable.data.summarize" value="true"/>
   <sampleData>
@@ -1712,7 +1746,7 @@
      <entries _body=",255,255,255,255"/>
      <entries _body=",255,255,128,0"/>
     </seriesPalette>
-    <series _type="PieSeries" seriesIdentifier="Series 1" labelPosition="4" rotation="90.0" innerRadius="75.0" innerRadiusPercent="true">
+    <series _type="PieSeries" seriesIdentifier="Series 1" labelPosition="4" rotation="90.0" innerRadius="60.0" innerRadiusPercent="true">
      <label visible="false">
       <background _nil="1"/>
       <outline>
@@ -1735,7 +1769,7 @@
       </outline>
      </title>
      <leaderLineAttributes visible="false"/>
-     <sliceOutline _body=",255,219,219,219"/>
+     <sliceOutline _body=",0,255,255,255"/>
     </series>
    </seriesDefinitions>
    <series seriesIdentifier="">
@@ -1756,8 +1790,6 @@
 ]]></xml-property>
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
-                        <property name="marginBottom">0pt</property>
-                        <property name="height">1.8229166666666667in</property>
                         <property name="width">2.8020833333333335in</property>
                         <property name="dataSet">Topic Stats Data Set</property>
                         <list-property name="boundDataColumns">
@@ -1791,13 +1823,20 @@
                                 <expression name="expression" type="javascript">dataSetRow["Description"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
+                            <structure>
+                                <property name="name">CalcColor</property>
+                                <text-property name="displayName">CalcColor</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CalcColor"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
                         </list-property>
                     </extended-item>
                 </cell>
                 <cell id="114">
-                    <table id="1226">
+                    <table id="1349">
                         <property name="style">USElectionsStyle</property>
-                        <property name="width">3.6145833333333335in</property>
+                        <property name="width">3.3125in</property>
+                        <property name="dataSet">Topic Stats Data Set</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">TotalArticles</property>
@@ -1814,7 +1853,14 @@
                             <structure>
                                 <property name="name">Type</property>
                                 <text-property name="displayName">Type</text-property>
-                                <expression name="expression" type="javascript">"No. of " + dataSetRow["Type"] + " articles"</expression>
+                                <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CalcColor</property>
+                                <text-property name="displayName">CalcColor</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CalcColor"]</expression>
                                 <property name="dataType">string</property>
                                 <property name="allowExport">true</property>
                             </structure>
@@ -1832,79 +1878,99 @@
                                 <property name="allowExport">true</property>
                             </structure>
                         </list-property>
-                        <column id="1245">
+                        <column id="1368">
                             <property name="fontWeight">normal</property>
                             <property name="textAlign">left</property>
-                            <property name="width">2.25in</property>
+                            <property name="width">1.9479166666666667in</property>
                         </column>
-                        <column id="1247">
+                        <column id="1369">
                             <property name="fontWeight">normal</property>
                             <property name="textAlign">right</property>
-                            <property name="width">1.3645833333333333in</property>
+                            <property name="width">1.25in</property>
                         </column>
                         <header>
-                            <row id="1261">
-                                <cell id="1262">
-                                    <label name="ElectionsLabel" id="1265">
+                            <row id="1350">
+                                <property name="borderBottomColor">#EAEAEA</property>
+                                <property name="borderBottomStyle">solid</property>
+                                <property name="borderBottomWidth">thin</property>
+                                <cell id="1351">
+                                    <label name="ElectionsLabel2" id="1352">
                                         <property name="fontSize">16pt</property>
                                         <property name="fontWeight">bold</property>
                                         <property name="color">#000000</property>
                                         <text-property name="text">Mentions</text-property>
                                     </label>
                                 </cell>
-                                <cell id="1263">
-                                    <text name="ElectionsText1" id="1264">
+                                <cell id="1353">
+                                    <text name="ElectionsText11" id="1354">
                                         <property name="color">#000000</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<select>
+                                        <text-property name="content"><![CDATA[<div>
+<select>
   <option value="30">Last 30 days</option>
   <option value="60">Last 60 days</option>
   <option value="90">Last 90 days</option>
 </select> 
-]]></text-property>
+</div>]]></text-property>
                                     </text>
                                 </cell>
                             </row>
-                            <row id="1227">
-                                <cell id="1228">
-                                    <label id="1256">
-                                        <text-property name="text">No. of articles</text-property>
+                            <row id="1355">
+                                <property name="borderBottomColor">#EAEAEA</property>
+                                <property name="borderBottomStyle">solid</property>
+                                <property name="borderBottomWidth">thin</property>
+                                <property name="verticalAlign">middle</property>
+                                <property name="height">33px</property>
+                                <cell id="1356">
+                                    <label id="1357">
+                                        <text-property name="text">Total</text-property>
                                     </label>
                                 </cell>
-                                <cell id="1232">
-                                    <data id="1257">
+                                <cell id="1358">
+                                    <data id="1359">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                        </structure>
                                         <property name="resultSetColumn">Aggregation</property>
                                     </data>
                                 </cell>
                             </row>
                         </header>
                         <detail>
-                            <row id="1234">
-                                <cell id="1235">
-                                    <data id="1240">
-                                        <property name="resultSetColumn">Type</property>
-                                    </data>
+                            <row id="1360">
+                                <property name="borderBottomColor">#EAEAEA</property>
+                                <property name="borderBottomStyle">solid</property>
+                                <property name="borderBottomWidth">thin</property>
+                                <property name="verticalAlign">middle</property>
+                                <property name="height">33px</property>
+                                <cell id="1361">
+                                    <text id="1362">
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[No. of <FONT color="<VALUE-OF>row["CalcColor"]</VALUE-OF>">
+<VALUE-OF>row["Type"]</VALUE-OF>
+</FONT>]]></text-property>
+                                    </text>
                                 </cell>
-                                <cell id="1239">
-                                    <data id="1236">
+                                <cell id="1363">
+                                    <data id="1364">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">#,##0{RoundingMode=HALF_UP}</property>
+                                        </structure>
                                         <property name="resultSetColumn">TotalArticles</property>
                                     </data>
                                 </cell>
                             </row>
                         </detail>
                         <footer>
-                            <row id="1241">
-                                <cell id="1242"/>
-                                <cell id="1244"/>
+                            <row id="1365">
+                                <cell id="1366"/>
+                                <cell id="1367"/>
                             </row>
                         </footer>
                     </table>
                 </cell>
-            </row>
-            <row id="116">
-                <cell id="1302"/>
-                <cell id="117"/>
-                <cell id="118"/>
             </row>
         </grid>
     </body>

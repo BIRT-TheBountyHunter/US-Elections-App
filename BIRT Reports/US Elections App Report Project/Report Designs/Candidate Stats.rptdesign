@@ -1796,6 +1796,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
             <row id="112">
                 <cell id="1301">
                     <property name="textAlign">right</property>
+                    <property name="verticalAlign">middle</property>
                     <image id="1305">
                         <property name="height">168px</property>
                         <property name="width">168px</property>
@@ -1804,7 +1805,8 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
                     </image>
                 </cell>
                 <cell id="113">
-                    <extended-item extensionName="Chart" name="Chart1" id="1224">
+                    <extended-item extensionName="Chart" name="ElectionsDonutChart" extends="US Elections.ElectionsDonutChart"
+ id="1369">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithoutAxes version="2.6.1" type="Pie Chart" subType="Standard">
   <block>
@@ -1814,7 +1816,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
     </outline>
     <label>
      <caption value="Last 30 Days">
-      <font name="Lato" size="16.0" bold="true" rotation="90.0"/>
+      <font name="Lato" size="10.0" bold="true" rotation="90.0"/>
       <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
@@ -1864,7 +1866,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
   <extendedProperties name="enable.area.alt" value="false"/>
   <extendedProperties name="enable.drill.category" value="true"/>
   <extendedProperties name="enable.drill.series" value="true"/>
-  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    options.title = &#13;&#10;        {&#13;&#10;        verticalAlign: &#039;middle&#039;,&#13;&#10;        },&#13;&#10;&#13;&#10;    options.chart = &#13;&#10;        {&#13;&#10;            spacingLeft: 0,&#13;&#10;            spacingRight:0,&#13;&#10;            spacingBottom:0,&#13;&#10;            spacingTop:0,&#13;&#10;        }&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    options.title = &#13;&#10;        {&#13;&#10;        verticalAlign: &#039;middle&#039;,&#13;&#10;        text: &#039;&lt;tspan style=&quot;font-size:16px&quot;&gt;Last&lt;/tspan&gt;&lt;br/&gt;&lt;tspan style=&quot;font-size:32px&quot;&gt;30&lt;/tspan&gt;&lt;br/&gt;&lt;tspan style=&quot;font-size:16px&quot;&gt;Days&lt;/tspan&gt;&#039;,&#13;&#10;        },&#13;&#10;&#13;&#10;    options.chart = &#13;&#10;        {&#13;&#10;            spacingLeft: 0,&#13;&#10;            spacingRight:0,&#13;&#10;            spacingBottom:0,&#13;&#10;            spacingTop:0,&#13;&#10;        }&#13;&#10; },&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is rendered.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; */&#13;&#10;beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;    //You can change options here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before axis instance is rendered.&#13;&#10; *&#13;&#10; * @param axis&#13;&#10; *            axis instance&#13;&#10; * @param  axisOptions&#13;&#10; *             axis options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  axisIndex&#13;&#10; *             axis index&#13;&#10; */&#13;&#10;beforeDrawAxis: function(axis, axisOptions, chart, axisIndex)&#13;&#10;{&#13;&#10;    //You can change axisOptions here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before series instance is rendered.&#13;&#10; *&#13;&#10; * @param series&#13;&#10; *            series instance&#13;&#10; * @param  seriesOptions&#13;&#10; *             series options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  seriesIndex&#13;&#10; *             series index&#13;&#10; */&#13;&#10;beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;    //You can change seriesOptions here.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before data point instance is rendered.&#13;&#10; *&#13;&#10; * @param point&#13;&#10; *            data point instance&#13;&#10; * @param  pointOptions&#13;&#10; *             data point options&#13;&#10; * @param  chart&#13;&#10; *             chart instance&#13;&#10; * @param  seriesIndex&#13;&#10; *             series index&#13;&#10; * @param  pointIndex&#13;&#10; *             data point index&#13;&#10; */&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;    //You can change pointOptions here to modify data, color and y.&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called after chart instance is rendered.&#13;&#10; *&#13;&#10; * @param chart&#13;&#10; *            chart instance&#13;&#10; */&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;},"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
   <extendedProperties name="enable.data.summarize" value="true"/>
   <sampleData>
@@ -1957,7 +1959,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
      <entries _body=",255,255,255,255"/>
      <entries _body=",255,255,128,0"/>
     </seriesPalette>
-    <series _type="PieSeries" seriesIdentifier="Series 1" labelPosition="4" rotation="90.0" innerRadius="75.0" innerRadiusPercent="true">
+    <series _type="PieSeries" seriesIdentifier="Series 1" labelPosition="4" rotation="90.0" innerRadius="60.0" innerRadiusPercent="true">
      <label visible="false">
       <background _nil="1"/>
       <outline>
@@ -1980,7 +1982,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
       </outline>
      </title>
      <leaderLineAttributes visible="false"/>
-     <sliceOutline _body=",255,219,219,219"/>
+     <sliceOutline _body=",0,255,255,255"/>
     </series>
    </seriesDefinitions>
    <series seriesIdentifier="">
@@ -2001,12 +2003,68 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
 ]]></xml-property>
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
-                        <property name="marginBottom">0pt</property>
-                        <property name="height">1.8229166666666667in</property>
                         <property name="width">2.8020833333333335in</property>
+                        <property name="dataSet">Candidate Stats Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">TotalArticles</property>
+                                <text-property name="displayName">TotalArticles</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["TotalArticles"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Period</property>
+                                <text-property name="displayName">Period</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Period"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Type</property>
+                                <text-property name="displayName">Type</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Type"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">DoB</property>
+                                <text-property name="displayName">DoB</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["DoB"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Age</property>
+                                <text-property name="displayName">Age</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Age"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">State</property>
+                                <text-property name="displayName">State</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["State"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Position</property>
+                                <text-property name="displayName">Position</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["Position"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">HeadshotImageName</property>
+                                <text-property name="displayName">HeadshotImageName</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["HeadshotImageName"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CalcColor</property>
+                                <text-property name="displayName">CalcColor</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CalcColor"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
                     </extended-item>
                 </cell>
                 <cell id="114">
+                    <property name="verticalAlign">middle</property>
                     <table id="1349">
                         <property name="style">USElectionsStyle</property>
                         <property name="width">3.3125in</property>

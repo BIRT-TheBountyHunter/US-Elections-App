@@ -1705,7 +1705,7 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
             <row id="112">
                 <property name="height">2.6145833333333335in</property>
                 <cell id="113">
-                    <extended-item extensionName="Chart" name="Chart1" id="1224">
+                    <extended-item extensionName="Chart" name="ElectionsDonutChart" id="1224">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithoutAxes version="2.6.1" type="Pie Chart" subType="Standard">
   <block>
