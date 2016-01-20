@@ -819,6 +819,9 @@ body.home {
 		    -webkit-appearance: none;
 		    font-family: 'Lato', sans-serif;
 		    font-size: 16px;
+		    -moz-appearance:none;
+			text-indent: 0.01px;
+			text-overflow: '';
 		}
 		
 		.select-style:active, .select-style:hover {
@@ -846,6 +849,42 @@ body.home {
 		.goButton:hover, .goButton:active {
 			background-color: #c6c6c6;
 		}
+			
+		/* Select Menu for Filter Pane */
+		
+		.select-filter-style {
+			float: left;
+			margin-right: 30px;
+		    width: 290px;
+		    border-radius: 3px;
+		    overflow: hidden;
+		    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+		    padding: 6px;
+		}
+		
+		.select-filter-style select {
+		    padding: 5px 8px;
+		    width: 290px;
+		    border: none;
+		    box-shadow: none;
+		    background: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		    font-family: 'Lato', sans-serif;
+		    font-size: 16px;
+		    -moz-appearance:none;
+			text-indent: 0.01px;
+			text-overflow: '';
+		}
+		
+		.select-filter-style:active, .select-style:hover {
+			background-color: #c6c6c6;
+		}
+		
+		.select-filter-style select:focus {
+		    outline: none;
+		}
+
 		
 		/* Compare Form Elements */
 		
@@ -869,6 +908,9 @@ body.home {
 		    -webkit-appearance: none;
 		    font-family: 'Lato', sans-serif;
 		    font-size: 16px;
+		    -moz-appearance:none;
+			text-indent: 0.01px;
+			text-overflow: '';
 		}
 		
 		.select-compare-style:active, .select-compare-style:hover {
