@@ -2,11 +2,13 @@ $(document).ready(function() {
     actuate.load("viewer");
 
     var iHub = "/iportal";
-    var rptDocument = "/elections/Key Stats.rptdocument";
 	var reqOps = new actuate.RequestOptions();
 	var viewer;
 	
-	var bookmarks = ["keyStats"];
+	var rptDocuments = ["/elections/Key Stats.rptdocument",
+						"/elections/Media Breakdown.rptdocument"];
+	var bookmarks = ["keyStats", "MediaBreakdown"];
+	var heights = [200, 250]
 	
 	actuate.initialize( iHub, reqOps, "administrator", null, myInit);
 	
@@ -18,14 +20,15 @@ $(document).ready(function() {
             var uiOptions = new actuate.viewer.UIOptions();
                 uiOptions.enableToolBar(false);
 
-            viewer = [new actuate.Viewer("keyStats")];
+            viewer = [new actuate.Viewer("keyStats"),
+					  new actuate.Viewer("MediaBreakdown")];
 			
 			for(var i=0;i<viewer.length;i++) {
-                viewer[i].setReportDocument(rptDocument);
+                viewer[i].setReportDocument(rptDocuments[i]);
                 viewer[i].setReportletBookmark(bookmarks[i]);
                 viewer[i].setUIOptions(uiOptions);
-				viewer[i].setHeight(175);
-                viewer[i].setWidth($("#keyStats").width());
+				viewer[i].setHeight(heights[i]);
+                viewer[i].setWidth(980);
                 viewer[i].submit();
             }
         }catch(err){
