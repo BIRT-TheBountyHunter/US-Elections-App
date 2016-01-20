@@ -329,9 +329,17 @@
         <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Stats Data Set" id="5">
             <list-property name="columnHints">
                 <structure>
+                    <property name="columnName">candidateid</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">candidateid</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">candidateid</text-property>
+                </structure>
+                <structure>
                     <property name="columnName">TotalArticles</property>
                     <property name="analysis">measure</property>
                     <text-property name="displayName">TotalArticles</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">TotalArticles</text-property>
                 </structure>
                 <structure>
@@ -403,41 +411,46 @@
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">candidateid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">DoB</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Age</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">6</property>
+                        <property name="position">7</property>
                         <property name="name">State</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">7</property>
+                        <property name="position">8</property>
                         <property name="name">Position</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">8</property>
+                        <property name="position">9</property>
                         <property name="name">HeadshotImageName</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -447,62 +460,69 @@
             <list-property name="resultSet">
                 <structure>
                     <property name="position">1</property>
+                    <property name="name">candidateid</property>
+                    <property name="nativeName">candidateid</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
                     <property name="name">TotalArticles</property>
                     <property name="nativeName">TotalArticles</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">2</property>
+                    <property name="position">3</property>
                     <property name="name">Period</property>
                     <property name="nativeName">Period</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">3</property>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="nativeName">Type</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">DoB</property>
                     <property name="nativeName">DoB</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Age</property>
                     <property name="nativeName">Age</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">6</property>
+                    <property name="position">7</property>
                     <property name="name">State</property>
                     <property name="nativeName">State</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">7</property>
+                    <property name="position">8</property>
                     <property name="name">Position</property>
                     <property name="nativeName">Position</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">8</property>
+                    <property name="position">9</property>
                     <property name="name">HeadshotImageName</property>
                     <property name="nativeName">HeadshotImageName</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","Period","Type","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,1,1,1,1,1,1]}]]></xml-property>
+            <xml-property name="queryText"><![CDATA[{"Columns":["candidateid","TotalArticles","Period","Type","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,3,1,1,1,1,1,1]}]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
@@ -622,268 +642,23 @@
             <list-property name="privateDriverProperties">
                 <ex-property>
                     <name>DATA</name>
-                    <value>[["1203","30","positive","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["1223","30","negative","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3908","30","neutral","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["2406","60","positive","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["2500","60","negative","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["7020","60","neutral","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3609","90","positive","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3400","90","negative","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["10500","90","neutral","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3001","30","positive","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["3500","30","negative","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["5000","30","neutral","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["6001","60","positive","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["7000","60","negative","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["15000","60","neutral","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["9001","90","positive","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["10500","90","negative","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["20000","90","neutral","06/14/1946","69","New York","Business Magnate","Donald Trump.png"]]</value>
-                </ex-property>
-            </list-property>
-        </oda-data-set>
-        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Breakdown Data Set" id="6">
-            <list-property name="columnHints">
-                <structure>
-                    <property name="columnName">TotalArticles</property>
-                    <property name="analysis">measure</property>
-                    <text-property name="displayName">TotalArticles</text-property>
-                    <text-property name="heading">TotalArticles</text-property>
-                </structure>
-                <structure>
-                    <property name="columnName">PositiveArticles</property>
-                    <property name="analysis">measure</property>
-                    <text-property name="displayName">PositiveArticles</text-property>
-                    <property name="onColumnLayout">false</property>
-                    <text-property name="heading">PositiveArticles</text-property>
-                    <property name="indexColumn">false</property>
-                    <property name="compressed">false</property>
-                </structure>
-                <structure>
-                    <property name="columnName">NegativeArticles</property>
-                    <property name="analysis">measure</property>
-                    <text-property name="displayName">NegativeArticles</text-property>
-                    <property name="onColumnLayout">false</property>
-                    <text-property name="heading">NegativeArticles</text-property>
-                    <property name="indexColumn">false</property>
-                    <property name="compressed">false</property>
-                </structure>
-                <structure>
-                    <property name="columnName">NeutralArticles</property>
-                    <property name="analysis">measure</property>
-                    <text-property name="displayName">NeutralArticles</text-property>
-                    <property name="onColumnLayout">false</property>
-                    <text-property name="heading">NeutralArticles</text-property>
-                    <property name="indexColumn">false</property>
-                    <property name="compressed">false</property>
-                </structure>
-                <structure>
-                    <property name="columnName">Week</property>
-                    <property name="analysis">dimension</property>
-                    <text-property name="displayName">Week</text-property>
-                    <text-property name="heading">Week</text-property>
-                </structure>
-                <structure>
-                    <property name="columnName">Media</property>
-                    <property name="analysis">dimension</property>
-                    <text-property name="displayName">Media</text-property>
-                    <text-property name="heading">Media</text-property>
-                </structure>
-            </list-property>
-            <list-property name="parameters"/>
-            <structure name="cachedMetaData">
-                <list-property name="resultSet">
-                    <structure>
-                        <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
-                        <property name="dataType">integer</property>
-                    </structure>
-                    <structure>
-                        <property name="position">2</property>
-                        <property name="name">PositiveArticles</property>
-                        <property name="dataType">integer</property>
-                    </structure>
-                    <structure>
-                        <property name="position">3</property>
-                        <property name="name">NegativeArticles</property>
-                        <property name="dataType">integer</property>
-                    </structure>
-                    <structure>
-                        <property name="position">4</property>
-                        <property name="name">NeutralArticles</property>
-                        <property name="dataType">integer</property>
-                    </structure>
-                    <structure>
-                        <property name="position">5</property>
-                        <property name="name">Week</property>
-                        <property name="dataType">string</property>
-                    </structure>
-                    <structure>
-                        <property name="position">6</property>
-                        <property name="name">Media</property>
-                        <property name="dataType">string</property>
-                    </structure>
-                </list-property>
-            </structure>
-            <property name="dataSource">Static Data Source</property>
-            <list-property name="resultSet">
-                <structure>
-                    <property name="position">1</property>
-                    <property name="name">TotalArticles</property>
-                    <property name="nativeName">TotalArticles</property>
-                    <property name="dataType">integer</property>
-                    <property name="nativeDataType">3</property>
-                </structure>
-                <structure>
-                    <property name="position">2</property>
-                    <property name="name">PositiveArticles</property>
-                    <property name="nativeName">PositiveArticles</property>
-                    <property name="dataType">integer</property>
-                    <property name="nativeDataType">3</property>
-                </structure>
-                <structure>
-                    <property name="position">3</property>
-                    <property name="name">NegativeArticles</property>
-                    <property name="nativeName">NegativeArticles</property>
-                    <property name="dataType">integer</property>
-                    <property name="nativeDataType">3</property>
-                </structure>
-                <structure>
-                    <property name="position">4</property>
-                    <property name="name">NeutralArticles</property>
-                    <property name="nativeName">NeutralArticles</property>
-                    <property name="dataType">integer</property>
-                    <property name="nativeDataType">3</property>
-                </structure>
-                <structure>
-                    <property name="position">5</property>
-                    <property name="name">Week</property>
-                    <property name="nativeName">Week</property>
-                    <property name="dataType">string</property>
-                    <property name="nativeDataType">1</property>
-                </structure>
-                <structure>
-                    <property name="position">6</property>
-                    <property name="name">Media</property>
-                    <property name="nativeName">Media</property>
-                    <property name="dataType">string</property>
-                    <property name="nativeDataType">1</property>
-                </structure>
-            </list-property>
-            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","PositiveArticles","NegativeArticles","NeutralArticles","Week","Media"],"Types":[3,3,3,3,1,1]}]]></xml-property>
-            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-            <list-property name="privateDriverProperties">
-                <ex-property>
-                    <name>DATA</name>
-                    <value>[["3738","687","989","3062","1/3","CNN"],["6896","1201","1808","6124","1/10","CNN"],["9993","1890","2727","9876","1/17","CNN"],["18900","3600","5454","18800","1/25","CNN"],["3001","700","1000","4000","1/3","Fox News"],["6001","1301","19008","6200","1/10","Fox News"],["9001","1990","2828","9900","1/17","Fox News"],["19900","3700","5555","19800","1/25","Fox News"]]</value>
+                    <value>[["1","1203","30","positive","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","1223","30","negative","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","3908","30","neutral","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","2406","60","positive","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","2500","60","negative","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","7020","60","neutral","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","3609","90","positive","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","3400","90","negative","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["1","10500","90","neutral","09/08/1941","74","Vermont","US Senator","electionImages/1-large.png"],["13","3001","30","positive","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","3500","30","negative","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","5000","30","neutral","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","6001","60","positive","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","7000","60","negative","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","15000","60","neutral","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","9001","90","positive","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","10500","90","negative","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"],["13","20000","90","neutral","06/14/1946","69","New York","Business Magnate","electionImages/13-large.png"]]</value>
                 </ex-property>
             </list-property>
         </oda-data-set>
         <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Topic Stats Data Set" id="8">
             <list-property name="columnHints">
                 <structure>
+                    <property name="columnName">topicid</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">topicid</text-property>
+                    <text-property name="heading">topicid</text-property>
+                </structure>
+                <structure>
                     <property name="columnName">TotalArticles</property>
                     <property name="analysis">measure</property>
                     <text-property name="displayName">TotalArticles</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">TotalArticles</text-property>
                 </structure>
                 <structure>
@@ -899,18 +674,21 @@
                     <property name="columnName">Type</property>
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">Type</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">Type</text-property>
                 </structure>
                 <structure>
                     <property name="columnName">TopicImageName</property>
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">TopicImageName</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">TopicImageName</text-property>
                 </structure>
                 <structure>
                     <property name="columnName">Description</property>
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">Description</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">Description</text-property>
                 </structure>
             </list-property>
@@ -919,26 +697,31 @@
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">topicid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">TopicImageName</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Description</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -948,41 +731,48 @@
             <list-property name="resultSet">
                 <structure>
                     <property name="position">1</property>
+                    <property name="name">topicid</property>
+                    <property name="nativeName">topicid</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
                     <property name="name">TotalArticles</property>
                     <property name="nativeName">TotalArticles</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">2</property>
+                    <property name="position">3</property>
                     <property name="name">Period</property>
                     <property name="nativeName">Period</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">3</property>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="nativeName">Type</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">TopicImageName</property>
                     <property name="nativeName">TopicImageName</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Description</property>
                     <property name="nativeName">Description</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","Period","Type","TopicImageName","Description"],"Types":[3,3,1,1,1]}]]></xml-property>
+            <xml-property name="queryText"><![CDATA[{"Columns":["topicid","TotalArticles","Period","Type","TopicImageName","Description"],"Types":[3,3,3,1,1,1]}]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
@@ -1102,16 +892,24 @@
             <list-property name="privateDriverProperties">
                 <ex-property>
                     <name>DATA</name>
-                    <value>[["3738","30","positive","Firearms.png","Media coverage about guns and firearms ownership"],["4000","30","negative","Firearms.png","Media coverage about guns and firearms ownership"],["15000","30","neutral","Firearms.png","Media coverage about guns and firearms ownership"],["6896","60","positive","Firearms.png","Media coverage about guns and firearms ownership"],["13013","60","negative","Firearms.png","Media coverage about guns and firearms ownership"],["17000","60","neutral","Firearms.png","Media coverage about guns and firearms ownership"],["9993","90","positive","Firearms.png","Media coverage about guns and firearms ownership"],["2000","90","negative","Firearms.png","Media coverage about guns and firearms ownership"],["6633","90","neutral","Firearms.png","Media coverage about guns and firearms ownership"],["3001","30","positive","Healthcare.png","Media coverage about healthcare issues"],["3150","30","negative","Healthcare.png","Media coverage about healthcare issues"],["1609","30","neutral","Healthcare.png","Media coverage about healthcare issues"],["6001","60","positive","Healthcare.png","Media coverage about healthcare issues"],["6899","60","negative","Healthcare.png","Media coverage about healthcare issues"],["10001","60","neutral","Healthcare.png","Media coverage about healthcare issues"],["9001","90","positive","Healthcare.png","Media coverage about healthcare issues"],["12520","90","negative","Healthcare.png","Media coverage about healthcare issues"],["11700","90","neutral","Healthcare.png","Media coverage about healthcare issues"]]</value>
+                    <value>[["1","3738","30","positive","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","4000","30","negative","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","15000","30","neutral","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","6896","60","positive","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","13013","60","negative","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","17000","60","neutral","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","9993","90","positive","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","2000","90","negative","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["1","6633","90","neutral","electionImages/t1-large.png","Media coverage about guns and firearms ownership"],["2","3001","30","positive","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","3150","30","negative","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","1609","30","neutral","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","6001","60","positive","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","6899","60","negative","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","10001","60","neutral","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","9001","90","positive","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","12520","90","negative","electionImages/t2-large.png","Media coverage about healthcare issues"],["2","11700","90","neutral","electionImages/t2-large.png","Media coverage about healthcare issues"]]</value>
                 </ex-property>
             </list-property>
         </oda-data-set>
         <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Comparison Stats Data Set" id="10">
             <list-property name="columnHints">
                 <structure>
+                    <property name="columnName">candidateid</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">candidateid</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">candidateid</text-property>
+                </structure>
+                <structure>
                     <property name="columnName">TotalArticles</property>
                     <property name="analysis">measure</property>
                     <text-property name="displayName">TotalArticles</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">TotalArticles</text-property>
                 </structure>
                 <structure>
@@ -1145,6 +943,7 @@
                     <property name="columnName">Party</property>
                     <property name="analysis">dimension</property>
                     <text-property name="displayName">Party</text-property>
+                    <property name="onColumnLayout">false</property>
                     <text-property name="heading">Party</text-property>
                 </structure>
             </list-property>
@@ -1153,26 +952,31 @@
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">candidateid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">HeadshotImageName</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Party</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -1182,41 +986,48 @@
             <list-property name="resultSet">
                 <structure>
                     <property name="position">1</property>
+                    <property name="name">candidateid</property>
+                    <property name="nativeName">candidateid</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
                     <property name="name">TotalArticles</property>
                     <property name="nativeName">TotalArticles</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">2</property>
+                    <property name="position">3</property>
                     <property name="name">Period</property>
                     <property name="nativeName">Period</property>
                     <property name="dataType">integer</property>
                     <property name="nativeDataType">3</property>
                 </structure>
                 <structure>
-                    <property name="position">3</property>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="nativeName">Type</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">HeadshotImageName</property>
                     <property name="nativeName">HeadshotImageName</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Party</property>
                     <property name="nativeName">Party</property>
                     <property name="dataType">string</property>
                     <property name="nativeDataType">1</property>
                 </structure>
             </list-property>
-            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","Period","Type","HeadshotImageName","Party"],"Types":[3,3,1,1,1]}]]></xml-property>
+            <xml-property name="queryText"><![CDATA[{"Columns":["candidateid","TotalArticles","Period","Type","HeadshotImageName","Party"],"Types":[3,3,3,1,1,1]}]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
@@ -1336,7 +1147,7 @@
             <list-property name="privateDriverProperties">
                 <ex-property>
                     <name>DATA</name>
-                    <value>[["1203","30","positive","BernieSanders.png","Democratic"],["1223","30","negative","BernieSanders.png","Democratic"],["3908","30","neutral","BernieSanders.png","Democratic"],["2406","60","positive","BernieSanders.png","Democratic"],["2500","60","negative","BernieSanders.png","Democratic"],["7020","60","neutral","BernieSanders.png","Democratic"],["3609","90","positive","BernieSanders.png","Democratic"],["3400","90","negative","BernieSanders.png","Democratic"],["10500","90","neutral","BernieSanders.png","Democratic"],["3001","30","positive","Donald Trump.png","Republican"],["3500","30","negative","Donald Trump.png","Republican"],["5000","30","neutral","Donald Trump.png","Republican"],["6001","60","positive","Donald Trump.png","Republican"],["7000","60","negative","Donald Trump.png","Republican"],["15000","60","neutral","Donald Trump.png","Republican"],["9001","90","positive","Donald Trump.png","Republican"],["10500","90","negative","Donald Trump.png","Republican"],["20000","90","neutral","Donald Trump.png","Republican"]]</value>
+                    <value>[["1","1203","30","positive","electionImages/1-large.png","Democratic"],["1","1223","30","negative","electionImages/1-large.png","Democratic"],["1","3908","30","neutral","electionImages/1-large.png","Democratic"],["1","2406","60","positive","electionImages/1-large.png","Democratic"],["1","2500","60","negative","electionImages/1-large.png","Democratic"],["1","7020","60","neutral","electionImages/1-large.png","Democratic"],["1","3609","90","positive","electionImages/1-large.png","Democratic"],["1","3400","90","negative","electionImages/1-large.png","Democratic"],["1","10500","90","neutral","electionImages/1-large.png","Democratic"],["13","3001","30","positive","electionImages/13-large.png","Republican"],["13","3500","30","negative","electionImages/13-large.png","Republican"],["13","5000","30","neutral","electionImages/13-large.png","Republican"],["13","6001","60","positive","electionImages/13-large.png","Republican"],["13","7000","60","negative","electionImages/13-large.png","Republican"],["13","15000","60","neutral","electionImages/13-large.png","Republican"],["13","9001","90","positive","electionImages/13-large.png","Republican"],["13","10500","90","negative","electionImages/13-large.png","Republican"],["13","20000","90","neutral","electionImages/13-large.png","Republican"]]</value>
                 </ex-property>
             </list-property>
         </oda-data-set>
