@@ -1,1409 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
-    <xml-property name="externalMetadata">
-        <external-datamarts>
-            <datamart-node location="file:/D:/GitHub/US-Elections-App/BIRT%20Reports/US%20Elections%20App%20Report%20Project/Data%20Objects/Local%20-%20US%20Elections.datadesign">
-                <reference-elements>Test BDO Data Source;</reference-elements>
-                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-                    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150206-1039 Build &lt;4.2.3.v20150206-1039></property>
-                    <data-sources>
-                        <oda-data-source extensionID="com.actuate.data.oda.static" name="Static Data Source" id="2"/>
-                    </data-sources>
-                    <data-sets>
-                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Key Stats Articles Data Set" id="3">
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">TotalArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">TotalArticles</text-property>
-                                    <text-property name="heading">TotalArticles</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Period</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">Period</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Period</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Type</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Type</text-property>
-                                    <text-property name="heading">Type</text-property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">TotalArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">Period</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">Type</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Static Data Source</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">TotalArticles</property>
-                                    <property name="nativeName">TotalArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">Period</property>
-                                    <property name="nativeName">Period</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">Type</property>
-                                    <property name="nativeName">Type</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArticles","Period","Type"],"Types":[3,3,1]}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                            <list-property name="privateDriverProperties">
-                                <ex-property>
-                                    <name>DATA</name>
-                                    <value>[["882","30","positive"],["687","30","negative"],["989","30","neutral"],["1616","60","positive"],["1214","60","negative"],["1880","60","neutral"],["2445","90","positive"],["1820","90","negative"],["2740","90","neutral"],["4883","0","positive"],["3636","0","negative"],["5455","0","neutral"]]</value>
-                                </ex-property>
-                            </list-property>
-                        </oda-data-set>
-                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Stats Data Set" id="5">
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">TotalArtictles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">TotalArtictles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">TotalArtictles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">PositiveArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">PositiveArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">PositiveArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NegativeArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NegativeArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NegativeArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NeutralArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NeutralArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NeutralArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Period</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">Period</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Period</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">DoB</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">DoB</text-property>
-                                    <text-property name="heading">DoB</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Age</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Age</text-property>
-                                    <text-property name="heading">Age</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">State</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">State</text-property>
-                                    <text-property name="heading">State</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Position</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Position</text-property>
-                                    <text-property name="heading">Position</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">HeadshotImageName</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">HeadshotImageName</text-property>
-                                    <text-property name="heading">HeadshotImageName</text-property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">TotalArtictles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">PositiveArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">NegativeArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">4</property>
-                                        <property name="name">NeutralArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">5</property>
-                                        <property name="name">Period</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">6</property>
-                                        <property name="name">DoB</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">7</property>
-                                        <property name="name">Age</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">8</property>
-                                        <property name="name">State</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">9</property>
-                                        <property name="name">Position</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">10</property>
-                                        <property name="name">HeadshotImageName</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Static Data Source</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">TotalArtictles</property>
-                                    <property name="nativeName">TotalArtictles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">PositiveArticles</property>
-                                    <property name="nativeName">PositiveArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">NegativeArticles</property>
-                                    <property name="nativeName">NegativeArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">4</property>
-                                    <property name="name">NeutralArticles</property>
-                                    <property name="nativeName">NeutralArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">5</property>
-                                    <property name="name">Period</property>
-                                    <property name="nativeName">Period</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">6</property>
-                                    <property name="name">DoB</property>
-                                    <property name="nativeName">DoB</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">7</property>
-                                    <property name="name">Age</property>
-                                    <property name="nativeName">Age</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">8</property>
-                                    <property name="name">State</property>
-                                    <property name="nativeName">State</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">9</property>
-                                    <property name="name">Position</property>
-                                    <property name="nativeName">Position</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">10</property>
-                                    <property name="name">HeadshotImageName</property>
-                                    <property name="nativeName">HeadshotImageName</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,3,3,3,1,1,1,1,1]}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                            <list-property name="privateDriverProperties">
-                                <ex-property>
-                                    <name>DATA</name>
-                                    <value>[["3738","687","989","3062","30","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["6896","1201","1808","6124","60","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["9993","1890","2727","9876","90","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["18900","3600","5454","18800","0","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3001","700","1000","4000","30","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["6001","1301","19008","6200","60","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["9001","1990","2828","9900","90","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["19900","3700","5555","19800","0","06/14/1946","69","New York","Business Magnate","Donald Trump.png"]]</value>
-                                </ex-property>
-                            </list-property>
-                        </oda-data-set>
-                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Breakdown Data Set" id="6">
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">TotalArtictles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">TotalArtictles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">TotalArtictles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">PositiveArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">PositiveArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">PositiveArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NegativeArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NegativeArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NegativeArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NeutralArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NeutralArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NeutralArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Week</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Week</text-property>
-                                    <text-property name="heading">Week</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Media</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Media</text-property>
-                                    <text-property name="heading">Media</text-property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">TotalArtictles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">PositiveArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">NegativeArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">4</property>
-                                        <property name="name">NeutralArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">5</property>
-                                        <property name="name">Week</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">6</property>
-                                        <property name="name">Media</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Static Data Source</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">TotalArtictles</property>
-                                    <property name="nativeName">TotalArtictles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">PositiveArticles</property>
-                                    <property name="nativeName">PositiveArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">NegativeArticles</property>
-                                    <property name="nativeName">NegativeArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">4</property>
-                                    <property name="name">NeutralArticles</property>
-                                    <property name="nativeName">NeutralArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">5</property>
-                                    <property name="name">Week</property>
-                                    <property name="nativeName">Week</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">6</property>
-                                    <property name="name">Media</property>
-                                    <property name="nativeName">Media</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Week","Media"],"Types":[3,3,3,3,1,1]}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                            <list-property name="privateDriverProperties">
-                                <ex-property>
-                                    <name>DATA</name>
-                                    <value>[["3738","687","989","3062","1/3","CNN"],["6896","1201","1808","6124","1/10","CNN"],["9993","1890","2727","9876","1/17","CNN"],["18900","3600","5454","18800","1/25","CNN"],["3001","700","1000","4000","1/3","Fox News"],["6001","1301","19008","6200","1/10","Fox News"],["9001","1990","2828","9900","1/17","Fox News"],["19900","3700","5555","19800","1/25","Fox News"]]</value>
-                                </ex-property>
-                            </list-property>
-                        </oda-data-set>
-                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Candidate Comparison Stats Data Set" id="7">
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">TotalArtictles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">TotalArtictles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">TotalArtictles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">PositiveArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">PositiveArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">PositiveArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NegativeArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NegativeArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NegativeArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NeutralArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NeutralArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NeutralArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Period</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">Period</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Period</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">DoB</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">DoB</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">DoB</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Age</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Age</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Age</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">State</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">State</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">State</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Position</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Position</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Position</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">HeadshotImageName</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">HeadshotImageName</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">HeadshotImageName</text-property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">TotalArtictles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">PositiveArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">NegativeArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">4</property>
-                                        <property name="name">NeutralArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">5</property>
-                                        <property name="name">Period</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">6</property>
-                                        <property name="name">DoB</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">7</property>
-                                        <property name="name">Age</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">8</property>
-                                        <property name="name">State</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">9</property>
-                                        <property name="name">Position</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">10</property>
-                                        <property name="name">HeadshotImageName</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Static Data Source</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">TotalArtictles</property>
-                                    <property name="nativeName">TotalArtictles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">PositiveArticles</property>
-                                    <property name="nativeName">PositiveArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">NegativeArticles</property>
-                                    <property name="nativeName">NegativeArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">4</property>
-                                    <property name="name">NeutralArticles</property>
-                                    <property name="nativeName">NeutralArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">5</property>
-                                    <property name="name">Period</property>
-                                    <property name="nativeName">Period</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">6</property>
-                                    <property name="name">DoB</property>
-                                    <property name="nativeName">DoB</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">7</property>
-                                    <property name="name">Age</property>
-                                    <property name="nativeName">Age</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">8</property>
-                                    <property name="name">State</property>
-                                    <property name="nativeName">State</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">9</property>
-                                    <property name="name">Position</property>
-                                    <property name="nativeName">Position</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">10</property>
-                                    <property name="name">HeadshotImageName</property>
-                                    <property name="nativeName">HeadshotImageName</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","DoB","Age","State","Position","HeadshotImageName"],"Types":[3,3,3,3,3,1,1,1,1,1]}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                            <list-property name="privateDriverProperties">
-                                <ex-property>
-                                    <name>DATA</name>
-                                    <value>[["3738","687","989","3062","30","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["6896","1201","1808","6124","60","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["9993","1890","2727","9876","90","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["18900","3600","5454","18800","0","09/08/1941","74","Vermont","US Senator","BernieSanders.png"],["3001","700","1000","4000","30","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["6001","1301","19008","6200","60","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["9001","1990","2828","9900","90","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["19900","3700","5555","19800","0","06/14/1946","69","New York","Business Magnate","Donald Trump.png"],["3344","880","1000","4000","30","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["6688","1601","2000","8000","60","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["9900","2420","3000","1600","90","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"],["20900","3800","5600","20800","0","10/26/2947","68","New York","Former Secretary of State","Hillary Clinton.png"]]</value>
-                                </ex-property>
-                            </list-property>
-                        </oda-data-set>
-                        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Topic Stats Data Set" id="8">
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">TotalArtictles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">TotalArtictles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">TotalArtictles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">PositiveArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">PositiveArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">PositiveArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NegativeArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NegativeArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NegativeArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">NeutralArticles</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">NeutralArticles</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">NeutralArticles</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Period</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="displayName">Period</text-property>
-                                    <property name="onColumnLayout">false</property>
-                                    <text-property name="heading">Period</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">TopicImageName</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">TopicImageName</text-property>
-                                    <text-property name="heading">TopicImageName</text-property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Description</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="displayName">Description</text-property>
-                                    <text-property name="heading">Description</text-property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">TotalArtictles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">PositiveArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">NegativeArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">4</property>
-                                        <property name="name">NeutralArticles</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">5</property>
-                                        <property name="name">Period</property>
-                                        <property name="dataType">integer</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">6</property>
-                                        <property name="name">TopicImageName</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">7</property>
-                                        <property name="name">Description</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Static Data Source</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">TotalArtictles</property>
-                                    <property name="nativeName">TotalArtictles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">PositiveArticles</property>
-                                    <property name="nativeName">PositiveArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">NegativeArticles</property>
-                                    <property name="nativeName">NegativeArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">4</property>
-                                    <property name="name">NeutralArticles</property>
-                                    <property name="nativeName">NeutralArticles</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">5</property>
-                                    <property name="name">Period</property>
-                                    <property name="nativeName">Period</property>
-                                    <property name="dataType">integer</property>
-                                    <property name="nativeDataType">3</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">6</property>
-                                    <property name="name">TopicImageName</property>
-                                    <property name="nativeName">TopicImageName</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">7</property>
-                                    <property name="name">Description</property>
-                                    <property name="nativeName">Description</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">1</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[{"Columns":["TotalArtictles","PositiveArticles","NegativeArticles","NeutralArticles","Period","TopicImageName","Description"],"Types":[3,3,3,3,3,1,1]}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TotalArtictles</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>TotalArtictles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TotalArtictles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>PositiveArticles</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>PositiveArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>PositiveArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NegativeArticles</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NegativeArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NegativeArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>NeutralArticles</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>NeutralArticles</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>NeutralArticles</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Period</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-            <design:uiHints>
-              <design:displayName>Period</design:displayName>
-            </design:uiHints>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Period</design:label>
-            <design:formattingHints>
-              <design:displaySize>-1</design:displaySize>
-            </design:formattingHints>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                            <list-property name="privateDriverProperties">
-                                <ex-property>
-                                    <name>DATA</name>
-                                    <value>[["3738","687","989","3062","30","Firearms.png","Media coverage about guns and firearms ownership"],["6896","1201","1808","6124","60","Firearms.png","Media coverage about guns and firearms ownership"],["9993","1890","2727","9876","90","Firearms.png","Media coverage about guns and firearms ownership"],["18900","3600","5454","18800","0","Firearms.png","Media coverage about guns and firearms ownership"],["3001","700","1000","4000","30","Healthcare.png","Media coverage about healthcare issues"],["6001","1301","19008","6200","60","Healthcare.png","Media coverage about healthcare issues"],["9001","1990","2828","9900","90","Healthcare.png","Media coverage about healthcare issues"],["19900","3700","5555","19800","0","Healthcare.png","Media coverage about healthcare issues"]]</value>
-                                </ex-property>
-                            </list-property>
-                        </oda-data-set>
-                    </data-sets>
-                </datamart>
-            </datamart-node>
-        </external-datamarts>
-    </xml-property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150710-0101 Build &lt;4.2.3.v20150710-0101></property>
     <property name="units">in</property>
     <property name="theme">US Elections</property>
     <list-property name="libraries">
@@ -1428,6 +25,1146 @@
                 </style>
             </styles>
         </theme>
+        <report-item-theme type="Chart" name="US Elections Bar Chart Series Palette Reversed" id="946">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" unitSpacing="15.0">
+  <block>
+   <children _type="TitleBlock" anchor="7">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Arial" size="14.0" bold="false"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <background _body=",255,255,255,255"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" itemType="0" showValue="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Arial" size="10.0"/>
+     <color _body=",255,85,85,85"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <caption>
+      <font name="Arial" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.animation" value="true"/>
+  <extendedProperties name="jschart.client.script" value=""/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <caption>
+     <font name="Arial"/>
+     <color _body=",255,85,85,85"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <caption>
+      <font name="Arial"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,170,170,170"/>
+      <entries _body=",255,155,21,30"/>
+      <entries _body=",255,56,198,69"/>
+      <entries _body=",255,244,215,96"/>
+      <entries _body=",255,201,17,47"/>
+      <entries _body=",255,46,152,140"/>
+      <entries _body=",255,244,172,69"/>
+      <entries _body=",255,53,120,173"/>
+      <entries _body=",255,242,150,130"/>
+      <entries _body=",255,44,142,60"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition=""/>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <riserOutline _body=",0,255,255,255"/>
+     </series>
+     <series _type="LineSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="4">
+       <color _nil="1"/>
+      </lineAttributes>
+      <shadowColor _body=",0,255,255,255"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="" stacked="false" curve="false">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes visible="false">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial" size="10.0"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes visible="true">
+       <color _body=",255,85,85,85"/>
+      </leaderLineAttributes>
+      <sliceOutline _body=",255,255,255,255"/>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <caption>
+         <font name="Arial"/>
+         <color _body=",255,85,85,85"/>
+        </caption>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="3">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="" paletteLineColor="true">
+      <label>
+       <caption>
+        <font name="Arial">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker type="3" size="3" visible="true">
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes>
+       <color _body=",255,85,85,85"/>
+      </webLineAttributes>
+      <webLabel>
+       <caption>
+        <font name="Arial" size="10.0">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font name="Arial">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes visible="false">
+     <color _body=",255,85,85,85"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Lato" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="1">
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _body=",255,128,128,128"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption>
+      <font name="Arial"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,85,85,85"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Arial" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,170,170,170"/>
+     <entries _body=",255,155,21,30"/>
+     <entries _body=",255,56,198,69"/>
+     <entries _body=",255,244,215,96"/>
+     <entries _body=",255,201,17,47"/>
+     <entries _body=",255,46,152,140"/>
+     <entries _body=",255,244,172,69"/>
+     <entries _body=",255,53,120,173"/>
+     <entries _body=",255,242,150,130"/>
+     <entries _body=",255,44,142,60"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition=""/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+   </seriesDefinitions>
+   <lineAttributes visible="false">
+    <color _body=",255,85,85,85"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Lato" size="10.0"/>
+     <color _body=",255,0,0,0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="US Elections Bar Chart" id="945">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" unitSpacing="15.0">
+  <block>
+   <children _type="TitleBlock" anchor="7">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Arial" size="14.0" bold="false"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <background _body=",255,255,255,255"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" itemType="0" showValue="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Arial" size="10.0"/>
+     <color _body=",255,85,85,85"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <caption>
+      <font name="Arial" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.animation" value="true"/>
+  <extendedProperties name="jschart.client.script" value=""/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <caption>
+     <font name="Arial"/>
+     <color _body=",255,85,85,85"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <caption>
+      <font name="Arial"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,56,198,69"/>
+      <entries _body=",255,155,21,30"/>
+      <entries _body=",255,170,170,170"/>
+      <entries _body=",255,244,215,96"/>
+      <entries _body=",255,201,17,47"/>
+      <entries _body=",255,46,152,140"/>
+      <entries _body=",255,244,172,69"/>
+      <entries _body=",255,53,120,173"/>
+      <entries _body=",255,242,150,130"/>
+      <entries _body=",255,44,142,60"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition=""/>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <riserOutline _body=",0,255,255,255"/>
+     </series>
+     <series _type="LineSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="4">
+       <color _nil="1"/>
+      </lineAttributes>
+      <shadowColor _body=",0,255,255,255"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="" stacked="false" curve="false">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes visible="false">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial" size="10.0"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes visible="true">
+       <color _body=",255,85,85,85"/>
+      </leaderLineAttributes>
+      <sliceOutline _body=",255,255,255,255"/>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <caption>
+         <font name="Arial"/>
+         <color _body=",255,85,85,85"/>
+        </caption>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="3">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <caption>
+        <font name="Arial"/>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="" paletteLineColor="true">
+      <label>
+       <caption>
+        <font name="Arial">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker type="3" size="3" visible="true">
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes>
+       <color _body=",255,85,85,85"/>
+      </webLineAttributes>
+      <webLabel>
+       <caption>
+        <font name="Arial" size="10.0">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font name="Arial">
+         <alignment/>
+        </font>
+        <color _body=",255,85,85,85"/>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes visible="false">
+     <color _body=",255,85,85,85"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Lato" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="1">
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _body=",255,128,128,128"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption>
+      <font name="Arial"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,85,85,85"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Arial" size="10.0"/>
+      <color _body=",255,85,85,85"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,56,198,69"/>
+     <entries _body=",255,155,21,30"/>
+     <entries _body=",255,170,170,170"/>
+     <entries _body=",255,244,215,96"/>
+     <entries _body=",255,201,17,47"/>
+     <entries _body=",255,46,152,140"/>
+     <entries _body=",255,244,172,69"/>
+     <entries _body=",255,53,120,173"/>
+     <entries _body=",255,242,150,130"/>
+     <entries _body=",255,44,142,60"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition=""/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+   </seriesDefinitions>
+   <lineAttributes visible="false">
+    <color _body=",255,85,85,85"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Lato" size="10.0"/>
+     <color _body=",255,0,0,0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
     </themes>
     <components>
         <label name="ElectionsLabel" id="31">
