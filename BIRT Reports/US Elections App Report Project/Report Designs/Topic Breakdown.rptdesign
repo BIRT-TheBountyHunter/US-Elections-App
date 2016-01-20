@@ -13,16 +13,17 @@
         </structure>
     </list-property>
     <parameters>
-        <scalar-parameter name="Topic" id="39">
+        <scalar-parameter name="pTopicId" id="39">
             <property name="valueType">static</property>
-            <property name="dataType">string</property>
+            <property name="dataType">integer</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">firearms</value>
+                <value type="constant">1</value>
             </simple-property-list>
             <list-property name="selectionList">
                 <structure>
-                    <property name="value">firearms</property>
+                    <property name="value">1</property>
+                    <property name="label">Guns</property>
                 </structure>
             </list-property>
             <property name="paramType">multi-value</property>
@@ -33,77 +34,78 @@
                 <property name="category">Unformatted</property>
             </structure>
         </scalar-parameter>
-        <scalar-parameter name="Agency" id="40">
+        <scalar-parameter name="pMediaId" id="40">
             <property name="valueType">static</property>
             <property name="isRequired">true</property>
-            <property name="dataType">string</property>
+            <property name="dataType">integer</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">All Media</value>
+                <value type="constant">0</value>
             </simple-property-list>
             <list-property name="selectionList">
                 <structure>
-                    <property name="value">Al Jazeera</property>
+                    <property name="value">1</property>
                 </structure>
                 <structure>
-                    <property name="value">Asia News Network</property>
+                    <property name="value">2</property>
                 </structure>
                 <structure>
-                    <property name="value">BBC</property>
+                    <property name="value">3</property>
                 </structure>
                 <structure>
-                    <property name="value">Bloomberg</property>
+                    <property name="value">4</property>
                 </structure>
                 <structure>
-                    <property name="value">Business Insider</property>
+                    <property name="value">5</property>
                 </structure>
                 <structure>
-                    <property name="value">CNN</property>
+                    <property name="value">6</property>
                 </structure>
                 <structure>
-                    <property name="value">Chicago Tribune</property>
+                    <property name="value">7</property>
                 </structure>
                 <structure>
-                    <property name="value">Daily Mail</property>
+                    <property name="value">8</property>
                 </structure>
                 <structure>
-                    <property name="value">Fox News</property>
+                    <property name="value">9</property>
                 </structure>
                 <structure>
-                    <property name="value">NBC News</property>
+                    <property name="value">10</property>
                 </structure>
                 <structure>
-                    <property name="value">NJ.com</property>
+                    <property name="value">11</property>
                 </structure>
                 <structure>
-                    <property name="value">NPR</property>
+                    <property name="value">12</property>
                 </structure>
                 <structure>
-                    <property name="value">New York Post</property>
+                    <property name="value">13</property>
                 </structure>
                 <structure>
-                    <property name="value">New York Times</property>
+                    <property name="value">14</property>
                 </structure>
                 <structure>
-                    <property name="value">The Guardian</property>
+                    <property name="value">15</property>
                 </structure>
                 <structure>
-                    <property name="value">The Hill</property>
+                    <property name="value">16</property>
                 </structure>
                 <structure>
-                    <property name="value">USA Today</property>
+                    <property name="value">17</property>
                 </structure>
                 <structure>
-                    <property name="value">USNews</property>
+                    <property name="value">18</property>
                 </structure>
                 <structure>
-                    <property name="value">Vice</property>
+                    <property name="value">19</property>
                 </structure>
                 <structure>
-                    <property name="value">Yahoo</property>
+                    <property name="value">20</property>
                 </structure>
                 <structure>
-                    <property name="value">All Media</property>
+                    <property name="value">0</property>
+                    <property name="label">All Media</property>
                 </structure>
             </list-property>
             <property name="paramType">simple</property>
@@ -164,13 +166,34 @@
                     <property name="analysis">dimension</property>
                     <text-property name="heading">topic</text-property>
                 </structure>
+                <structure>
+                    <property name="columnName">agencyId</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">agencyId</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">topicId</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">topicId</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">candidateId</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">candidateId</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
             </list-property>
             <list-property name="filter">
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["topic"]</expression>
+                    <expression name="expr" type="javascript">row["topicId"]</expression>
                     <simple-property-list name="value1">
-                        <value>params["Topic"].value</value>
+                        <value>params["pTopicId"].value</value>
                     </simple-property-list>
                 </structure>
             </list-property>
@@ -206,6 +229,21 @@
                         <property name="name">topic</property>
                         <property name="dataType">string</property>
                     </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">agencyId</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">topicId</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">candidateId</property>
+                        <property name="dataType">integer</property>
+                    </structure>
                 </list-property>
             </structure>
             <property name="dataSource">Test BDO Data Source</property>
@@ -240,6 +278,21 @@
                     <property name="position">6</property>
                     <property name="name">topic</property>
                     <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">agencyId</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">topicId</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">candidateId</property>
+                    <property name="dataType">integer</property>
                 </structure>
             </list-property>
         </data-mart-data-set>
@@ -482,13 +535,13 @@
             <list-property name="filter">
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">if(params["Agency"].value == "All Media"){&#13;
-	row["agency"];&#13;
+                    <expression name="expr" type="javascript">if(params["pMediaId"].value == 0){&#13;
+	row["agencyId"];&#13;
 }else{&#13;
-	params["Agency"].value;&#13;
+	params["pMediaId"].value;&#13;
 }</expression>
                     <simple-property-list name="value1">
-                        <value type="javascript">row["agency"]</value>
+                        <value type="javascript">row["agencyId"]</value>
                     </simple-property-list>
                     <property name="updateAggregation">true</property>
                 </structure>
@@ -528,6 +581,26 @@
                     <text-property name="displayName">week</text-property>
                     <expression name="expression" type="javascript">dataSetRow["week"]</expression>
                     <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">topic</property>
+                    <expression name="expression" type="javascript">dataSetRow["topic"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">agencyId</property>
+                    <expression name="expression" type="javascript">dataSetRow["agencyId"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">topicId</property>
+                    <expression name="expression" type="javascript">dataSetRow["topicId"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">candidateId</property>
+                    <expression name="expression" type="javascript">dataSetRow["candidateId"]</expression>
+                    <property name="dataType">integer</property>
                 </structure>
             </list-property>
             <property name="theme">US Elections.US Elections Bar Chart Series Palette Reversed</property>

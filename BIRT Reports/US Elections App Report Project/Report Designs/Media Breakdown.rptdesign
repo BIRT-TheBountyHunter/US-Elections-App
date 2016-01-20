@@ -13,7 +13,7 @@
         </structure>
     </list-property>
     <parameters>
-        <scalar-parameter name="Tone" id="37">
+        <scalar-parameter name="pSentiment" id="37">
             <property name="valueType">static</property>
             <property name="isRequired">false</property>
             <property name="dataType">string</property>
@@ -26,6 +26,27 @@
                 <structure>
                     <property name="value">negative</property>
                     <property name="label">negative</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">radio-button</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pSort" id="39">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">Asc</property>
+                </structure>
+                <structure>
+                    <property name="value">Desc</property>
                 </structure>
             </list-property>
             <property name="paramType">simple</property>
@@ -180,7 +201,7 @@
   <extendedProperties name="enable.drill.series" value="true"/>
   <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;        if (series.name == &#039;positive&#039;)&#13;&#10;                seriesOptions.color = &quot;#38c645&quot;;&#13;&#10;        else if (series.name == &#039;negative&#039;)&#13;&#10;                seriesOptions.color = &quot;#9b151e&quot;;&#13;&#10;        else&#13;&#10;                seriesOptions.color = &quot;#aaaaaa&quot;;&#13;&#10; &#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;  if (this.getReportParameter(&quot;Tone&quot;) == &quot;positive&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[1].hide();&#13;&#10;    }&#13;&#10;    else  if (this.getReportParameter(&quot;Tone&quot;) == &quot;negative&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[2].hide();&#13;&#10;    }&#13;&#10;},&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is initially created.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; */&#13;&#10;beforeGeneration: function(options)&#13;&#10;{&#13;&#10;var html = &quot;&lt;div style=\&quot;font-family:Arial; font-size:10pt; display: none\&quot;&gt;&quot;;&#13;&#10;for (var i = 0; i &lt; options.xAxis.categories.length; i++) {&#13;&#10;html += &quot;&lt;div&gt;&quot; + options.xAxis.categories[i] + &quot;&lt;/div&gt;&quot;;&#13;&#10;}&#13;&#10;html += &quot;&lt;/div&gt;&quot;;&#13;&#10;var $div = $(html);&#13;&#10;$div.appendTo(&quot;body&quot;);&#13;&#10;var width = $div.width();&#13;&#10;$div.detach();&#13;&#10;&#13;&#10;options.xAxis.labels = {&#13;&#10;format: &quot;&lt;div style=\&quot;width:&quot; + width + &quot;px;text-align:left\&quot;&gt;{value}&lt;/div&gt;&quot;,&#13;&#10;useHTML: true&#13;&#10;};&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;        if (series.name == &#039;positive&#039;)&#13;&#10;                seriesOptions.color = &quot;#38c645&quot;;&#13;&#10;        else if (series.name == &#039;negative&#039;)&#13;&#10;                seriesOptions.color = &quot;#9b151e&quot;;&#13;&#10;        else&#13;&#10;                seriesOptions.color = &quot;#aaaaaa&quot;;&#13;&#10; &#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;  if (this.getReportParameter(&quot;pSentiment&quot;) == &quot;positive&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[1].hide();&#13;&#10;    }&#13;&#10;    else  if (this.getReportParameter(&quot;pSentiment&quot;) == &quot;negative&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[2].hide();&#13;&#10;    }&#13;&#10;},&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is initially created.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; */&#13;&#10;beforeGeneration: function(options)&#13;&#10;{&#13;&#10;var html = &quot;&lt;div style=\&quot;font-family:Arial; font-size:10pt; display: none\&quot;&gt;&quot;;&#13;&#10;for (var i = 0; i &lt; options.xAxis.categories.length; i++) {&#13;&#10;html += &quot;&lt;div&gt;&quot; + options.xAxis.categories[i] + &quot;&lt;/div&gt;&quot;;&#13;&#10;}&#13;&#10;html += &quot;&lt;/div&gt;&quot;;&#13;&#10;var $div = $(html);&#13;&#10;$div.appendTo(&quot;body&quot;);&#13;&#10;var width = $div.width();&#13;&#10;$div.detach();&#13;&#10;&#13;&#10;options.xAxis.labels = {&#13;&#10;format: &quot;&lt;div style=\&quot;width:&quot; + width + &quot;px;text-align:left\&quot;&gt;{value}&lt;/div&gt;&quot;,&#13;&#10;useHTML: true&#13;&#10;};&#13;&#10;},"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="A, B, C"/>
    <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
@@ -314,7 +335,7 @@
      <curveFitting _nil="1"/>
     </series>
     <grouping enabled="true"/>
-    <sortKey definition="if (params[&quot;Tone&quot;].value == &quot;positive&quot;)&#13;&#10;row[&quot;positive&quot;];&#13;&#10;else if (params[&quot;Tone&quot;].value == &quot;negative&quot;)&#13;&#10;row[&quot;negative&quot;];&#13;&#10;else row[&quot;positive&quot;]+row[&quot;negative&quot;]+row[&quot;neutral&quot;];"/>
+    <sortKey definition="if (params[&quot;pSentiment&quot;].value == &quot;positive&quot;)&#13;&#10;row[&quot;positive&quot;];&#13;&#10;else if (params[&quot;pSentiment&quot;].value == &quot;negative&quot;)&#13;&#10;row[&quot;negative&quot;];&#13;&#10;else row[&quot;positive&quot;]+row[&quot;negative&quot;]+row[&quot;neutral&quot;];"/>
    </seriesDefinitions>
    <lineAttributes>
     <color _nil="1"/>
@@ -355,9 +376,9 @@
             <list-property name="filter">
                 <structure>
                     <property name="operator">top-n</property>
-                    <expression name="expr" type="javascript">if (params["Tone"].value == "positive")&#13;
+                    <expression name="expr" type="javascript">if (params["pSentiment"].value == "positive")&#13;
 row["positive"];&#13;
-else if (params["Tone"].value == "negative")&#13;
+else if (params["pSentiment"].value == "negative")&#13;
 row["negative"];&#13;
 else row["positive"]+row["negative"]+row["neutral"];</expression>
                     <simple-property-list name="value1">
@@ -452,7 +473,7 @@ else row["positive"]+row["negative"]+row["neutral"];</expression>
   <extendedProperties name="enable.drill.category" value="true"/>
   <extendedProperties name="enable.drill.series" value="true"/>
   <extendedProperties name="enable.data.summarize" value="false"/>
-  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;        if (series.name == &#039;positive&#039;)&#13;&#10;                seriesOptions.color = &quot;#38c645&quot;;&#13;&#10;        else if (series.name == &#039;negative&#039;)&#13;&#10;                seriesOptions.color = &quot;#9b151e&quot;;&#13;&#10;        else&#13;&#10;                seriesOptions.color = &quot;#aaaaaa&quot;;&#13;&#10; &#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;  if (this.getReportParameter(&quot;Tone&quot;) == &quot;positive&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[1].hide();&#13;&#10;    }&#13;&#10;    else  if (this.getReportParameter(&quot;Tone&quot;) == &quot;negative&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[2].hide();&#13;&#10;    }&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is initially created.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; */&#13;&#10;beforeGeneration: function(options)&#13;&#10;{&#13;&#10;var html = &quot;&lt;div style=\&quot;font-family:Arial; font-size:10pt; display: none\&quot;&gt;&quot;;&#13;&#10;for (var i = 0; i &lt; options.xAxis.categories.length; i++) {&#13;&#10;html += &quot;&lt;div&gt;&quot; + options.xAxis.categories[i] + &quot;&lt;/div&gt;&quot;;&#13;&#10;}&#13;&#10;html += &quot;&lt;/div&gt;&quot;;&#13;&#10;var $div = $(html);&#13;&#10;$div.appendTo(&quot;body&quot;);&#13;&#10;var width = $div.width();&#13;&#10;$div.detach();&#13;&#10;&#13;&#10;options.xAxis.labels = {&#13;&#10;format: &quot;&lt;div style=\&quot;width:&quot; + width + &quot;px;text-align:left\&quot;&gt;{value}&lt;/div&gt;&quot;,&#13;&#10;useHTML: true&#13;&#10;};&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, chart, seriesIndex)&#13;&#10;{&#13;&#10;        if (series.name == &#039;positive&#039;)&#13;&#10;                seriesOptions.color = &quot;#38c645&quot;;&#13;&#10;        else if (series.name == &#039;negative&#039;)&#13;&#10;                seriesOptions.color = &quot;#9b151e&quot;;&#13;&#10;        else&#13;&#10;                seriesOptions.color = &quot;#aaaaaa&quot;;&#13;&#10; &#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{&#13;&#10;  if (this.getReportParameter(&quot;pSentiment&quot;) == &quot;positive&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[1].hide();&#13;&#10;    }&#13;&#10;    else  if (this.getReportParameter(&quot;pSentiment&quot;) == &quot;negative&quot;)&#13;&#10;   {&#13;&#10;        chart.getCore().series[0].hide();&#13;&#10;        chart.getCore().series[2].hide();&#13;&#10;    }&#13;&#10;},&#13;&#10;&#13;&#10;/**&#13;&#10; * Called before chart instance is initially created.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; */&#13;&#10;beforeGeneration: function(options)&#13;&#10;{&#13;&#10;var html = &quot;&lt;div style=\&quot;font-family:Arial; font-size:10pt; display: none\&quot;&gt;&quot;;&#13;&#10;for (var i = 0; i &lt; options.xAxis.categories.length; i++) {&#13;&#10;html += &quot;&lt;div&gt;&quot; + options.xAxis.categories[i] + &quot;&lt;/div&gt;&quot;;&#13;&#10;}&#13;&#10;html += &quot;&lt;/div&gt;&quot;;&#13;&#10;var $div = $(html);&#13;&#10;$div.appendTo(&quot;body&quot;);&#13;&#10;var width = $div.width();&#13;&#10;$div.detach();&#13;&#10;&#13;&#10;options.xAxis.labels = {&#13;&#10;format: &quot;&lt;div style=\&quot;width:&quot; + width + &quot;px;text-align:left\&quot;&gt;{value}&lt;/div&gt;&quot;,&#13;&#10;useHTML: true&#13;&#10;};&#13;&#10;},"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="A, B, C"/>
@@ -587,7 +608,7 @@ else row["positive"]+row["negative"]+row["neutral"];</expression>
      <curveFitting _nil="1"/>
     </series>
     <grouping enabled="true"/>
-    <sortKey definition="if (params[&quot;Tone&quot;].value == &quot;positive&quot;)&#13;&#10;row[&quot;positive&quot;];&#13;&#10;else if (params[&quot;Tone&quot;].value == &quot;negative&quot;)&#13;&#10;row[&quot;negative&quot;];&#13;&#10;else row[&quot;positive&quot;]+row[&quot;negative&quot;]+row[&quot;neutral&quot;];"/>
+    <sortKey definition="if (params[&quot;pSentiment&quot;].value == &quot;positive&quot;)&#13;&#10;row[&quot;positive&quot;];&#13;&#10;else if (params[&quot;pSentiment&quot;].value == &quot;negative&quot;)&#13;&#10;row[&quot;negative&quot;];&#13;&#10;else row[&quot;positive&quot;]+row[&quot;negative&quot;]+row[&quot;neutral&quot;];"/>
    </seriesDefinitions>
    <lineAttributes>
     <color _nil="1"/>
@@ -628,9 +649,9 @@ else row["positive"]+row["negative"]+row["neutral"];</expression>
             <list-property name="filter">
                 <structure>
                     <property name="operator">top-n</property>
-                    <expression name="expr" type="javascript">if (params["Tone"].value == "positive")&#13;
+                    <expression name="expr" type="javascript">if (params["pSentiment"].value == "positive")&#13;
 row["positive"];&#13;
-else if (params["Tone"].value == "negative")&#13;
+else if (params["pSentiment"].value == "negative")&#13;
 row["negative"];&#13;
 else row["positive"]+row["negative"]+row["neutral"];</expression>
                     <simple-property-list name="value1">
