@@ -12,6 +12,8 @@
 	<script language="javascript" type="text/javascript" src="js/jquery.idle-timer.js"></script>
 	<script language="javascript" type="text/javascript" src="js/featherlight.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/profilejsapiload.js"></script>
+	<script type="text/javascript" src="http://ot-election-ihub1.eastus.cloudapp.azure.com:8700/iportal/jsapi"></script>
 	
 	<!-- Share This -->
 	<script type="text/javascript">var switchTo5x=true;</script>
@@ -113,39 +115,13 @@
 			<!-- Heading -->
 		    <h1>Bernie Sanders</h1>
 		    <span class="democrat partyTitle">Democratic Party</span>
-		    
-		    <!-- Candidate Info -->
-		    <div id="candidateStats">
-		    	<span><strong>DoB:</strong> 09/08/1941</span>
-		    	<span><strong>Age:</strong> 74</span>
-		    	<span><strong>Location:</strong> Vermont</span>
-		    	<span><strong>Position:</strong> US Senator</span>
-		    </div>
-	
+			
 		</div>
 		
 		<!-- Key Stats -->
 		<div id="keyStats" class="clearfix">
-			
-			<div style="width: 775px; margin: 0 auto 0 auto;">
-		
-				<!-- Profile Photo -->
-				<div id="profileTopicImage">
-					<img src="img/profile-bernie-sanders-large.png" alt="Bernie Sanders" />
-				</div>
-				
-				<!-- Donut chart -->
-				<div id="overallMediaMentionsDonut">
-					Donut chart here
-				</div>
-				
-				<!-- Stats -->
-				<div id="overallKeyStatsTable">
-					Key stats here
-				</div>
-			
+			<div id="candidateStats" style="width: 775px; margin: 0 auto 0 auto;">
 			</div>
-		
 		</div>
 		
 		<!-- Methology Call Out -->
@@ -237,7 +213,7 @@
 			</div> <!-- End Filter Pane -->
 			
 			<!-- Analytic Container -->
-			<div class="analyticContainer">
+			<div id="MediaBreakdown">
 								
 			</div>
 			
