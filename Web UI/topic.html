@@ -12,6 +12,8 @@
 	<script language="javascript" type="text/javascript" src="js/jquery.idle-timer.js"></script>
 	<script language="javascript" type="text/javascript" src="js/featherlight.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/topicjsapiload.js"></script>
+	<script type="text/javascript" src="http://ot-election-ihub1.eastus.cloudapp.azure.com:8700/iportal/jsapi"></script>
 	
 	<!-- Share This -->
 	<script type="text/javascript">var switchTo5x=true;</script>
@@ -101,33 +103,13 @@
 
 			<!-- Heading -->
 		    <h1>Firearms</h1>
-		    
-		    <!-- Candidate Info -->
-		    <div id="candidateStats">
-		    	<span>Media coverage about gun control and firearm ownership</span>
-		    </div>
 	
 		</div>
 		
 		<!-- Key Stats -->
 		<div id="keyStats" class="clearfix">
 			
-			<div style="width: 775px; margin: 0 auto 0 auto;">
-		
-				<!-- Profile Photo -->
-				<div id="profileTopicImage">
-					<img src="img/icon-firearms-large.png" alt="Firearms" />
-				</div>
-				
-				<!-- Donut chart -->
-				<div id="overallMediaMentionsDonut">
-					Donut chart here
-				</div>
-				
-				<!-- Stats -->
-				<div id="overallKeyStatsTable">
-					Key stats here
-				</div>
+			<div id ="topicStats" style="width: 775px; margin: 0 auto 0 auto;">
 			
 			</div>
 		
@@ -177,7 +159,7 @@
 			</div> <!-- End Filter Pane -->
 			
 			<!-- Analytic Container -->
-			<div class="analyticContainer">
+			<div id="MediaBreakdown">
 								
 			</div>
 			
