@@ -182,25 +182,16 @@
 			<div class="filterPane">
 				<h5>Filters</h5>
 				
-				<h6>Media Sentiment</h6>
-				<ul class="clearfix">
-				  <li>
-				  	<input type="radio" id="candidates-sentimentShowAll" name="candidates-filterBySentiment" value="showall" checked>
-				  	<label for="candidates-sentimentShowAll">Show All</label>
-				  	<div class="check"></div>
-				  </li>
-				  <li>
-				  	<input type="radio" id="candidates-sentimentPositive" name="candidates-filterBySentiment" value="negative">
-				  	<label for="candidates-sentimentPositive">Positive mentions only</label>
-				  	<div class="check"></div>
-				  </li>
-				  
-				  <li>
-				    <input type="radio" id="candidates-sentimentNegative" name="candidates-filterBySentiment" value="positive">
-				    <label for="candidates-sentimentNegative">Negative mentions only</label>
-				    <div class="check"></div>
-				  </li>
-				</ul>
+				<h6>Media Source</h6>
+				<div class="select-filter-style">
+				  <select>
+				    <option value="All">All Media Sources</option>
+				    <option value="Fox News">FOX News</option>
+				    <option value="BBC">BBC</option>
+				    <option value="CNN">CNN</option>
+				    <option value="New York Times"> New York Times</option>
+				  </select>
+				</div>
 				
 			</div> <!-- End Filter Pane -->
 			
