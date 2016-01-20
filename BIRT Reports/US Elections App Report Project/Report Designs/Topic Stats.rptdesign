@@ -1177,6 +1177,64 @@
             <property name="namespace">ThemesReportItems31</property>
         </structure>
     </list-property>
+    <parameters>
+        <scalar-parameter name="pPeriod" id="1375">
+            <text-property name="promptText">Period</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">30</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">30</property>
+                    <property name="label">30</property>
+                </structure>
+                <structure>
+                    <property name="value">60</property>
+                    <property name="label">60</property>
+                </structure>
+                <structure>
+                    <property name="value">90</property>
+                    <property name="label">90</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pTopicId" id="1376">
+            <text-property name="promptText">Topic ID</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">1</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">1</property>
+                    <property name="label">1</property>
+                </structure>
+                <structure>
+                    <property name="value">2</property>
+                    <property name="label">2</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
     <data-sources>
         <data-mart-data-source name="Test BDO Data Source" id="74">
             <property name="datamartURL">Data Objects/Local - US Elections</property>
@@ -1232,20 +1290,27 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
                     <property name="columnName">CalcColor</property>
                     <property name="analysis">attribute</property>
                 </structure>
+                <structure>
+                    <property name="columnName">Description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Description</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Description</text-property>
+                </structure>
             </list-property>
             <list-property name="filter">
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["TopicImageName"]</expression>
+                    <expression name="expr" type="javascript">row["Period"]</expression>
                     <simple-property-list name="value1">
-                        <value>"Firearms.png"</value>
+                        <value>params["pPeriod"].value</value>
                     </simple-property-list>
                 </structure>
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["Period"]</expression>
+                    <expression name="expr" type="javascript">row["topicid"]</expression>
                     <simple-property-list name="value1">
-                        <value>30</value>
+                        <value>params["pTopicId"].value</value>
                     </simple-property-list>
                 </structure>
             </list-property>
@@ -1253,31 +1318,36 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">topicid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">TopicImageName</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Description</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">6</property>
+                        <property name="position">7</property>
                         <property name="name">CalcColor</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -1288,26 +1358,31 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
             <list-property name="selectedColumns">
                 <structure>
                     <property name="position">1</property>
-                    <property name="name">TotalArticles</property>
+                    <property name="name">topicid</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">2</property>
-                    <property name="name">Period</property>
+                    <property name="name">TotalArticles</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">3</property>
+                    <property name="name">Period</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">TopicImageName</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Description</property>
                     <property name="dataType">string</property>
                 </structure>
@@ -1398,8 +1473,8 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
                     <image id="1305">
                         <property name="height">168px</property>
                         <property name="width">168px</property>
-                        <property name="source">file</property>
-                        <expression name="uri" type="constant">Images/icon-firearms-large.png</expression>
+                        <property name="source">url</property>
+                        <expression name="uri" type="bre">[TopicImageName]</expression>
                     </image>
                 </cell>
                 <cell id="113">
@@ -1482,9 +1557,9 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
   <seriesDefinitions>
    <query definition=""/>
    <seriesPalette>
-    <entries _body=",255,56,198,69"/>
     <entries _body=",255,155,21,30"/>
     <entries _body=",255,170,170,170"/>
+    <entries _body=",255,56,198,69"/>
     <entries _body=",255,255,255,255"/>
     <entries _body=",255,128,207,255"/>
     <entries _body=",255,232,172,57"/>
@@ -1521,9 +1596,9 @@ else if (row["Type"] == "neutral")  { "aaaaaa" }</expression>
    <seriesDefinitions>
     <query definition=""/>
     <seriesPalette>
-     <entries _body=",255,56,198,69"/>
      <entries _body=",255,155,21,30"/>
      <entries _body=",255,170,170,170"/>
+     <entries _body=",255,56,198,69"/>
      <entries _body=",255,255,255,255"/>
      <entries _body=",255,128,207,255"/>
      <entries _body=",255,232,172,57"/>

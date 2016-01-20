@@ -1177,6 +1177,90 @@
             <property name="namespace">ThemesReportItems31</property>
         </structure>
     </list-property>
+    <parameters>
+        <scalar-parameter name="pPeriod" id="1474">
+            <text-property name="promptText">Period</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">30</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">30</property>
+                    <property name="label">30</property>
+                </structure>
+                <structure>
+                    <property name="value">60</property>
+                    <property name="label">60</property>
+                </structure>
+                <structure>
+                    <property name="value">90</property>
+                    <property name="label">90</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pCandidateId1" id="1475">
+            <text-property name="promptText">Candidate ID 1</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">1</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">1</property>
+                    <property name="label">1</property>
+                </structure>
+                <structure>
+                    <property name="value">13</property>
+                    <property name="label">13</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pCandidateId2" id="1476">
+            <text-property name="promptText">Candidate ID 2</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">13</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">1</property>
+                    <property name="label">1</property>
+                </structure>
+                <structure>
+                    <property name="value">13</property>
+                    <property name="label">13</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
     <data-sources>
         <data-mart-data-source name="Test BDO Data Source" id="25">
             <property name="datamartURL">Data Objects/Local - US Elections</property>
@@ -1248,20 +1332,27 @@ else {"#0000ff" }</expression>
                     <property name="columnName">PartyColor</property>
                     <property name="analysis">attribute</property>
                 </structure>
+                <structure>
+                    <property name="columnName">Party</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Party</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Party</text-property>
+                </structure>
             </list-property>
             <list-property name="filter">
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["HeadshotImageName"]</expression>
+                    <expression name="expr" type="javascript">row["Period"]</expression>
                     <simple-property-list name="value1">
-                        <value>"BernieSanders.png"</value>
+                        <value>params["pPeriod"].value</value>
                     </simple-property-list>
                 </structure>
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["Period"]</expression>
+                    <expression name="expr" type="javascript">row["candidateid"]</expression>
                     <simple-property-list name="value1">
-                        <value>30</value>
+                        <value>params["pCandidateId1"].value</value>
                     </simple-property-list>
                 </structure>
             </list-property>
@@ -1269,36 +1360,41 @@ else {"#0000ff" }</expression>
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">candidateid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">HeadshotImageName</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Party</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">6</property>
+                        <property name="position">7</property>
                         <property name="name">CalcColor</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">7</property>
+                        <property name="position">8</property>
                         <property name="name">PartyColor</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -1309,26 +1405,31 @@ else {"#0000ff" }</expression>
             <list-property name="selectedColumns">
                 <structure>
                     <property name="position">1</property>
-                    <property name="name">TotalArticles</property>
+                    <property name="name">candidateid</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">2</property>
-                    <property name="name">Period</property>
+                    <property name="name">TotalArticles</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">3</property>
+                    <property name="name">Period</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">HeadshotImageName</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Party</property>
                     <property name="dataType">string</property>
                 </structure>
@@ -1398,20 +1499,27 @@ else {"#0000ff" }</expression>
                     <property name="columnName">PartyColor</property>
                     <property name="analysis">attribute</property>
                 </structure>
+                <structure>
+                    <property name="columnName">Party</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Party</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">Party</text-property>
+                </structure>
             </list-property>
             <list-property name="filter">
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["HeadshotImageName"]</expression>
+                    <expression name="expr" type="javascript">row["Period"]</expression>
                     <simple-property-list name="value1">
-                        <value>"Donald Trump.png"</value>
+                        <value>params["pPeriod"].value</value>
                     </simple-property-list>
                 </structure>
                 <structure>
                     <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["Period"]</expression>
+                    <expression name="expr" type="javascript">row["candidateid"]</expression>
                     <simple-property-list name="value1">
-                        <value>30</value>
+                        <value>params["pCandidateId2"].value</value>
                     </simple-property-list>
                 </structure>
             </list-property>
@@ -1419,36 +1527,41 @@ else {"#0000ff" }</expression>
                 <list-property name="resultSet">
                     <structure>
                         <property name="position">1</property>
-                        <property name="name">TotalArticles</property>
+                        <property name="name">candidateid</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">2</property>
-                        <property name="name">Period</property>
+                        <property name="name">TotalArticles</property>
                         <property name="dataType">integer</property>
                     </structure>
                     <structure>
                         <property name="position">3</property>
+                        <property name="name">Period</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
                         <property name="name">Type</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">4</property>
+                        <property name="position">5</property>
                         <property name="name">HeadshotImageName</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">5</property>
+                        <property name="position">6</property>
                         <property name="name">Party</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">6</property>
+                        <property name="position">7</property>
                         <property name="name">CalcColor</property>
                         <property name="dataType">string</property>
                     </structure>
                     <structure>
-                        <property name="position">7</property>
+                        <property name="position">8</property>
                         <property name="name">PartyColor</property>
                         <property name="dataType">string</property>
                     </structure>
@@ -1459,26 +1572,31 @@ else {"#0000ff" }</expression>
             <list-property name="selectedColumns">
                 <structure>
                     <property name="position">1</property>
-                    <property name="name">TotalArticles</property>
+                    <property name="name">candidateid</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">2</property>
-                    <property name="name">Period</property>
+                    <property name="name">TotalArticles</property>
                     <property name="dataType">integer</property>
                 </structure>
                 <structure>
                     <property name="position">3</property>
+                    <property name="name">Period</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
                     <property name="name">Type</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">4</property>
+                    <property name="position">5</property>
                     <property name="name">HeadshotImageName</property>
                     <property name="dataType">string</property>
                 </structure>
                 <structure>
-                    <property name="position">5</property>
+                    <property name="position">6</property>
                     <property name="name">Party</property>
                     <property name="dataType">string</property>
                 </structure>
@@ -1568,7 +1686,7 @@ else {"#0000ff" }</expression>
                                         <property name="height">168px</property>
                                         <property name="width">168px</property>
                                         <property name="source">url</property>
-                                        <expression name="uri" type="constant">electionImages/1-large.png</expression>
+                                        <expression name="uri" type="bre">[HeadshotImageName]</expression>
                                     </image>
                                 </cell>
                             </row>
@@ -1669,7 +1787,7 @@ else {"#0000ff" }</expression>
                                         <property name="height">168px</property>
                                         <property name="width">168px</property>
                                         <property name="source">url</property>
-                                        <expression name="uri" type="constant">electionImages/13-large.png</expression>
+                                        <expression name="uri" type="bre">[HeadshotImageName]</expression>
                                     </image>
                                 </cell>
                             </row>
@@ -1792,9 +1910,9 @@ else {"#0000ff" }</expression>
   <seriesDefinitions>
    <query definition=""/>
    <seriesPalette>
-    <entries _body=",255,56,198,69"/>
     <entries _body=",255,155,21,30"/>
     <entries _body=",255,170,170,170"/>
+    <entries _body=",255,56,198,69"/>
     <entries _body=",255,255,255,255"/>
     <entries _body=",255,128,207,255"/>
     <entries _body=",255,232,172,57"/>
@@ -1831,9 +1949,9 @@ else {"#0000ff" }</expression>
    <seriesDefinitions>
     <query definition=""/>
     <seriesPalette>
-     <entries _body=",255,56,198,69"/>
      <entries _body=",255,155,21,30"/>
      <entries _body=",255,170,170,170"/>
+     <entries _body=",255,56,198,69"/>
      <entries _body=",255,255,255,255"/>
      <entries _body=",255,128,207,255"/>
      <entries _body=",255,232,172,57"/>
@@ -2163,9 +2281,9 @@ else {"#0000ff" }</expression>
   <seriesDefinitions>
    <query definition=""/>
    <seriesPalette>
-    <entries _body=",255,56,198,69"/>
     <entries _body=",255,155,21,30"/>
     <entries _body=",255,170,170,170"/>
+    <entries _body=",255,56,198,69"/>
     <entries _body=",255,255,255,255"/>
     <entries _body=",255,128,207,255"/>
     <entries _body=",255,232,172,57"/>
@@ -2202,9 +2320,9 @@ else {"#0000ff" }</expression>
    <seriesDefinitions>
     <query definition=""/>
     <seriesPalette>
-     <entries _body=",255,56,198,69"/>
      <entries _body=",255,155,21,30"/>
      <entries _body=",255,170,170,170"/>
+     <entries _body=",255,56,198,69"/>
      <entries _body=",255,255,255,255"/>
      <entries _body=",255,128,207,255"/>
      <entries _body=",255,232,172,57"/>
