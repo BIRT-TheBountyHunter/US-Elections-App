@@ -1,0 +1,421 @@
+agency,positive,negative,neutral,week,topic,candidate
+Yahoo,227,199,946,7/10/2016,firearms,Bernie Sanders
+Yahoo,180,258,1003,7/17/2016,firearms,Bernie Sanders
+Yahoo,289,269,1138,7/24/2016,firearms,Bernie Sanders
+Yahoo,278,108,987,7/31/2016,firearms,Bernie Sanders
+Yahoo,253,157,517,8/7/2016,firearms,Bernie Sanders
+Yahoo,184,277,1193,8/14/2016,firearms,Bernie Sanders
+Yahoo,142,294,1458,8/21/2016,firearms,Bernie Sanders
+Yahoo,108,147,1278,8/28/2016,firearms,Bernie Sanders
+Yahoo,295,106,440,9/4/2016,firearms,Bernie Sanders
+Yahoo,265,194,777,9/11/2016,firearms,Bernie Sanders
+Yahoo,104,153,1186,9/18/2016,firearms,Bernie Sanders
+Yahoo,250,166,684,9/25/2016,firearms,Bernie Sanders
+Yahoo,268,116,433,10/2/2016,firearms,Bernie Sanders
+Yahoo,186,104,624,10/9/2016,firearms,Bernie Sanders
+Yahoo,186,104,624,10/16/2016,firearms,Bernie Sanders
+Yahoo,241,247,545,10/23/2016,firearms,Bernie Sanders
+Yahoo,142,270,755,10/30/2016,firearms,Bernie Sanders
+Yahoo,171,136,417,11/6/2016,firearms,Bernie Sanders
+Yahoo,189,232,828,11/13/2016,firearms,Bernie Sanders
+Yahoo,288,184,940,11/20/2016,firearms,Bernie Sanders
+Yahoo,121,179,540,11/27/2016,firearms,Bernie Sanders
+CNN,145,168,993,7/10/2016,firearms,Bernie Sanders
+CNN,145,279,1143,7/17/2016,firearms,Bernie Sanders
+CNN,212,121,1028,7/24/2016,firearms,Bernie Sanders
+CNN,195,275,970,7/31/2016,firearms,Bernie Sanders
+CNN,270,249,507,8/7/2016,firearms,Bernie Sanders
+CNN,283,172,708,8/14/2016,firearms,Bernie Sanders
+CNN,257,267,1457,8/21/2016,firearms,Bernie Sanders
+CNN,181,205,1215,8/28/2016,firearms,Bernie Sanders
+CNN,148,294,1022,9/4/2016,firearms,Bernie Sanders
+CNN,201,256,1494,9/11/2016,firearms,Bernie Sanders
+CNN,171,100,664,9/18/2016,firearms,Bernie Sanders
+CNN,140,212,782,9/25/2016,firearms,Bernie Sanders
+CNN,108,239,545,10/2/2016,firearms,Bernie Sanders
+CNN,185,195,891,10/9/2016,firearms,Bernie Sanders
+CNN,185,195,891,10/16/2016,firearms,Bernie Sanders
+CNN,295,283,951,10/23/2016,firearms,Bernie Sanders
+CNN,261,249,494,10/30/2016,firearms,Bernie Sanders
+CNN,106,193,542,11/6/2016,firearms,Bernie Sanders
+CNN,290,241,696,11/13/2016,firearms,Bernie Sanders
+CNN,193,275,832,11/20/2016,firearms,Bernie Sanders
+CNN,226,226,1403,11/27/2016,firearms,Bernie Sanders
+Fox News,227,127,1499,7/10/2016,firearms,Bernie Sanders
+Fox News,276,253,631,7/17/2016,firearms,Bernie Sanders
+Fox News,298,167,408,7/24/2016,firearms,Bernie Sanders
+Fox News,200,174,571,7/31/2016,firearms,Bernie Sanders
+Fox News,189,113,1117,8/7/2016,firearms,Bernie Sanders
+Fox News,129,126,545,8/14/2016,firearms,Bernie Sanders
+Fox News,130,205,1092,8/21/2016,firearms,Bernie Sanders
+Fox News,272,185,819,8/28/2016,firearms,Bernie Sanders
+Fox News,217,225,1046,9/4/2016,firearms,Bernie Sanders
+Fox News,262,296,1307,9/11/2016,firearms,Bernie Sanders
+Fox News,154,292,1396,9/18/2016,firearms,Bernie Sanders
+Fox News,178,254,1008,9/25/2016,firearms,Bernie Sanders
+Fox News,276,182,780,10/2/2016,firearms,Bernie Sanders
+Fox News,215,219,1345,10/9/2016,firearms,Bernie Sanders
+Fox News,215,219,1345,10/16/2016,firearms,Bernie Sanders
+Fox News,277,139,1027,10/23/2016,firearms,Bernie Sanders
+Fox News,189,279,725,10/30/2016,firearms,Bernie Sanders
+Fox News,260,280,1407,11/6/2016,firearms,Bernie Sanders
+Fox News,101,141,1201,11/13/2016,firearms,Bernie Sanders
+Fox News,140,188,838,11/20/2016,firearms,Bernie Sanders
+Fox News,232,136,1120,11/27/2016,firearms,Bernie Sanders
+NPR,157,191,784,7/10/2016,firearms,Bernie Sanders
+NPR,185,281,702,7/17/2016,firearms,Bernie Sanders
+NPR,161,237,416,7/24/2016,firearms,Bernie Sanders
+NPR,122,110,1347,7/31/2016,firearms,Bernie Sanders
+NPR,111,249,582,8/7/2016,firearms,Bernie Sanders
+NPR,267,130,1435,8/14/2016,firearms,Bernie Sanders
+NPR,172,174,1204,8/21/2016,firearms,Bernie Sanders
+NPR,251,282,1069,8/28/2016,firearms,Bernie Sanders
+NPR,282,154,959,9/4/2016,firearms,Bernie Sanders
+NPR,266,160,1159,9/11/2016,firearms,Bernie Sanders
+NPR,155,250,795,9/18/2016,firearms,Bernie Sanders
+NPR,236,119,510,9/25/2016,firearms,Bernie Sanders
+NPR,129,132,794,10/2/2016,firearms,Bernie Sanders
+NPR,211,269,452,10/9/2016,firearms,Bernie Sanders
+NPR,211,269,452,10/16/2016,firearms,Bernie Sanders
+NPR,100,254,1233,10/23/2016,firearms,Bernie Sanders
+NPR,242,177,510,10/30/2016,firearms,Bernie Sanders
+NPR,154,103,413,11/6/2016,firearms,Bernie Sanders
+NPR,140,202,477,11/13/2016,firearms,Bernie Sanders
+NPR,143,202,1055,11/20/2016,firearms,Bernie Sanders
+NPR,288,259,417,11/27/2016,firearms,Bernie Sanders
+BBC,209,122,890,7/10/2016,firearms,Bernie Sanders
+BBC,283,204,1193,7/17/2016,firearms,Bernie Sanders
+BBC,235,262,578,7/24/2016,firearms,Bernie Sanders
+BBC,246,132,1282,7/31/2016,firearms,Bernie Sanders
+BBC,233,201,972,8/7/2016,firearms,Bernie Sanders
+BBC,247,158,1179,8/14/2016,firearms,Bernie Sanders
+BBC,242,108,582,8/21/2016,firearms,Bernie Sanders
+BBC,173,280,769,8/28/2016,firearms,Bernie Sanders
+BBC,214,150,1379,9/4/2016,firearms,Bernie Sanders
+BBC,274,247,978,9/11/2016,firearms,Bernie Sanders
+BBC,135,108,570,9/18/2016,firearms,Bernie Sanders
+BBC,106,299,1387,9/25/2016,firearms,Bernie Sanders
+BBC,136,279,665,10/2/2016,firearms,Bernie Sanders
+BBC,196,154,1166,10/9/2016,firearms,Bernie Sanders
+BBC,196,154,1166,10/16/2016,firearms,Bernie Sanders
+BBC,267,299,616,10/23/2016,firearms,Bernie Sanders
+BBC,239,238,898,10/30/2016,firearms,Bernie Sanders
+BBC,217,279,1182,11/6/2016,firearms,Bernie Sanders
+BBC,244,208,1269,11/13/2016,firearms,Bernie Sanders
+BBC,289,162,1484,11/20/2016,firearms,Bernie Sanders
+BBC,254,194,675,11/27/2016,firearms,Bernie Sanders
+The Guardian,296,145,1149,7/10/2016,firearms,Bernie Sanders
+The Guardian,221,297,1145,7/17/2016,firearms,Bernie Sanders
+The Guardian,231,295,451,7/24/2016,firearms,Bernie Sanders
+The Guardian,226,241,974,7/31/2016,firearms,Bernie Sanders
+The Guardian,127,241,908,8/7/2016,firearms,Bernie Sanders
+The Guardian,250,174,1456,8/14/2016,firearms,Bernie Sanders
+The Guardian,280,132,1353,8/21/2016,firearms,Bernie Sanders
+The Guardian,165,194,406,8/28/2016,firearms,Bernie Sanders
+The Guardian,258,100,502,9/4/2016,firearms,Bernie Sanders
+The Guardian,213,197,1276,9/11/2016,firearms,Bernie Sanders
+The Guardian,221,230,1357,9/18/2016,firearms,Bernie Sanders
+The Guardian,109,240,400,9/25/2016,firearms,Bernie Sanders
+The Guardian,270,149,1435,10/2/2016,firearms,Bernie Sanders
+The Guardian,266,297,727,10/9/2016,firearms,Bernie Sanders
+The Guardian,266,297,727,10/16/2016,firearms,Bernie Sanders
+The Guardian,158,182,1426,10/23/2016,firearms,Bernie Sanders
+The Guardian,204,136,518,10/30/2016,firearms,Bernie Sanders
+The Guardian,226,280,1032,11/6/2016,firearms,Bernie Sanders
+The Guardian,195,136,1472,11/13/2016,firearms,Bernie Sanders
+The Guardian,251,175,1117,11/20/2016,firearms,Bernie Sanders
+The Guardian,224,168,719,11/27/2016,firearms,Bernie Sanders
+Al Jazeera,224,167,406,7/10/2016,firearms,Bernie Sanders
+Al Jazeera,287,136,749,7/17/2016,firearms,Bernie Sanders
+Al Jazeera,290,287,435,7/24/2016,firearms,Bernie Sanders
+Al Jazeera,257,255,493,7/31/2016,firearms,Bernie Sanders
+Al Jazeera,107,222,1345,8/7/2016,firearms,Bernie Sanders
+Al Jazeera,298,244,1102,8/14/2016,firearms,Bernie Sanders
+Al Jazeera,284,216,1492,8/21/2016,firearms,Bernie Sanders
+Al Jazeera,216,237,1346,8/28/2016,firearms,Bernie Sanders
+Al Jazeera,174,212,935,9/4/2016,firearms,Bernie Sanders
+Al Jazeera,269,186,705,9/11/2016,firearms,Bernie Sanders
+Al Jazeera,118,141,1192,9/18/2016,firearms,Bernie Sanders
+Al Jazeera,106,228,1172,9/25/2016,firearms,Bernie Sanders
+Al Jazeera,135,192,750,10/2/2016,firearms,Bernie Sanders
+Al Jazeera,134,240,1282,10/9/2016,firearms,Bernie Sanders
+Al Jazeera,134,240,1282,10/16/2016,firearms,Bernie Sanders
+Al Jazeera,280,178,451,10/23/2016,firearms,Bernie Sanders
+Al Jazeera,164,241,1060,10/30/2016,firearms,Bernie Sanders
+Al Jazeera,125,236,919,11/6/2016,firearms,Bernie Sanders
+Al Jazeera,260,240,723,11/13/2016,firearms,Bernie Sanders
+Al Jazeera,299,110,1334,11/20/2016,firearms,Bernie Sanders
+Al Jazeera,183,285,1425,11/27/2016,firearms,Bernie Sanders
+Bloomberg,184,132,1428,7/10/2016,firearms,Bernie Sanders
+Bloomberg,265,269,1169,7/17/2016,firearms,Bernie Sanders
+Bloomberg,270,182,892,7/24/2016,firearms,Bernie Sanders
+Bloomberg,143,197,583,7/31/2016,firearms,Bernie Sanders
+Bloomberg,102,244,1019,8/7/2016,firearms,Bernie Sanders
+Bloomberg,211,128,404,8/14/2016,firearms,Bernie Sanders
+Bloomberg,138,125,531,8/21/2016,firearms,Bernie Sanders
+Bloomberg,170,109,926,8/28/2016,firearms,Bernie Sanders
+Bloomberg,226,240,843,9/4/2016,firearms,Bernie Sanders
+Bloomberg,186,182,1233,9/11/2016,firearms,Bernie Sanders
+Bloomberg,130,203,566,9/18/2016,firearms,Bernie Sanders
+Bloomberg,235,120,1416,9/25/2016,firearms,Bernie Sanders
+Bloomberg,157,288,1405,10/2/2016,firearms,Bernie Sanders
+Bloomberg,130,286,1104,10/9/2016,firearms,Bernie Sanders
+Bloomberg,130,286,1104,10/16/2016,firearms,Bernie Sanders
+Bloomberg,155,285,1425,10/23/2016,firearms,Bernie Sanders
+Bloomberg,171,244,1038,10/30/2016,firearms,Bernie Sanders
+Bloomberg,262,168,729,11/6/2016,firearms,Bernie Sanders
+Bloomberg,112,295,1471,11/13/2016,firearms,Bernie Sanders
+Bloomberg,121,244,1379,11/20/2016,firearms,Bernie Sanders
+Bloomberg,274,248,952,11/27/2016,firearms,Bernie Sanders
+Daily Mail,152,278,1005,7/10/2016,firearms,Bernie Sanders
+Daily Mail,128,262,1438,7/17/2016,firearms,Bernie Sanders
+Daily Mail,130,158,424,7/24/2016,firearms,Bernie Sanders
+Daily Mail,190,118,747,7/31/2016,firearms,Bernie Sanders
+Daily Mail,157,219,1111,8/7/2016,firearms,Bernie Sanders
+Daily Mail,284,110,803,8/14/2016,firearms,Bernie Sanders
+Daily Mail,271,123,988,8/21/2016,firearms,Bernie Sanders
+Daily Mail,156,248,1446,8/28/2016,firearms,Bernie Sanders
+Daily Mail,172,140,843,9/4/2016,firearms,Bernie Sanders
+Daily Mail,198,207,632,9/11/2016,firearms,Bernie Sanders
+Daily Mail,101,116,911,9/18/2016,firearms,Bernie Sanders
+Daily Mail,114,134,794,9/25/2016,firearms,Bernie Sanders
+Daily Mail,212,173,725,10/2/2016,firearms,Bernie Sanders
+Daily Mail,209,246,1252,10/9/2016,firearms,Bernie Sanders
+Daily Mail,209,246,1252,10/16/2016,firearms,Bernie Sanders
+Daily Mail,191,265,998,10/23/2016,firearms,Bernie Sanders
+Daily Mail,180,101,1413,10/30/2016,firearms,Bernie Sanders
+Daily Mail,127,253,708,11/6/2016,firearms,Bernie Sanders
+Daily Mail,158,111,512,11/13/2016,firearms,Bernie Sanders
+Daily Mail,188,106,881,11/20/2016,firearms,Bernie Sanders
+Daily Mail,272,277,1399,11/27/2016,firearms,Bernie Sanders
+New York Times,151,176,737,7/10/2016,firearms,Bernie Sanders
+New York Times,246,224,815,7/17/2016,firearms,Bernie Sanders
+New York Times,178,200,423,7/24/2016,firearms,Bernie Sanders
+New York Times,121,185,1030,7/31/2016,firearms,Bernie Sanders
+New York Times,208,150,521,8/7/2016,firearms,Bernie Sanders
+New York Times,104,143,1170,8/14/2016,firearms,Bernie Sanders
+New York Times,274,135,837,8/21/2016,firearms,Bernie Sanders
+New York Times,203,140,849,8/28/2016,firearms,Bernie Sanders
+New York Times,156,183,826,9/4/2016,firearms,Bernie Sanders
+New York Times,204,217,850,9/11/2016,firearms,Bernie Sanders
+New York Times,102,232,1465,9/18/2016,firearms,Bernie Sanders
+New York Times,172,221,555,9/25/2016,firearms,Bernie Sanders
+New York Times,202,162,523,10/2/2016,firearms,Bernie Sanders
+New York Times,173,167,608,10/9/2016,firearms,Bernie Sanders
+New York Times,173,167,608,10/16/2016,firearms,Bernie Sanders
+New York Times,190,191,1182,10/23/2016,firearms,Bernie Sanders
+New York Times,152,124,1390,10/30/2016,firearms,Bernie Sanders
+New York Times,109,124,1474,11/6/2016,firearms,Bernie Sanders
+New York Times,225,293,1284,11/13/2016,firearms,Bernie Sanders
+New York Times,103,139,945,11/20/2016,firearms,Bernie Sanders
+New York Times,239,158,920,11/27/2016,firearms,Bernie Sanders
+Business Insider,190,200,1340,7/10/2016,firearms,Bernie Sanders
+Business Insider,192,266,825,7/17/2016,firearms,Bernie Sanders
+Business Insider,157,144,666,7/24/2016,firearms,Bernie Sanders
+Business Insider,218,167,787,7/31/2016,firearms,Bernie Sanders
+Business Insider,148,137,991,8/7/2016,firearms,Bernie Sanders
+Business Insider,231,189,891,8/14/2016,firearms,Bernie Sanders
+Business Insider,204,178,742,8/21/2016,firearms,Bernie Sanders
+Business Insider,139,108,1341,8/28/2016,firearms,Bernie Sanders
+Business Insider,162,210,604,9/4/2016,firearms,Bernie Sanders
+Business Insider,169,122,610,9/11/2016,firearms,Bernie Sanders
+Business Insider,147,105,849,9/18/2016,firearms,Bernie Sanders
+Business Insider,230,179,696,9/25/2016,firearms,Bernie Sanders
+Business Insider,259,268,798,10/2/2016,firearms,Bernie Sanders
+Business Insider,200,117,1267,10/9/2016,firearms,Bernie Sanders
+Business Insider,200,117,1267,10/16/2016,firearms,Bernie Sanders
+Business Insider,257,171,1024,10/23/2016,firearms,Bernie Sanders
+Business Insider,237,300,1148,10/30/2016,firearms,Bernie Sanders
+Business Insider,132,249,482,11/6/2016,firearms,Bernie Sanders
+Business Insider,262,252,970,11/13/2016,firearms,Bernie Sanders
+Business Insider,232,247,1046,11/20/2016,firearms,Bernie Sanders
+Business Insider,228,154,599,11/27/2016,firearms,Bernie Sanders
+The Hill,164,122,821,7/10/2016,firearms,Bernie Sanders
+The Hill,170,140,631,7/17/2016,firearms,Bernie Sanders
+The Hill,252,110,1411,7/24/2016,firearms,Bernie Sanders
+The Hill,205,170,1315,7/31/2016,firearms,Bernie Sanders
+The Hill,266,278,739,8/7/2016,firearms,Bernie Sanders
+The Hill,275,291,713,8/14/2016,firearms,Bernie Sanders
+The Hill,267,266,727,8/21/2016,firearms,Bernie Sanders
+The Hill,272,129,1001,8/28/2016,firearms,Bernie Sanders
+The Hill,135,108,855,9/4/2016,firearms,Bernie Sanders
+The Hill,106,167,503,9/11/2016,firearms,Bernie Sanders
+The Hill,248,191,727,9/18/2016,firearms,Bernie Sanders
+The Hill,272,224,1229,9/25/2016,firearms,Bernie Sanders
+The Hill,195,110,720,10/2/2016,firearms,Bernie Sanders
+The Hill,136,161,1241,10/9/2016,firearms,Bernie Sanders
+The Hill,136,161,1241,10/16/2016,firearms,Bernie Sanders
+The Hill,272,202,623,10/23/2016,firearms,Bernie Sanders
+The Hill,182,272,408,10/30/2016,firearms,Bernie Sanders
+The Hill,296,262,894,11/6/2016,firearms,Bernie Sanders
+The Hill,192,262,998,11/13/2016,firearms,Bernie Sanders
+The Hill,282,165,1392,11/20/2016,firearms,Bernie Sanders
+The Hill,113,115,1486,11/27/2016,firearms,Bernie Sanders
+USNews,104,251,1120,7/10/2016,firearms,Bernie Sanders
+USNews,271,132,1129,7/17/2016,firearms,Bernie Sanders
+USNews,202,268,1178,7/24/2016,firearms,Bernie Sanders
+USNews,257,298,744,7/31/2016,firearms,Bernie Sanders
+USNews,158,263,1187,8/7/2016,firearms,Bernie Sanders
+USNews,168,153,977,8/14/2016,firearms,Bernie Sanders
+USNews,191,209,495,8/21/2016,firearms,Bernie Sanders
+USNews,269,219,621,8/28/2016,firearms,Bernie Sanders
+USNews,221,261,559,9/4/2016,firearms,Bernie Sanders
+USNews,292,163,412,9/11/2016,firearms,Bernie Sanders
+USNews,135,125,960,9/18/2016,firearms,Bernie Sanders
+USNews,103,206,1228,9/25/2016,firearms,Bernie Sanders
+USNews,101,149,1348,10/2/2016,firearms,Bernie Sanders
+USNews,140,147,1211,10/9/2016,firearms,Bernie Sanders
+USNews,140,147,1211,10/16/2016,firearms,Bernie Sanders
+USNews,100,125,1019,10/23/2016,firearms,Bernie Sanders
+USNews,300,178,1255,10/30/2016,firearms,Bernie Sanders
+USNews,275,192,1364,11/6/2016,firearms,Bernie Sanders
+USNews,125,136,906,11/13/2016,firearms,Bernie Sanders
+USNews,100,187,874,11/20/2016,firearms,Bernie Sanders
+USNews,160,244,1244,11/27/2016,firearms,Bernie Sanders
+Chicago Tribune,159,219,591,7/10/2016,firearms,Bernie Sanders
+Chicago Tribune,157,164,1107,7/17/2016,firearms,Bernie Sanders
+Chicago Tribune,172,159,668,7/24/2016,firearms,Bernie Sanders
+Chicago Tribune,106,290,606,7/31/2016,firearms,Bernie Sanders
+Chicago Tribune,121,219,1038,8/7/2016,firearms,Bernie Sanders
+Chicago Tribune,233,258,1287,8/14/2016,firearms,Bernie Sanders
+Chicago Tribune,269,154,426,8/21/2016,firearms,Bernie Sanders
+Chicago Tribune,277,186,447,8/28/2016,firearms,Bernie Sanders
+Chicago Tribune,101,161,1358,9/4/2016,firearms,Bernie Sanders
+Chicago Tribune,150,263,680,9/11/2016,firearms,Bernie Sanders
+Chicago Tribune,251,226,1441,9/18/2016,firearms,Bernie Sanders
+Chicago Tribune,100,101,430,9/25/2016,firearms,Bernie Sanders
+Chicago Tribune,190,247,812,10/2/2016,firearms,Bernie Sanders
+Chicago Tribune,100,249,576,10/9/2016,firearms,Bernie Sanders
+Chicago Tribune,100,249,576,10/16/2016,firearms,Bernie Sanders
+Chicago Tribune,101,244,1253,10/23/2016,firearms,Bernie Sanders
+Chicago Tribune,190,260,1376,10/30/2016,firearms,Bernie Sanders
+Chicago Tribune,152,150,688,11/6/2016,firearms,Bernie Sanders
+Chicago Tribune,143,248,1189,11/13/2016,firearms,Bernie Sanders
+Chicago Tribune,257,108,622,11/20/2016,firearms,Bernie Sanders
+Chicago Tribune,235,216,1354,11/27/2016,firearms,Bernie Sanders
+NJ.com,179,247,913,7/10/2016,firearms,Bernie Sanders
+NJ.com,266,270,725,7/17/2016,firearms,Bernie Sanders
+NJ.com,189,283,480,7/24/2016,firearms,Bernie Sanders
+NJ.com,121,161,1053,7/31/2016,firearms,Bernie Sanders
+NJ.com,195,144,605,8/7/2016,firearms,Bernie Sanders
+NJ.com,161,156,488,8/14/2016,firearms,Bernie Sanders
+NJ.com,224,211,800,8/21/2016,firearms,Bernie Sanders
+NJ.com,234,283,1143,8/28/2016,firearms,Bernie Sanders
+NJ.com,254,264,787,9/4/2016,firearms,Bernie Sanders
+NJ.com,199,104,525,9/11/2016,firearms,Bernie Sanders
+NJ.com,215,132,1430,9/18/2016,firearms,Bernie Sanders
+NJ.com,229,143,402,9/25/2016,firearms,Bernie Sanders
+NJ.com,229,120,1328,10/2/2016,firearms,Bernie Sanders
+NJ.com,174,278,881,10/9/2016,firearms,Bernie Sanders
+NJ.com,228,231,1266,10/16/2016,firearms,Bernie Sanders
+NJ.com,228,231,1266,10/23/2016,firearms,Bernie Sanders
+NJ.com,300,130,474,10/30/2016,firearms,Bernie Sanders
+NJ.com,169,235,1146,11/6/2016,firearms,Bernie Sanders
+NJ.com,182,249,843,11/13/2016,firearms,Bernie Sanders
+NJ.com,145,135,531,11/20/2016,firearms,Bernie Sanders
+NJ.com,143,115,1010,11/27/2016,firearms,Bernie Sanders
+USA Today,259,294,708,7/10/2016,firearms,Bernie Sanders
+USA Today,222,163,418,7/17/2016,firearms,Bernie Sanders
+USA Today,176,131,869,7/24/2016,firearms,Bernie Sanders
+USA Today,276,103,520,7/31/2016,firearms,Bernie Sanders
+USA Today,192,196,423,8/7/2016,firearms,Bernie Sanders
+USA Today,194,139,1465,8/14/2016,firearms,Bernie Sanders
+USA Today,207,165,858,8/21/2016,firearms,Bernie Sanders
+USA Today,256,212,412,8/28/2016,firearms,Bernie Sanders
+USA Today,300,288,836,9/4/2016,firearms,Bernie Sanders
+USA Today,107,162,1377,9/11/2016,firearms,Bernie Sanders
+USA Today,263,185,949,9/18/2016,firearms,Bernie Sanders
+USA Today,262,261,1256,9/25/2016,firearms,Bernie Sanders
+USA Today,195,181,1472,10/2/2016,firearms,Bernie Sanders
+USA Today,249,132,1223,10/9/2016,firearms,Bernie Sanders
+USA Today,249,132,1223,10/16/2016,firearms,Bernie Sanders
+USA Today,119,136,673,10/23/2016,firearms,Bernie Sanders
+USA Today,271,118,665,10/30/2016,firearms,Bernie Sanders
+USA Today,162,165,1077,11/6/2016,firearms,Bernie Sanders
+USA Today,277,133,975,11/13/2016,firearms,Bernie Sanders
+USA Today,158,121,911,11/20/2016,firearms,Bernie Sanders
+USA Today,212,115,717,11/27/2016,firearms,Bernie Sanders
+Asia News Network,160,243,754,7/10/2016,firearms,Bernie Sanders
+Asia News Network,263,181,479,7/17/2016,firearms,Bernie Sanders
+Asia News Network,192,287,870,7/24/2016,firearms,Bernie Sanders
+Asia News Network,268,297,547,7/31/2016,firearms,Bernie Sanders
+Asia News Network,141,262,722,8/7/2016,firearms,Bernie Sanders
+Asia News Network,215,159,1086,8/14/2016,firearms,Bernie Sanders
+Asia News Network,256,103,445,8/21/2016,firearms,Bernie Sanders
+Asia News Network,173,254,411,8/28/2016,firearms,Bernie Sanders
+Asia News Network,229,114,778,9/4/2016,firearms,Bernie Sanders
+Asia News Network,165,195,1374,9/11/2016,firearms,Bernie Sanders
+Asia News Network,196,175,1432,9/18/2016,firearms,Bernie Sanders
+Asia News Network,164,151,422,9/25/2016,firearms,Bernie Sanders
+Asia News Network,126,195,1143,10/2/2016,firearms,Bernie Sanders
+Asia News Network,143,137,483,10/9/2016,firearms,Bernie Sanders
+Asia News Network,143,137,483,10/16/2016,firearms,Bernie Sanders
+Asia News Network,124,275,996,10/23/2016,firearms,Bernie Sanders
+Asia News Network,213,274,1225,10/30/2016,firearms,Bernie Sanders
+Asia News Network,116,102,1323,11/6/2016,firearms,Bernie Sanders
+Asia News Network,198,127,1450,11/13/2016,firearms,Bernie Sanders
+Asia News Network,201,126,1387,11/20/2016,firearms,Bernie Sanders
+Asia News Network,147,203,692,11/27/2016,firearms,Bernie Sanders
+NBC News,125,139,682,7/10/2016,firearms,Bernie Sanders
+NBC News,145,265,841,7/17/2016,firearms,Bernie Sanders
+NBC News,116,226,431,7/24/2016,firearms,Bernie Sanders
+NBC News,272,204,579,7/31/2016,firearms,Bernie Sanders
+NBC News,183,119,770,8/7/2016,firearms,Bernie Sanders
+NBC News,206,137,1448,8/14/2016,firearms,Bernie Sanders
+NBC News,274,175,734,8/21/2016,firearms,Bernie Sanders
+NBC News,198,140,1453,8/28/2016,firearms,Bernie Sanders
+NBC News,204,288,888,9/4/2016,firearms,Bernie Sanders
+NBC News,168,124,441,9/11/2016,firearms,Bernie Sanders
+NBC News,113,136,1350,9/18/2016,firearms,Bernie Sanders
+NBC News,113,225,1056,9/25/2016,firearms,Bernie Sanders
+NBC News,254,204,1068,10/2/2016,firearms,Bernie Sanders
+NBC News,221,171,820,10/9/2016,firearms,Bernie Sanders
+NBC News,221,171,820,10/16/2016,firearms,Bernie Sanders
+NBC News,103,298,582,10/23/2016,firearms,Bernie Sanders
+NBC News,209,293,1476,10/30/2016,firearms,Bernie Sanders
+NBC News,107,176,605,11/6/2016,firearms,Bernie Sanders
+NBC News,269,270,746,11/13/2016,firearms,Bernie Sanders
+NBC News,277,283,766,11/20/2016,firearms,Bernie Sanders
+NBC News,123,263,1224,11/27/2016,firearms,Bernie Sanders
+New York Post,209,110,1312,7/10/2016,firearms,Bernie Sanders
+New York Post,210,195,411,7/17/2016,firearms,Bernie Sanders
+New York Post,250,228,728,7/24/2016,firearms,Bernie Sanders
+New York Post,252,143,814,7/31/2016,firearms,Bernie Sanders
+New York Post,251,290,1151,8/7/2016,firearms,Bernie Sanders
+New York Post,210,213,733,8/14/2016,firearms,Bernie Sanders
+New York Post,260,229,1165,8/21/2016,firearms,Bernie Sanders
+New York Post,202,192,938,8/28/2016,firearms,Bernie Sanders
+New York Post,288,218,1338,9/4/2016,firearms,Bernie Sanders
+New York Post,195,285,1144,9/11/2016,firearms,Bernie Sanders
+New York Post,117,120,622,9/18/2016,firearms,Bernie Sanders
+New York Post,241,283,1425,9/25/2016,firearms,Bernie Sanders
+New York Post,228,161,517,10/2/2016,firearms,Bernie Sanders
+New York Post,144,156,684,10/9/2016,firearms,Bernie Sanders
+New York Post,144,156,684,10/16/2016,firearms,Bernie Sanders
+New York Post,288,238,1364,10/23/2016,firearms,Bernie Sanders
+New York Post,127,164,1363,10/30/2016,firearms,Bernie Sanders
+New York Post,201,197,882,11/6/2016,firearms,Bernie Sanders
+New York Post,149,252,1431,11/13/2016,firearms,Bernie Sanders
+New York Post,259,131,454,11/20/2016,firearms,Bernie Sanders
+New York Post,277,236,551,11/27/2016,firearms,Bernie Sanders
+Vice,205,270,860,7/10/2016,firearms,Bernie Sanders
+Vice,194,145,1187,7/17/2016,firearms,Bernie Sanders
+Vice,206,244,1471,7/24/2016,firearms,Bernie Sanders
+Vice,241,273,762,7/31/2016,firearms,Bernie Sanders
+Vice,254,266,1190,8/7/2016,firearms,Bernie Sanders
+Vice,214,120,1277,8/14/2016,firearms,Bernie Sanders
+Vice,217,127,601,8/21/2016,firearms,Bernie Sanders
+Vice,284,220,890,8/28/2016,firearms,Bernie Sanders
+Vice,100,198,770,9/4/2016,firearms,Bernie Sanders
+Vice,205,125,1113,9/11/2016,firearms,Bernie Sanders
+Vice,233,256,955,9/18/2016,firearms,Bernie Sanders
+Vice,183,153,1140,9/25/2016,firearms,Bernie Sanders
+Vice,148,197,1132,10/2/2016,firearms,Bernie Sanders
+Vice,236,136,552,10/9/2016,firearms,Bernie Sanders
+Vice,236,136,552,10/16/2016,firearms,Bernie Sanders
+Vice,243,230,959,10/23/2016,firearms,Bernie Sanders
+Vice,255,147,686,10/30/2016,firearms,Bernie Sanders
+Vice,255,184,619,11/6/2016,firearms,Bernie Sanders
+Vice,244,285,1232,11/13/2016,firearms,Bernie Sanders
+Vice,102,239,538,11/20/2016,firearms,Bernie Sanders
+Vice,300,252,720,11/27/2016,firearms,Bernie Sanders
