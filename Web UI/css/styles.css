@@ -13,10 +13,6 @@ body {
 	padding: 0;
 	text-align: center;
 	background-color: #FFFFFF;
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
 }
 
 body.home {
@@ -227,7 +223,7 @@ body.home {
 	
 	#menuHeader {
 		color: #FFFFFF;
-		background-color: rgba(0,0,0,0.6);
+		background-color: rgba(0,0,0,0.95);
 		width: 100%;
 		height: 50px;
 		position: absolute;
@@ -292,10 +288,6 @@ body.home {
 	
 	#menuHeader.scrolldown .headerWrapper h4, body.interior #menuHeader .headerWrapper h4 {
 		margin-left: 0px !important;
-	}
-	
-	#menuHeader.scrolldown, body.interior #menuHeader {
-		background-color: rgba(0,0,0,0.95);
 	}
 	
 	#menu li {
@@ -419,27 +411,27 @@ body.home {
 	a.twitter {
 		background-image: url('../img/icon-share-twitter.png');
 		-webkit-transition-delay: 0s;
-		transition-delay: 0s;
+		transition-delay: 0.25s;
 	}
 	a.facebook {
 		background-image: url('../img/icon-share-facebook.png');
 		-webkit-transition-delay: 0.1s;
-		transition-delay: 0.1s;
+		transition-delay: 0.35s;
 	}
 	a.google {
 		background-image: url('../img/icon-share-google.png');
 		-webkit-transition-delay: 0.2s;
-		transition-delay: 0.2s;
+		transition-delay: 0.45s;
 	}
 	a.linkedin {
 		background-image: url('../img/icon-share-linkedin.png');
 		-webkit-transition-delay: 0.3s;
-		transition-delay: 0.3s;
+		transition-delay: 0.55s;
 	}
 	a.email {
 		background-image: url('../img/icon-share-email.png');
 		-webkit-transition-delay: 0.4s;
-		transition-delay: 0.4s;
+		transition-delay: 0.65s;
 	}
 
 	
@@ -937,6 +929,9 @@ body.home {
 			-o-transition: .25s ease-in-out;
 			transition: .25s ease-in-out;
 			text-align: center;
+			-moz-appearance:none;
+			text-indent: 0.01px;
+			text-overflow: '';
 
 		}
 		
